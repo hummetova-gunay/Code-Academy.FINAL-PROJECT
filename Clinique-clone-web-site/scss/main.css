@@ -13,6 +13,19 @@
   margin: 0 auto;
 }
 
+#home .section-body .section-text button {
+  padding: 10px 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+}
+#home .section-body .section-text button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 header {
   padding: 10px 0;
 }
@@ -106,7 +119,48 @@ header .mobile-header {
   }
 }
 
+#home {
+  position: relative;
+}
 #home .section-body {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-image: url(../../images/summer30_lmw_pc@2x.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#home .section-body .section-text {
+  width: 100%;
+  padding: 100px;
+}
+#home .section-body .section-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#home .section-body .section-text p {
+  margin: 0;
+}
+#home .section-body .section-text span {
+  font-weight: 700;
+}
+#home .section-body .section-text button {
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+#home .section-body .section-text .pale-text {
+  font-size: 12px;
+  color: #999999;
+}
+#home .section-body .section-img {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  #home .section-body {
+    background-image: none;
+    flex-direction: column-reverse;
+  }
+  #home .section-body .section-img {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

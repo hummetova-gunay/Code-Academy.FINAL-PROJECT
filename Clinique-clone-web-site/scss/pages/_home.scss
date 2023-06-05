@@ -1,6 +1,44 @@
 #home{
+    position: relative;
     .section-body{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        background-image: url(../../images/summer30_lmw_pc@2x.jpg);
+        background-position: center;
+        background-size: cover;
+        .section-text{
+            width: 100%;
+            padding: 100px;
+            h1{
+                font-size: 60px;
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+            }
+            span{
+                font-weight: 700;
+            }
+            button{
+                @extend %primary-button;
+                letter-spacing: 1px;
+                margin: 20px 0;
+            }
+            .pale-text{
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        .section-img{
+            display: none;
+        }
+      @media screen and (max-width:1023px){
+        background-image: none;
+        flex-direction: column-reverse;
+        .section-img{
+            display: block;
+        }
+      }
     }
 }
