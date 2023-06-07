@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap");
 * {
@@ -6,6 +7,7 @@
   text-decoration: none !important;
   list-style-type: none;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
@@ -36,8 +38,6 @@ header .header {
 }
 header .header h1 a {
   color: #1a1a1a;
-  font-family: "Signika Negative", sans-serif;
-  margin-right: 150px;
 }
 header .header nav ul {
   display: flex;
@@ -96,7 +96,6 @@ header .mobile-header {
   }
   header .mobile-header .mobile-nav h1 a {
     color: #1a1a1a;
-    font-family: "Signika Negative", sans-serif;
   }
   header .mobile-header .mobile-nav .fa-x {
     color: #1a1a1a;
@@ -119,13 +118,10 @@ header .mobile-header {
   }
 }
 
-#home {
-  position: relative;
-}
 #home .section-body {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-image: url(../../images/summer30_lmw_pc@2x.jpg);
   background-position: center;
   background-size: cover;
@@ -137,6 +133,11 @@ header .mobile-header {
 #home .section-body .section-text h1 {
   font-size: 60px;
   font-weight: 700;
+}
+@media screen and (max-width: 567px) {
+  #home .section-body .section-text h1 {
+    font-size: 40px;
+  }
 }
 #home .section-body .section-text p {
   margin: 0;
@@ -162,5 +163,102 @@ header .mobile-header {
   }
   #home .section-body .section-img {
     display: block;
+  }
+  #home .section-body .section-img img {
+    width: 100%;
+  }
+  #home .section-body .section-text {
+    padding: 50px;
+  }
+}
+
+#discount-section .section-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#discount-section .section-body .discounted-product img {
+  width: 100%;
+}
+#discount-section .section-body .discount-time {
+  padding: 50px;
+  text-align: center;
+}
+#discount-section .section-body .discount-time h1 {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1023px) {
+  #discount-section .section-body .discount-time h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #discount-section .section-body .discount-time h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 567px) {
+  #discount-section .section-body .discount-time h1 {
+    font-size: 28px;
+  }
+}
+#discount-section .section-body .discount-time .decreasing-time {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+#discount-section .section-body .discount-time .decreasing-time div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+#discount-section .section-body .discount-time .decreasing-time div h2 {
+  font-size: 40px;
+}
+@media screen and (max-width: 1023px) {
+  #discount-section .section-body .discount-time .decreasing-time div h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #discount-section .section-body .discount-time .decreasing-time div h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 567px) {
+  #discount-section .section-body .discount-time .decreasing-time div h2 {
+    font-size: 20px;
+  }
+}
+#discount-section .section-body .discount-time .decreasing-time div span {
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  #discount-section .section-body .discount-time .decreasing-time div span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 567px) {
+  #discount-section .section-body .discount-time .decreasing-time div span {
+    font-size: 16px;
+  }
+}
+#discount-section .section-body .discount-time .decreasing-time div:first-child, #discount-section .section-body .discount-time .decreasing-time div:nth-child(2), #discount-section .section-body .discount-time .decreasing-time div:nth-child(3) {
+  border-right: 2px solid black;
+}
+@media screen and (max-width: 1023px) {
+  #discount-section .section-body {
+    flex-direction: column;
+  }
+  #discount-section .section-body .discount-time .decreasing-time {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  #discount-section .section-body .discount-time .decreasing-time div:first-child, #discount-section .section-body .discount-time .decreasing-time div:nth-child(2), #discount-section .section-body .discount-time .decreasing-time div:nth-child(3) {
+    border: none;
   }
 }/*# sourceMappingURL=main.css.map */

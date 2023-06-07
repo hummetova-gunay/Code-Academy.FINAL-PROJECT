@@ -1,0 +1,78 @@
+#discount-section{
+    .section-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .discounted-product{
+        img{
+            width: 100%;
+        }
+    }
+    .discount-time{
+        padding: 50px;
+        text-align: center;
+        h1{
+            margin-bottom: 50px;
+            font-size: 48px;
+            font-weight: 700;
+            @media screen and (max-width:1023px) {
+                font-size: 44px;
+            }
+            @media screen and (max-width:767px) {
+                font-size: 36px;
+            }
+            @media screen and (max-width:567px) {
+                font-size: 28px;
+            }
+        }
+        .decreasing-time{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 100%;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-right: 10px;
+                width: 100%;
+                h2{
+                    font-size: 40px;
+                    @media screen and (max-width:1023px) {
+                        font-size: 34px;
+                    }
+                    @media screen and (max-width:767px) {
+                        font-size: 30px;
+                    }
+                    @media screen and (max-width:567px) {
+                        font-size: 20px;
+                    }
+                }
+                span{
+                    font-size: 24px;
+                    @media screen and (max-width:767px) {
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width:567px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            div:first-child,div:nth-child(2),div:nth-child(3){
+                border-right: 2px solid black;
+            }
+        }
+    }
+    @media screen and (max-width:1023px) {
+        flex-direction: column;
+        .discount-time{
+            .decreasing-time{
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                div:first-child,div:nth-child(2),div:nth-child(3){
+                    border: none;
+                }
+            }
+        }
+    }
+}
+}

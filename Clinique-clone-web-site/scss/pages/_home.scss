@@ -1,9 +1,8 @@
 #home{
-    position: relative;
     .section-body{
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         background-image: url(../../images/summer30_lmw_pc@2x.jpg);
         background-position: center;
         background-size: cover;
@@ -13,6 +12,9 @@
             h1{
                 font-size: 60px;
                 font-weight: 700;
+                @media screen and (max-width:567px) {
+                    font-size: 40px;
+                }
             }
             p{
                 margin: 0;
@@ -38,6 +40,12 @@
         flex-direction: column-reverse;
         .section-img{
             display: block;
+            img{
+                width: 100%;
+            }
+        }
+        .section-text{
+            padding: 50px;
         }
       }
     }
