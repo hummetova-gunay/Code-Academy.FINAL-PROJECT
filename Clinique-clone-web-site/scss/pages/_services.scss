@@ -1,0 +1,33 @@
+#services{
+    background-color: #ADDDB8;
+    padding: 50px 0;
+    margin: 50px 0;
+    .container{
+        h1{
+            margin: 30px 0;
+        }
+      .all-services{
+        @include flexbox;
+        justify-content: space-between;
+        .single-service{
+            width: 250px;
+            @include flexbox;
+            flex-direction: column;
+            align-items: start;
+            img{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            p{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            a{
+                text-transform: uppercase;
+                color: black;
+                border-bottom: 1px solid black;
+            }
+        }
+    }  
+    }
+}
