@@ -741,4 +741,28 @@ header .mobile-header {
   text-transform: uppercase;
   color: black;
   border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1024px) {
+  #services .container .all-services {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #services .container .all-services .single-service {
+    width: 100%;
+  }
+  #services .container .all-services .single-service img {
+    width: 80%;
+  }
+  #services .container .all-services .single-service p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #services .container .all-services {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #services .container .all-services .single-service img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
