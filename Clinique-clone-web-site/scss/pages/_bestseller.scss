@@ -143,6 +143,7 @@
         }
     }
     .go-bestseller{
+      margin: 30px 0;
       @extend %styled-button;
       color: black;
       &:hover{

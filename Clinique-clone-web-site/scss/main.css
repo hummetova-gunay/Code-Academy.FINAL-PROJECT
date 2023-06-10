@@ -37,7 +37,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#laser-smart .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image #modal-btn {
+#laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image #modal-btn {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -51,7 +51,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
 }
-#laser-smart .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image #modal-btn:hover {
+#laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image #modal-btn:hover {
   background: #592770;
   box-shadow: 0 0 30px 5px rgba(95, 26, 122, 0.815);
   transition: all 0.2s ease-out;
@@ -647,6 +647,7 @@ header .mobile-header {
   }
 }
 #bestseller .go-bestseller {
+  margin: 30px 0;
   color: black;
 }
 #bestseller .go-bestseller:hover {
@@ -660,7 +661,11 @@ header .mobile-header {
   background-size: cover;
   padding: 100px 0;
 }
-#laser-smart .section-text {
+#laser-smart .section-body .section-img img {
+  display: none;
+  width: 100%;
+}
+#laser-smart .section-body .section-text {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -668,25 +673,36 @@ header .mobile-header {
   flex-direction: column;
   align-items: start;
 }
-#laser-smart .section-text h1 {
+#laser-smart .section-body .section-text h1 {
   font-weight: 700;
   font-size: 60px;
   margin: 20px 0;
 }
-#laser-smart .section-text p {
+#laser-smart .section-body .section-text p {
   text-transform: uppercase;
 }
-#laser-smart .section-text h4 {
+#laser-smart .section-body .section-text h4 {
   font-weight: 600;
 }
-#laser-smart .section-text button {
+#laser-smart .section-body .section-text button {
   color: black;
   margin: 10px 0;
 }
-#laser-smart .section-text button:hover {
+#laser-smart .section-body .section-text button:hover {
   color: white;
 }
-#laser-smart .section-text span {
+#laser-smart .section-body .section-text span {
   color: #999;
   font-size: 12px;
+}
+@media screen and (max-width: 1024px) {
+  #laser-smart {
+    background-image: none;
+  }
+  #laser-smart .section-body .section-img img {
+    display: block;
+  }
+  #laser-smart .section-body .section-text {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
