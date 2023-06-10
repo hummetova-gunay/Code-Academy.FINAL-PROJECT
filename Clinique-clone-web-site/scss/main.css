@@ -37,7 +37,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .styled-btn {
+#bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image #modal-btn {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -51,7 +51,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
 }
-#bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .styled-btn:hover {
+#bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image #modal-btn:hover {
   background: #592770;
   box-shadow: 0 0 30px 5px rgba(95, 26, 122, 0.815);
   transition: all 0.2s ease-out;
@@ -517,8 +517,10 @@ header .mobile-header {
   margin-bottom: 50px;
 }
 #bestseller .all-images {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 #bestseller .all-images .single-image {
   display: flex;
@@ -526,6 +528,8 @@ header .mobile-header {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 300px;
+  height: 450px;
 }
 #bestseller .all-images .single-image .card:hover .content {
   transform: rotateY(180deg);
@@ -542,8 +546,13 @@ header .mobile-header {
   transform: rotateY(180deg);
   color: white;
 }
-#bestseller .all-images .single-image .styled-btn {
+#bestseller .all-images .single-image #modal-btn {
   color: black;
+}
+@media screen and (max-width: 1200px) {
+  #bestseller .all-images .single-image #modal-btn {
+    display: none;
+  }
 }
 #bestseller .all-images .single-image .modal .modal-dialog .modal-body {
   display: flex;
@@ -601,6 +610,40 @@ header .mobile-header {
 #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
   color: white;
 }
+#bestseller .all-images .single-image .mobile-txt {
+  display: none;
+  width: 100%;
+}
+#bestseller .all-images .single-image .mobile-txt p {
+  text-align: center;
+}
+#bestseller .all-images .single-image .mobile-txt .rating-add-bag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#bestseller .all-images .single-image .mobile-txt .rating-add-bag .rating .rated-star {
+  display: none;
+}
+#bestseller .all-images .single-image .mobile-txt .rating-add-bag .add-bag button {
+  border: none;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1200px) {
+  #bestseller .all-images .single-image .mobile-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #bestseller .all-images {
+    flex-wrap: wrap;
+  }
+}
+
 #for-men {
   height: 100vh;
 }/*# sourceMappingURL=main.css.map */

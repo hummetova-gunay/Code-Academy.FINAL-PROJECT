@@ -7,14 +7,16 @@
         margin-bottom: 50px;
     }
     .all-images{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
+      @include flexbox;
+      gap: 20px;
         .single-image{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 20px;
+            width: 300px;
+            height: 450px;
             .card{
                 @extend %card;
                 &:hover .content {
@@ -35,11 +37,15 @@
                     color: white;
                   }
             }
-            .styled-btn{
+
+            #modal-btn{
                 @extend %styled-button;
                 color: black;
+                @media screen and (max-width:1200px) {
+                  display: none;
+                }
             }
-            .modal {
+            .modal{
                 .modal-dialog{
                     .modal-body{
                         @include flexbox;
@@ -101,8 +107,36 @@
                       }
                     }
                 }
+            } 
+            .mobile-txt{
+              display: none;
+              width: 100%;
+              p{
+                text-align: center;
+              }
+              .rating-add-bag{
+                @include flexbox;
+                gap: 40px;
+                .rating{
+                  .rated-star{
+                    display: none;
+                  }
+                }
+                .add-bag{
+                  button{
+                    border: none;
+                    border-bottom: 1px solid black;
+                  }
+                }
+              }
+              @media screen and (max-width:1200px) {
+                @include flexbox;
+                flex-direction: column;
+              }
             }
-
+        }
+        @media screen and (max-width:1200px) {
+          flex-wrap: wrap;
         }
     }
 }
