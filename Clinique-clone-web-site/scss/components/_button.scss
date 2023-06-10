@@ -11,3 +11,22 @@
         background-color: rgba($color: #000000, $alpha: 0.8);
     }
 }
+%styled-button{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #592770;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #F6F6F6;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    &:hover {
+        background: #592770;
+        box-shadow: 0 0 30px 5px rgba(95, 26, 122, 0.815);
+        transition: all 0.2s ease-out;
+      }
+}

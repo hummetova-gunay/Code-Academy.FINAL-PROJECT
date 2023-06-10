@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Clinique</title>
 </head>
 <body>
@@ -87,16 +87,16 @@
             <h1>LIMITED TIME. BUY ONE, GET ONE FREE. </h1>
         <div class="decreasing-time">
             <div class="days">
-                <h2 class="left-days">15</h2> <span>Days</span>
+                <h2 class="left-days"></h2> <span>Days</span>
             </div>
             <div class="hours">
-                <h2 class="left-hours">15</h2> <span>Hours</span>
+                <h2 class="left-hours"></h2> <span>Hours</span>
             </div>
             <div class="minutes">
-                <h2 class="left-minutes">15</h2> <span>Minutes</span>
+                <h2 class="left-minutes"></h2> <span>Minutes</span>
             </div>
             <div class="seconds">
-                <h2 class="left-seconds">15</h2> <span>Seconds</span>
+                <h2 class="left-seconds"></h2> <span>Seconds</span>
             </div>
         </div>
         <button>Buy Now
@@ -123,6 +123,277 @@
     </div>
     </div>
     </section>
+    <section id="bestseller">
+       <div class="container">
+        <h1>Love your skin with our bestsellers.</h1>
+          <div class="all-images">
+            <div class="single-image">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <img src="./images/cl_sku_635906_600x750_0.png" alt="">
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="front-content">
+                      <div class="slider-text">
+                        <p id="name">Almost Lipstick in Black Honey
+                          Clinique's cult classic lip shade. One is sold every 4 minutes globally.
+                          </p>
+                        <p id="price">$23.00</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Buy now</button>
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/arms.jpg" alt="">
+        <div class="modal-text">
+          <h1>Almost Lipstick In Black Honey</h1>
+          <p>Clinique's cult classic lip shade. One is sold every 4 minutes globally.</p>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <span class="how-many">(1471)</span>
+          </div>
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="inc-dec">
+              <button>-</button>
+              <span id="amount">1</span>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="price">
+            <h3>$32.00</h3>
+            <button>Add to bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <!-- Lipstick -->
+            <div class="single-image">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <img src="./images/modal-image.png" alt="">
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="front-content">
+                      <div class="slider-text">
+                        <p id="name"> Dramatically Different Moisturizing Lotion+™</p>
+                        <p id="price">$6.50 - $45</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Buy now</button>
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/ingridients-lotion.jpg" alt="">
+        <div class="modal-text">
+          <h1>Dramatically Different Moisturizing Lotion+™ </h1>
+          <p>Clinique's bestselling face moisturizer. Dermatologist-developed formula helps strengthen skin's moisture barrier.</p>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <span class="how-many">(6773)</span>
+          </div>
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="inc-dec">
+              <button>-</button>
+              <span id="amount">1</span>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="price">
+            <h3>$32.50</h3>
+            <button>Add to bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <!-- Moisturizing Lotion -->
+            <div class="single-image">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <img src="./images/moisture-surge.png" alt="">
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="front-content">
+                      <div class="slider-text">
+                        <p id="name">Moisture Surge™ 100H Auto-Replenishing Hydrator</p>
+                        <p id="price">$28.00</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Buy now</button>
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/moisture-surge.png" alt="">
+        <div class="modal-text">
+          <h1>Moisture Surge™ 100H Auto-Replenishing Hydrator</h1>
+          <p>Our refreshing fan-favorite hydrator. Lightweight, oil-free gel-cream penetrates deep, lasts 100 hours. Learn More</p>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <span class="how-many">(3038)</span>
+          </div>
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="inc-dec">
+              <button>-</button>
+              <span id="amount">1</span>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="price">
+            <h3>$28.00</h3>
+            <button>Add to bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <!-- Moisture Surge™ 100H -->
+            <div class="single-image">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <img src="./images/limited-edition.png" alt="">
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="front-content">
+                      <div class="slider-text">
+                        <p id="name">LIMITED-EDITION DUO Take The Day Off™ Cleansing Balm</p>
+                        <p id="price">$38.00</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Buy now</button>
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/clean-faces.jpg" alt="">
+        <div class="modal-text">
+          <h1>LIMITED-EDITION DUO Take The Day Off™ Cleansing Balm</h1>
+          <p>CLINIQUE.COM EXCLUSIVE. Buy one, get one free. Our #1 makeup remover in a silky balm formula gently dissolves makeup</p>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <i class="fa-solid fa-star rated-star"></i>
+            <span class="how-many">(3002)</span>
+          </div>
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="inc-dec">
+              <button>-</button>
+              <span id="amount">1</span>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="price">
+            <h3>$38.00</h3>
+            <button>Add to bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <!-- LIMITED-EDITION DUO Take The Day Off™ Cleansing Balm -->
+          </div>
+       </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>

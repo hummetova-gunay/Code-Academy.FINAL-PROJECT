@@ -1,7 +1,11 @@
 @import "./base/reset";
 @import "./base/global";
 @import "./components/button";
+@import "./components/card";
+@import "./utils/mixins";
 @import "./layout/header";
 @import "./pages/home";
 @import "./pages/discount";
+@import "./pages/bestseller";
+@import "./pages/_for-men";
 @import "./layout/footer";

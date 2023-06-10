@@ -6,4 +6,8 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    ::selection{
+        background-color:#612B72 ;
+        text-shadow: 5px 5px 18px whitesmoke;
+    }
 }

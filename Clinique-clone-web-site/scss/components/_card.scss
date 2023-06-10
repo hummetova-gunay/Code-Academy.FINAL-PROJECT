@@ -1,0 +1,75 @@
+%card{
+        overflow: visible;
+        height: 300px;
+        width: 270px;
+      .content {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 500ms;
+        box-shadow: 0px 0px 10px 1px #9a49a5ee;
+        border-radius: 5px;
+      }
+      .front, .back {
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .front{
+         .front-content{
+          width: 100%;
+          height: 100%;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          background-color: black;
+          .slider-text{
+            text-align: center;
+            #price{
+              font-size: 32px;
+            }
+          }
+         }
+      }
+      .back {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .back::before {
+        position: absolute;
+        content: ' ';
+        display: block;
+        width: 160px;
+        height: 160%;
+        background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+        animation: rotation_481 5000ms infinite linear;
+      }
+      .back-content {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        background-color: #fff;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+      }
+}
