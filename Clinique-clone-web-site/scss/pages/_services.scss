@@ -1,7 +1,8 @@
 #services{
-    background-color: #ADDDB8;
+    background-color: #ADDDB7;
+    // background-color: #F6F6F6;
     padding: 50px 0;
-    margin: 50px 0;
+    margin-top: 50px;
     .container{
         h1{
             margin: 30px 0;
@@ -33,9 +34,6 @@
             gap: 50px;
             .single-service{
                 width: 100%;
-                img{
-                    width: 80%;
-                }
                 p{
                     font-size: 16px;
                 }
@@ -44,11 +42,6 @@
         @media screen and (max-width:576px) {
             flex-direction: column;
             gap: 50px;
-            .single-service{
-                img{
-                    width: 100%;
-                }
-            }
         }
     }  
     }

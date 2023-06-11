@@ -1,0 +1,23 @@
+#get-in-touch{
+    background-color: #ADDDB7;
+    margin-top: 50px;
+    padding: 70px 0;
+    .container{
+        .section-body{
+            .subscription{
+                p{
+                    font-size: 12px;
+                }
+                .input-group{
+                    @extend %input-group;
+                    form{
+                        .submit{
+                            background-color: #ADDDB7;
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
