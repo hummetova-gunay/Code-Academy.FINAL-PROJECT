@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
 header{
-    background-color: #181818;
+    background-color:white;
     padding: 10px 0;
     .header{
         display: flex;
@@ -8,7 +8,7 @@ header{
         justify-content: space-between;
         h1 {
             a{
-                color:#F6F6F6;
+                color:black;
                 // margin-right: 150px;
             }
         }
@@ -22,11 +22,11 @@ header{
                 li{
                     a{
                         font-weight: 700;
-                        color:#F6F6F6;
+                        color:black;
                         border-bottom: 1px solid transparent;
                         &:hover{
                             transition: 0.8s;
-                            border-bottom-color:#F6F6F6 ;
+                            border-bottom-color:black ;
                         }
                     }
                 }
@@ -36,7 +36,7 @@ header{
             display: flex;
             gap: 20px;
             i{
-                color: #F6F6F6;
+                color: black;
                 font-size: 24px;
             }
             .fa-bars{
@@ -74,11 +74,11 @@ header{
                 margin-bottom: 30px;
                 h1{
                     a{
-                        color: #F6F6F6;
+                        color: black;
                     }
                 }
                 .fa-x{
-                    color:#F6F6F6;
+                    color:black;
                     font-size: 24px;
                 }
             }
@@ -89,11 +89,11 @@ header{
                         margin-bottom: 20px;
                         a{
                             font-weight: 700;
-                            color: #F6F6F6;
+                            color: black;
                             border-bottom: 1px solid transparent;
                             &:hover{
                                 transition: 0.8s;
-                                border-bottom-color: #F6F6F6;
+                                border-bottom-color: black;
                             } 
                         }
                     }
