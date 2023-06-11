@@ -806,4 +806,60 @@ header .mobile-header {
 #get-in-touch .container .section-body .subscription .input-group form .submit {
   background-color: #ADDDB7;
   padding: 1rem;
+}
+
+footer {
+  padding: 50px 0;
+}
+footer .container .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .container .headings .heading {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .container .headings .heading p {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .container .headings .heading ul {
+  padding-left: 0;
+}
+footer .container .headings .heading ul li {
+  margin-bottom: 10px;
+}
+footer .container .headings .heading ul li a {
+  font-weight: 100;
+  font-size: 16px;
+  color: black;
+  border-bottom: 1px solid transparent;
+}
+footer .container .headings .heading ul li a:hover {
+  transition: 0.8s;
+  border-bottom-color: black;
+}
+@media screen and (max-width: 1024px) {
+  footer .container .headings {
+    flex-wrap: wrap;
+  }
+  footer .container .headings .heading {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 567px) {
+  footer .container .headings {
+    flex-wrap: wrap;
+  }
+  footer .container .headings .heading {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
