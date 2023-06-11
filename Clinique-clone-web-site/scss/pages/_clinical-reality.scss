@@ -1,0 +1,28 @@
+#clinical-realty{
+    background-color: #E5F3E3;
+    padding: 50px;
+    margin: 50px 0;
+    .container{
+        .allservices{
+           @include flexbox;
+           align-items: flex-start;
+           gap: 20px;
+           .image{
+            img{
+                width: 100%;
+               }
+               p{
+                margin-top: 20px;
+               }
+           }
+           @media screen and (max-width:992px) {
+            flex-wrap: wrap;
+            .image{
+                img{
+                    width: 90%;
+                }
+            }
+           }
+        }
+    }
+}
