@@ -152,30 +152,82 @@
                             </div>
                             <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle-Ian1" role="button">Open first modal</a>
                             <div class="modal fade" id="exampleModalToggle-Ian1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Please select an event type</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                     
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle-Ian2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                                    <div class="modal-body all-events">
+                                        <button class="btn" data-bs-target="#exampleModalToggle-Ian2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                            <h5>Foundation Fundamental-Reporting-Merged</h5>
+                                            <p>Duration: 30min</p>
+                                        </button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                               <div class="modal fade" id="exampleModalToggle-Ian2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      Hide this modal and show the first with the button below.
+                                     <div class="pick-a-date">
+                                       <span>Pick a date and time</span>
+                                        <p>Duration: 30mins</p>
+                                        <p>This is a virtual meeting. The details will be sent to you.</p>
+                                        <span>Your time zone:</span><p>Azerbaijan;  Baku  (GMT+4:00) </p>
+                                     </div>
+                                     <hr>
+                                     <h4>June 2023</h4>
+                                     <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Sun</th>
+                                            <th scope="col">Mon</th>
+                                            <th scope="col">Tue</th>
+                                            <th scope="col">Wed</th>
+                                            <th scope="col">Thu</th>
+                                            <th scope="col">Fri</th>
+                                            <th scope="col">Sat</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                            <td><button class="btn">11</button></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p>Available starting times for <span>Sat, Jun 17, 2023</span></p>
+                                      <div class="part-of-day">
+                                        <div class="am">
+                                          <button class="btn">12:30 AM</button>
+                                          <button class="btn">12:45 AM</button>
+                                          <button class="btn">1:00 AM</button>
+                                          <button class="btn">1:15 AM</button>
+                                        </div>
+                                        <div class="pm">
+                                          <P>No PM times</P>
+                                        </div>
+                                      </div>
                                     </div>
                                     <div class="modal-footer">
                                       <button class="btn btn-primary" data-bs-target="#exampleModalToggle-Ian1" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
@@ -189,7 +241,6 @@
             </div>
         </div>
     </section>
-
     <section id="get-in-touch">
         <div class="container">
           <div class="section-body row">
