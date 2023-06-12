@@ -884,6 +884,9 @@ header .mobile-header {
   margin: 0;
   border: none;
 }
+#how-tos .container .all-videos .single-video h3 {
+  margin-top: 20px;
+}
 @media screen and (max-width: 1024px) {
   #how-tos .container .all-videos {
     flex-direction: column;
