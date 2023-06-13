@@ -32,7 +32,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
+#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -46,7 +46,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
 }
-#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
+#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
   background: #ADDDB7;
   box-shadow: 0 0 30px 5px #061309 95, 26, 122, 0.815;
   transition: all 0.2s ease-out;
@@ -221,6 +221,8 @@
 #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt {
   width: 250px;
   display: none;
+}
+#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt p {
   width: 100%;
 }
 #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag {
@@ -1031,6 +1033,10 @@ header .mobile-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: start;
+}
+#all-bestsellers .container .section-body .filter-part {
+  width: 400px;
 }
 #all-bestsellers .container .section-body .filter-part .filter-head {
   display: flex;
@@ -1046,7 +1052,39 @@ header .mobile-header {
   align-items: start;
 }
 #all-bestsellers .container .section-body .filter-part .filter-body .btn {
-  padding: 0;
+  width: 100%;
+  text-align: start;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
+}
+#all-bestsellers .container .section-body .filter-part .filter-body .collapse .btn {
+  border: none;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+}
+#all-bestsellers .container .section-body .bestsellers-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#all-bestsellers .container .section-body .bestsellers-part .featured {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+#all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-menu .btn {
+  width: 100%;
+  text-align: start;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
 }
 #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products {
   display: flex;
@@ -1060,11 +1098,21 @@ header .mobile-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-items: start;
 }
 #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller img {
   width: 250px;
   height: 300px;
+}
+#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn {
+  color: black;
+}
+#all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover {
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn {
+    display: none;
+  }
 }
 footer {
   padding: 50px 0;

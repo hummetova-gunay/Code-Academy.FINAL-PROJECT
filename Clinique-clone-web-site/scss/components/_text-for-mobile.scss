@@ -1,7 +1,10 @@
 %mobile-text{
     width: 250px;
     display: none;
-    width: 100%;
+    // width: 100%;
+    p{
+        width: 100%
+    }
     .rating-add-bag{
       @include flexbox;
       gap: 40px;
