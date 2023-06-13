@@ -19,11 +19,6 @@
   text-shadow: 5px 5px 18px whitesmoke;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button, #home .section-body .section-text button {
   padding: 10px 30px;
   background-color: black;
@@ -808,11 +803,8 @@ header .mobile-header {
   padding: 1rem;
 }
 
-#skin-services {
-  background-image: url(../../images/skin-services-bg.jpg);
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
+#skin-services .section-body .section-bg img {
+  width: 100%;
 }
 
 #clinical-realty {
@@ -946,6 +938,45 @@ header .mobile-header {
   font-weight: 900;
   margin: 0;
   margin-top: 20px;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .all-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .all-events .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .all-events .btn .event-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .modal-body p {
+  text-align: center;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .modal-body p span {
+  font-weight: 900;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .modal-body .part-of-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-around;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .modal-body .part-of-day .am-time, #meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data .modal .modal-dialog .modal-body .part-of-day .pm-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 footer {

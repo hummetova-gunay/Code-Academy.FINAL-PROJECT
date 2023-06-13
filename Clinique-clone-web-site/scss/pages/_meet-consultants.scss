@@ -43,7 +43,44 @@
                             margin-top: 20px;
                         }
                     }
-                }            
+                }
+                .modal{
+                   .modal-dialog{
+                    .all-events{
+                        @include flexbox;
+                        flex-direction: column;
+                        gap: 50px;
+                        padding: 50px;
+                        .btn{
+                        @include flexbox;
+                        justify-content: space-between;
+                        gap: 50px;
+                        .event-name{
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        }
+                    }
+                    .modal-body{
+                        p{
+                            text-align: center;
+                            span{
+                                font-weight: 900
+                            }
+                        }
+                        .part-of-day{
+                            @include flexbox;
+                            padding: 30px;
+                            justify-content: space-around;
+                            .am-time , .pm-time{
+                            @include flexbox;
+                            flex-direction: column;
+                            gap: 10px;
+                            }
+                        }
+                    }
+                   } 
+                }          
             }
            } 
         }
