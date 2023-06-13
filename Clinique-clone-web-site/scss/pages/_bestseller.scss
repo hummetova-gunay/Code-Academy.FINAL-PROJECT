@@ -49,67 +49,7 @@
                 }
             }
             .modal{
-                .modal-dialog{
-                    .modal-body{
-                        @include flexbox;
-                        gap: 30px;
-                        img{
-                          width: 600px;
-                          height: 100%;
-                        }
-                        .modal-text{
-                          h1{
-                            text-align: start;
-                            font-weight: 700;
-                          }
-                          p{
-                            font-size: 24px;
-                          }
-                          .rating{
-                            .rated-star{
-                              display: none;
-                            }
-                          }
-                          .quantity{
-                            @include flexbox;
-                            gap: 30px;
-                            .inc-dec{
-                              @include flexbox;
-                              gap: 10px;
-                              padding: 10px;
-                              button{
-                                border: none;
-                                font-size: 32px;
-                                font-weight: 600;
-                                background-color: transparent;
-                              }
-                              #amount{
-                                font-size: 24px;
-                                font-weight: 600;
-                              }
-                            }
-                          }
-                          .price{
-                            margin-top: 50px;
-                            @include flexbox;
-                            justify-content: space-between;
-                            button{
-                              @extend %styled-button;
-                              color: black;
-                              &:hover{
-                                color: white
-                              }
-                            }
-                          }
-                        }
-
-                    }
-                    .modal-footer{
-                      button{
-                        @extend %primary-button;
-                      }
-                    }
-                }
+              @extend %modal;
             } 
             .mobile-txt{
               display: none;

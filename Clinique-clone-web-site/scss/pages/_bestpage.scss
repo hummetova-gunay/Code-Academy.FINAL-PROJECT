@@ -1,0 +1,50 @@
+#all-bestsellers{
+    .container{
+        .section-heading{
+            @include flexbox;
+            justify-content: space-between;
+        }
+        .section-body{
+            @include flexbox;
+            .filter-part{
+                .filter-head{
+                    @include flexbox;
+                    justify-content: space-between;
+                }
+                .filter-body{
+                    @include flexbox;
+                    flex-direction: column;
+                    align-items: start;
+                    .btn{
+                        padding: 0;
+                    }
+                }
+            }
+            .bestsellers-part{
+                .all-bestseller-products{
+                    @include flexbox;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    .single-bestseller{
+                        @include flexbox;
+                        flex-direction: column;
+                        align-items: start;
+                        img{
+                            width: 250px;
+                            height: 300px;
+                        }
+                        .btn{
+                            @extend %styled-button;
+                        }
+                        .modal{
+                            @extend %modal;
+                        }
+                        .mobile-txt{
+                            @extend %mobile-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

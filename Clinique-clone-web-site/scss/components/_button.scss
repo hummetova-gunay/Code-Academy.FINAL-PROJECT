@@ -15,18 +15,19 @@
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
-    border: 1px solid #592770;
+    border: 1px solid #ADDDB7;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #F6F6F6;
+    color: black;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     transition: all 0.2s ease-in;
     &:hover {
-        background: #592770;
-        box-shadow: 0 0 30px 5px rgba(95, 26, 122, 0.815);
+        background: #ADDDB7;
+        box-shadow: 0 0 30px 5px #061309(95, 26, 122, 0.815);
         transition: all 0.2s ease-out;
+        color: white;
       }
 }
