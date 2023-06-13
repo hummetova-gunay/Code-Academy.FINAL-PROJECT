@@ -122,5 +122,7 @@ function fillCalendar(modalId) {
 
 fillCalendar("exampleModalToggle-Ian2");
 fillCalendar("exampleModalToggle-Ian-12week");
+fillCalendar("exampleModalToggle-Fawn2");
+fillCalendar("exampleModalToggle-serums");
 
     

@@ -917,9 +917,11 @@ header .mobile-header {
   }
 }
 #meet-consultants .consultants-section-body .all-consultants {
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
 #meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data {
   display: flex;

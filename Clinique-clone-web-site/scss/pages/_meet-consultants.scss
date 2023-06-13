@@ -23,7 +23,9 @@
             }
         }
         .all-consultants{
+            padding: 50px 0 ;
             @include flexbox;
+            justify-content: space-around;
            .single-consultant{              
             .consultant-data{
                 @include flexbox;
