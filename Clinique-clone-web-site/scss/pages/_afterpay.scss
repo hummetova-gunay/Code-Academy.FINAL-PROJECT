@@ -1,0 +1,41 @@
+#afterpay{
+    background-image: url(../../images/buy-now-pay-later-dt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0;
+    .section-body{
+        @include flexbox;
+        justify-content: flex-start;
+        .mobile-img{
+            width: 100%;
+            display: none;
+            @media screen and (max-width:1023px) {
+                display: block;
+            }
+        }
+        .text{
+            width: 40%;
+            padding: 1.5rem 0;
+            h1{
+                font-weight: 900;
+            }
+            img{
+                width: 100%;
+            }
+            button{
+                @extend %primary-button;
+            }
+        }
+        @media screen and (max-width:1023px) {
+            flex-direction: column;
+            .text{
+                width: 100%;
+            }
+        }
+
+    }
+    @media screen and (max-width:1023px){
+        background-image: none;
+    }
+}

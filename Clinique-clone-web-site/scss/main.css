@@ -19,7 +19,7 @@
   text-shadow: 5px 5px 18px whitesmoke;
 }
 
-#home .section-body .section-text button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
+#afterpay .section-body .text button, #home .section-body .section-text button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
   padding: 10px 30px;
   background-color: black;
   border: none;
@@ -28,7 +28,7 @@
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 800;
 }
-#home .section-body .section-text button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
+#afterpay .section-body .text button:hover, #home .section-body .section-text button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1173,6 +1173,52 @@ header .mobile-header {
 @media screen and (max-width: 767px) {
   #all-bestsellers .container .section-body {
     flex-direction: column;
+  }
+}
+
+#afterpay {
+  background-image: url(../../images/buy-now-pay-later-dt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 0;
+}
+#afterpay .section-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#afterpay .section-body .mobile-img {
+  width: 100%;
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  #afterpay .section-body .mobile-img {
+    display: block;
+  }
+}
+#afterpay .section-body .text {
+  width: 40%;
+  padding: 1.5rem 0;
+}
+#afterpay .section-body .text h1 {
+  font-weight: 900;
+}
+#afterpay .section-body .text img {
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  #afterpay .section-body {
+    flex-direction: column;
+  }
+  #afterpay .section-body .text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #afterpay {
+    background-image: none;
   }
 }
 
