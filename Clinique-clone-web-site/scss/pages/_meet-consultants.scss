@@ -26,7 +26,11 @@
             padding: 50px 0 ;
             @include flexbox;
             justify-content: space-around;
-           .single-consultant{              
+            gap: 30px;
+           .single-consultant{ 
+            img{
+                width: 100%
+            }             
             .consultant-data{
                 @include flexbox;
                 flex-direction: column;
@@ -85,6 +89,9 @@
                 }          
             }
            } 
+           @media screen and (max-width:767px){
+            flex-wrap: wrap;
+           }
         }
 
     }

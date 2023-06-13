@@ -1,15 +1,4 @@
-let menuIcon=document.querySelector('.fa-bars')
-let desktopHeader=document.querySelector('.header')
-let closeIcon=document.querySelector('.fa-x')
-let mobileHeading=document.querySelector('.mobile-header')
-menuIcon.addEventListener('click', function(){
-    mobileHeading.classList.add('show')
-    desktopHeader.classList.add('hide')
-})
-closeIcon.addEventListener('click', function(){
-    mobileHeading.classList.remove('show')
-    desktopHeader.classList.remove('hide')
-})
+
 let x = setInterval(()=>{
     let startDate= new Date("June 30, 2023 06:50:20").getTime()
 // console.log(startDate);

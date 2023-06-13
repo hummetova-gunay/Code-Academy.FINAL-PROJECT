@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Bestsellers</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h1><a href="index.html">CLINIQUE</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./bestseller.html">BestSellers</a></li>
+                        <li><a href="">SkinCare</a></li>
+                        <li><a href="">MakeUp</a></li>
+                        <li><a href="">Fragrance</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="./skinservices.html">Skin Services</a></li>
+                        <li><a href="">Travel Sizes</a></li>
+                        <li><a href="">Sign in</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="mobile-header">
+               <div class="mobile-nav">
+                <h1><a href="index.html">CLINIQUE</a></h1>
+                <i class="fa-solid fa-x"></i>
+               </div>
+            <nav>
+                <ul>
+                    <li><a href="">BestSellers</a></li>
+                    <li><a href="">SkinCare</a></li>
+                    <li><a href="">MakeUp</a></li>
+                    <li><a href="">Fragrance</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="./skinservices.html">Skin Services</a></li>
+                    <li><a href="">Travel Sizes</a></li>
+                    <li><a href="">Sign in</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <section id="all-bestsellers">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Bestsellers</h1>
+                <p>Our most loved, from cult classics to innovative formulas and cutting-edge de-agers.</p>
+            </div>
+            <div class="section-body">
+                <div class="filter-part">
+                    <div class="filter-head">
+                        <p>filter</p>
+                        <p><div class="amount">29</div> products</p>
+                    </div>
+                    <div class="filter-body">
+                        
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#byCategory" aria-expanded="false" aria-controls="collapseExample">Category </button>
+                            <div class="collapse" id="byCategory">
+                                <div class="filter-by">
+                                    <button class="btn">SkinCare <div class="products">17</div></button>
+                                    <button class="btn">MakeUp <div class="products">8</div></button>
+                                    <button class="btn">Fragrance<div class="products">2</div></button>
+                                    <button class="btn">Men<div class="products">1</div></button>
+                                </div>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skinconcern" aria-expanded="false" aria-controls="collapseExample">Skin concern </button>
+                            <div class="collapse" id="skinconcern">
+                                <div class="filter-by">
+                                    <button class="btn">Imperfections or Acne<div class="products">2</div></button>
+                                    <button class="btn">Dehydration<div class="products">11</div></button>
+                                    <button class="btn">Fatigue<div class="products">10</div></button>
+                                    <button class="btn"> Lines & Wrinkles<div class="products">10</div></button>
+                                </div>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#select-form" aria-expanded="false" aria-controls="collapseExample">Form </button>
+                            <div class="collapse" id="select-form">
+                                <div class="filter-by">
+                                    <button class="btn">Liquid<div class="products"></div></button>
+                                    <button class="btn">Powder<div class="products"></div></button>
+                                    <button class="btn">Cream<div class="products"></div></button>
+                                    <button class="btn">Stick<div class="products"></div></button>
+                                </div>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skintype" aria-expanded="false" aria-controls="collapseExample">Skin type </button>
+                            <div class="collapse" id="skintype">
+                                <div class="filter-by">
+                                    <button class="btn">Very Dry to Dry<div class="products"></div></button>
+                                    <button class="btn">Dry Combination<div class="products"></div></button>
+                                    <button class="btn">Combination Oily<div class="products"></div></button>
+                                    <button class="btn">Oily<div class="products"></div></button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="bestsellers-part"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./js/bestseller.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html> 

@@ -922,6 +922,10 @@ header .mobile-header {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  gap: 30px;
+}
+#meet-consultants .consultants-section-body .all-consultants .single-consultant img {
+  width: 100%;
 }
 #meet-consultants .consultants-section-body .all-consultants .single-consultant .consultant-data {
   display: flex;
@@ -979,6 +983,11 @@ header .mobile-header {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  #meet-consultants .consultants-section-body .all-consultants {
+    flex-wrap: wrap;
+  }
 }
 
 footer {
