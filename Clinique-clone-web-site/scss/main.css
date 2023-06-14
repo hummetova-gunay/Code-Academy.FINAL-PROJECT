@@ -161,10 +161,10 @@
   color: black;
 }
 
-header .container .header .menu-search .container-input {
+.admin-header .container .header .menu-search .container-input {
   position: relative;
 }
-header .container .header .menu-search .container-input .input {
+.admin-header .container .header .menu-search .container-input .input {
   width: 150px;
   padding: 10px 0px 10px 40px;
   border-radius: 9999px;
@@ -173,13 +173,13 @@ header .container .header .menu-search .container-input .input {
   outline: none;
   opacity: 0.8;
 }
-header .container .header .menu-search .container-input svg {
+.admin-header .container .header .menu-search .container-input svg {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translate(0, -50%);
 }
-header .container .header .menu-search .container-input .input:focus {
+.admin-header .container .header .menu-search .container-input .input:focus {
   opacity: 1;
   width: 250px;
 }
@@ -1321,28 +1321,66 @@ footer .container .headings .heading ul li a:hover {
   }
 }
 
-* {
+.adminpage * {
   background-color: #1B2A47;
   color: white;
 }
 
-header {
+.admin-header {
   background-color: #1B2A47;
 }
-header .container .header {
+.admin-header .container .header {
   display: flex;
   justify-content: space-between;
 }
-header .container .header .menu-search {
+.admin-header .container .header .menu-search {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
 }
-header .container .header .menu-search .container-input {
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .heading .admin-photo {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 25px 30px;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .heading .admin-photo .fa-user {
+  font-size: 60px;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .heading .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .heading .social-media .fa-brands {
+  font-size: 24px;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .pages {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.admin-header .container .header .menu-search .offcanvas .offcanvas-body .pages a:hover {
+  color: cadetblue;
+}
+.admin-header .container .header .menu-search .container-input {
   position: relative;
 }
-header .container .header .profile {
+.admin-header .container .header .profile {
   display: flex;
   justify-content: center;
   align-items: center;

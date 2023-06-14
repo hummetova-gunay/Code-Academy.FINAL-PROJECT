@@ -1,4 +1,4 @@
-header{
+.admin-header{
     background-color:#1B2A47;
     .container{
         .header{
@@ -7,6 +7,54 @@ header{
             .menu-search{
                 @include flexbox;
                 gap: 60px;
+                .offcanvas{
+                    .offcanvas-body{
+                        .heading{
+                            @include flexbox;
+                            flex-direction: column;
+                            gap: 10px;
+                            border-bottom: 1px solid white;
+                            padding: 20px 0;
+                            .admin-photo{
+                                border: 2px solid white;
+                                border-radius: 50%;
+                                padding: 25px 30px;
+                                .fa-user{
+                                    font-size: 60px;
+                                }
+                            }
+                            .social-media{
+                                @include flexbox;
+                                gap: 20px;
+                                .fa-brands{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                        .pages{
+                            margin-top: 50px;
+                            @include flexbox;
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 20px;
+                            a{
+                                &:hover{
+                                    color: cadetblue;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
                 .container-input{
                     position: relative;
                     @extend %search-input;
