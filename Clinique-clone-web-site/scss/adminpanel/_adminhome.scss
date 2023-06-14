@@ -1,0 +1,21 @@
+header{
+    background-color:#1B2A47;
+    .container{
+        .header{
+            display: flex;
+            justify-content: space-between;
+            .menu-search{
+                @include flexbox;
+                gap: 60px;
+                .container-input{
+                    position: relative;
+                    @extend %search-input;
+                }
+            }
+            .profile{
+                @include flexbox;
+                gap: 30px;
+            }
+        }
+    }
+}

@@ -18,13 +18,31 @@
                     border-radius: 0;
                     border: 1px solid black;
                    padding: 10px 50px;
+                   width: 200px;
                 }
                 .mobile-filter{
                    @include flexbox;
                    flex-direction: column; 
                    .mobile-filter-body{
-                    @include flexbox;
-                    flex-direction: column; 
+                    width: 100%;
+                      .btn{
+                        display: block;
+                        width: 100%;
+                        text-align: start;
+                        border-bottom: 1px solid black;
+                        border-radius: 0;
+                        padding: 10px;
+                    }
+                    .collapse{
+                        .btn{
+                            border: none;
+                            display: flex;
+                            align-items: start;
+                            justify-content: flex-start;
+                            gap: 10px;
+                            margin: 10px 0;
+                        }
+                    }
                    }
                 }
                 @media screen and (max-width:767px) {
@@ -54,7 +72,6 @@
                     .collapse{
                         .btn{
                             border: none;
-                            // border-bottom: none;
                             display: flex;
                             align-items: start;
                             justify-content: flex-start;
@@ -75,7 +92,12 @@
                     @include flexbox;
                     justify-content: flex-end;
                     .dropdown{
+                        .dropdown-toggle{
+                            @extend %primary-button;
+                            border-radius: 0;
+                        }
                         .dropdown-menu{
+                        border-radius: 0;
                             .btn{
                                 width: 100%;
                                 text-align: start;

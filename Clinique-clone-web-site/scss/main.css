@@ -19,7 +19,7 @@
   text-shadow: 5px 5px 18px whitesmoke;
 }
 
-#afterpay .section-body .text button, #home .section-body .section-text button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
+#afterpay .section-body .text button, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle, #home .section-body .section-text button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
   padding: 10px 30px;
   background-color: black;
   border: none;
@@ -28,7 +28,7 @@
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 800;
 }
-#afterpay .section-body .text button:hover, #home .section-body .section-text button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
+#afterpay .section-body .text button:hover, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle:hover, #home .section-body .section-text button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -159,6 +159,29 @@
   background-color: #ADDDB7;
   padding: 0 0.2em;
   color: black;
+}
+
+header .container .header .menu-search .container-input {
+  position: relative;
+}
+header .container .header .menu-search .container-input .input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #fff;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+header .container .header .menu-search .container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+header .container .header .menu-search .container-input .input:focus {
+  opacity: 1;
+  width: 250px;
 }
 
 #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body, #bestseller .all-images .single-image .modal .modal-dialog .modal-body {
@@ -1048,6 +1071,7 @@ header .mobile-header {
   border-radius: 0;
   border: 1px solid black;
   padding: 10px 50px;
+  width: 200px;
 }
 #all-bestsellers .container .section-body .responsive-heading-of-section .mobile-filter {
   display: flex;
@@ -1056,10 +1080,23 @@ header .mobile-header {
   flex-direction: column;
 }
 #all-bestsellers .container .section-body .responsive-heading-of-section .mobile-filter .mobile-filter-body {
+  width: 100%;
+}
+#all-bestsellers .container .section-body .responsive-heading-of-section .mobile-filter .mobile-filter-body .btn {
+  display: block;
+  width: 100%;
+  text-align: start;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
+}
+#all-bestsellers .container .section-body .responsive-heading-of-section .mobile-filter .mobile-filter-body .collapse .btn {
+  border: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0;
 }
 @media screen and (max-width: 767px) {
   #all-bestsellers .container .section-body .responsive-heading-of-section {
@@ -1119,6 +1156,12 @@ header .mobile-header {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+}
+#all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle {
+  border-radius: 0;
+}
+#all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-menu {
+  border-radius: 0;
 }
 #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-menu .btn {
   width: 100%;
@@ -1276,4 +1319,32 @@ footer .container .headings .heading ul li a:hover {
   footer .container .headings .heading {
     width: 100%;
   }
+}
+
+* {
+  background-color: #1B2A47;
+  color: white;
+}
+
+header {
+  background-color: #1B2A47;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .header .menu-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+header .container .header .menu-search .container-input {
+  position: relative;
+}
+header .container .header .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
