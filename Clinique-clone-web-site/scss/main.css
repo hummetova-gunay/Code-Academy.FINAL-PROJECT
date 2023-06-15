@@ -271,6 +271,56 @@
   }
 }
 
+#offcanvas-basket .offcanvas-header {
+  border-bottom: 1px solid grey;
+}
+#offcanvas-basket .offcanvas-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item img {
+  width: 40%;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions button {
+  border: none;
+}
+#offcanvas-basket .offcanvas-body .offcanvas-footer {
+  border-top: 1px solid grey;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#offcanvas-basket .offcanvas-body .offcanvas-footer a {
+  padding: 10px 20px;
+  color: white;
+  background-color: #6ebe7e;
+}
+
 header {
   background-color: white;
   padding: 10px 0;
@@ -1445,10 +1495,13 @@ header .mobile-header {
   }
 }
 
+#create-account {
+  background-color: #ADDDB7;
+  padding: 100px;
+}
 #create-account *::-moz-selection {
   background-color: darkgray;
 }
-
 #create-account *::selection {
   background-color: darkgray;
 }
@@ -1456,7 +1509,6 @@ header .mobile-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px;
 }
 #create-account .container .user-form .login-box {
   width: 400px;

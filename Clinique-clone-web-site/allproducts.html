@@ -25,8 +25,50 @@
                     </ul>
                 </nav>
                 <div class="icons">
-                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                  <a class=" position-relative" data-bs-toggle="offcanvas" href="#offcanvas-basket" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <!-- <span class="visually-hidden">unread messages</span> -->
+                    </span>
+                  </a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-basket" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Basket</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container all-basket-items">
+      <div class="basket-item">
+        <img src="./images/allure.png" alt="">
+        <div class="basket-info">
+          <p>Almost Lipstick in Black Honey. Clinique's cult classic lip shade. One is sold every 4 minutes globally.</p>
+          <div class="basket-actions">
+            <span> $23.00</span>
+            <button class="delete-from-basket"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="basket-item">
+        <img src="./images/allure.png" alt="">
+        <div class="basket-info">
+          <p>Almost Lipstick in Black Honey. Clinique's cult classic lip shade. One is sold every 4 minutes globally.</p>
+          <div class="basket-actions">
+            <span> $23.00</span>
+            <button class="delete-from-basket"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer">
+     <a href="">Order now</a>
+     <div class="total-price">$46.00</div>
+    </div>
+  </div>
+</div>
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="./user-account.html"><i class="fa-regular fa-user"></i></a>
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -42,6 +84,7 @@
                     <li><a href="./skinservices.html">Skin Services</a></li>
                     <li><a href="">Travel Sizes</a></li>
                     <li><a href="./singin-login.html">Sign in</a></li>
+                    <li><a href="./user-account.html">My Account</a></li>
                 </ul>
             </nav>
             </div>
