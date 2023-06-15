@@ -25,7 +25,7 @@
   border: 1.5px solid black;
  }
  
- .input:focus ~ label, input:valid ~ label {
+ .input:focus ~ label, input:valid ~ .user-label {
   transform: translateY(-50%) scale(0.8);
   background-color: #ADDDB7;
   padding: 0 .2em;
