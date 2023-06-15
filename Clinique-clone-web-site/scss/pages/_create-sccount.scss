@@ -1,26 +1,42 @@
 #create-account{
+  *{
+    &::selection{
+      background-color: darkgray
+    }
+  }
     .container{
         .user-form{
             @include flexbox;
+            margin: 100px;
+            .login-box {
+              width: 400px;
+              padding: 40px;
+              background: #467750;
+              box-sizing: border-box;
+              box-shadow: 0 15px 25px rgba(0,0,0,.6);
+              border-radius: 10px;
+              .user-box {
+                position: relative;
+                input {
+                  width: 100%;
+                  padding: 10px 0;
+                  font-size: 16px;
+                  color: #fff;
+                  margin-bottom: 30px;
+                  border: none;
+                  border-bottom: 1px solid #fff;
+                  outline: none;
+                  background: transparent;
+                }
+
+              }
+            }
+            @media screen and (max-width:500px) {
+              margin: 100px 0;
+            }
         }
     }
 }
-.login-box .user-box {
-  position: relative;
-}
-
-.login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-
 .login-box .user-box label {
   position: absolute;
   top: 0;
@@ -31,6 +47,7 @@
   pointer-events: none;
   transition: .5s;
 }
+
 
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
@@ -88,11 +105,3 @@
   background: linear-gradient(90deg, transparent, #ADDDB7);
   animation: btn-anim1 1s linear infinite;
 }
-.login-box {
-    width: 400px;
-    padding: 40px;
-    background: rgba(24, 20, 20, 0.987);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-  }

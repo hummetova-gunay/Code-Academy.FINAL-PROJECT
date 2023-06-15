@@ -850,6 +850,12 @@ header .mobile-header {
   margin-top: 50px;
   padding: 70px 0;
 }
+#get-in-touch *::-moz-selection {
+  background-color: darkgrey;
+}
+#get-in-touch *::selection {
+  background-color: darkgrey;
+}
 #get-in-touch .container .section-body .subscription p {
   font-size: 12px;
 }
@@ -1439,17 +1445,31 @@ header .mobile-header {
   }
 }
 
+#create-account *::-moz-selection {
+  background-color: darkgray;
+}
+
+#create-account *::selection {
+  background-color: darkgray;
+}
 #create-account .container .user-form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px;
 }
-
-.login-box .user-box {
+#create-account .container .user-form .login-box {
+  width: 400px;
+  padding: 40px;
+  background: #467750;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+#create-account .container .user-form .login-box .user-box {
   position: relative;
 }
-
-.login-box .user-box input {
+#create-account .container .user-form .login-box .user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -1459,6 +1479,11 @@ header .mobile-header {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+}
+@media screen and (max-width: 500px) {
+  #create-account .container .user-form {
+    margin: 100px 0;
+  }
 }
 
 .login-box .user-box label {
@@ -1523,15 +1548,6 @@ header .mobile-header {
   height: 2px;
   background: linear-gradient(90deg, transparent, #ADDDB7);
   animation: btn-anim1 1s linear infinite;
-}
-
-.login-box {
-  width: 400px;
-  padding: 40px;
-  background: rgba(24, 20, 20, 0.987);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
 }
 
 footer {

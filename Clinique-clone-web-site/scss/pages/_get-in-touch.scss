@@ -1,4 +1,9 @@
 #get-in-touch{
+    *{
+        &::selection{
+            background-color: darkgrey;
+        }
+    }
     background-color: #ADDDB7;
     margin-top: 50px;
     padding: 70px 0;
