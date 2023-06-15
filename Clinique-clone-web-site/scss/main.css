@@ -1385,4 +1385,51 @@ footer .container .headings .heading ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+#admin-home {
+  background-color: #152036;
+}
+#admin-home .container .progress-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px 0;
+  background-color: #152036;
+}
+#admin-home .container .progress-part .single-progress {
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+}
+#admin-home .container .progress-part .single-progress .progress-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#admin-home .container .progress-part .single-progress .progress {
+  background-color: white;
+}
+#admin-home .container .progress-part .single-progress .progress .progress-bar {
+  background-color: #24C79F;
+}
+#admin-home .container canvas {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#all-products-home {
+  padding: 20px;
+  background-color: #152036;
+}
+#all-products-home .container .product-table .table th, #all-products-home .container .product-table .table td {
+  background-color: #1B2A47;
+  color: white;
+  text-align: center;
+}
+#all-products-home .container .product-table .table td .btn {
+  background-color: #152036;
 }/*# sourceMappingURL=main.css.map */

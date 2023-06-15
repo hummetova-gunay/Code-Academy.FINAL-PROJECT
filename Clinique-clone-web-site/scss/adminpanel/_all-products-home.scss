@@ -1,0 +1,20 @@
+#all-products-home{
+    padding: 20px;
+    background-color: #152036;
+    .container{
+        .product-table{
+            .table{
+                    th ,td {
+                        background-color: #1B2A47;
+                        color: white;
+                        text-align: center;
+                    }
+                    td{
+                        .btn{
+                            background-color: #152036;
+                        }
+                    }
+            }
+        }
+    }
+}

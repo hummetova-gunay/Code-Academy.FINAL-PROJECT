@@ -1,69 +1,32 @@
-.admin-header{
-    background-color:#1B2A47;
+
+#admin-home{
+    background-color: #152036;
     .container{
-        .header{
-            display: flex;
+        .progress-part{
+            @include flexbox;
             justify-content: space-between;
-            .menu-search{
+            gap: 20px;
+            padding: 50px 0;
+            background-color: #152036;
+            .single-progress{
+               width: 400px;
+               margin: 20px ;
+               padding: 20px;
+               .progress-text{
                 @include flexbox;
-                gap: 60px;
-                .offcanvas{
-                    .offcanvas-body{
-                        .heading{
-                            @include flexbox;
-                            flex-direction: column;
-                            gap: 10px;
-                            border-bottom: 1px solid white;
-                            padding: 20px 0;
-                            .admin-photo{
-                                border: 2px solid white;
-                                border-radius: 50%;
-                                padding: 25px 30px;
-                                .fa-user{
-                                    font-size: 60px;
-                                }
-                            }
-                            .social-media{
-                                @include flexbox;
-                                gap: 20px;
-                                .fa-brands{
-                                    font-size: 24px;
-                                }
-                            }
-                        }
-                        .pages{
-                            margin-top: 50px;
-                            @include flexbox;
-                            flex-direction: column;
-                            align-items: start;
-                            gap: 20px;
-                            a{
-                                &:hover{
-                                    color: cadetblue;
-                                }
-                            }
-                        }
+                gap: 20px;
+               }
+                .progress{
+                    background-color: white;
+                    .progress-bar{
+                        background-color: #24C79F;
                     }
                 }
-
-
-
-
-
-
-
-
-
-
-                .container-input{
-                    position: relative;
-                    @extend %search-input;
-                }
             }
-            .profile{
-                @include flexbox;
-                gap: 30px;
-            }
+        }
+        canvas {
+            max-width: 800px;
+            margin: 0 auto;
         }
     }
 }
