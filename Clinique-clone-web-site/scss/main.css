@@ -1325,6 +1325,12 @@ footer .container .headings .heading ul li a:hover {
   background-color: #1B2A47;
   color: white;
 }
+.adminpage *::-moz-selection {
+  background-color: cadetblue;
+}
+.adminpage *::selection {
+  background-color: cadetblue;
+}
 
 .admin-header {
   background-color: #1B2A47;
@@ -1432,4 +1438,31 @@ footer .container .headings .heading ul li a:hover {
 }
 #all-products-home .container .product-table .table td .btn {
   background-color: #152036;
+}
+
+#edit-products {
+  padding: 50px;
+  background-color: #152036;
+}
+#edit-products .edit-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 0;
+}
+#edit-products .edit-form form {
+  width: 600px;
+}
+#edit-products .edit-form form .form-control {
+  background-color: #152036;
+}
+#edit-products .edit-form form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+#edit-products .edit-form form .btn {
+  background-color: #152036;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */

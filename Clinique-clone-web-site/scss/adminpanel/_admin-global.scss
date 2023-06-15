@@ -1,4 +1,7 @@
 .adminpage *{
     background-color: #1B2A47;
     color: white;
+    &::selection{
+        background-color: cadetblue;
+    }
 }
