@@ -1675,6 +1675,11 @@ header .mobile-header {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  align-items: start;
+}
+#order-info-section .allData .user-information {
+  border: 1px solid #7B9039;
+  padding: 40px;
 }
 #order-info-section .allData .user-information .heading {
   display: flex;
@@ -1687,6 +1692,11 @@ header .mobile-header {
 }
 #order-info-section .allData .user-information .heading p {
   margin: 0;
+}
+@media screen and (max-width: 567px) {
+  #order-info-section .allData .user-information .heading {
+    flex-direction: column;
+  }
 }
 #order-info-section .allData .user-information .delivery-method label {
   padding: 10px 20px;
@@ -1727,6 +1737,11 @@ header .mobile-header {
   align-items: center;
   gap: 10px;
 }
+@media screen and (max-width: 567px) {
+  #order-info-section .allData .user-information .payment .payment-address form .name-surname, #order-info-section .allData .user-information .payment .payment-address form .index-city {
+    flex-direction: column;
+  }
+}
 #order-info-section .allData .user-information .payment .payment-address form .actions {
   width: 100%;
   display: flex;
@@ -1743,8 +1758,60 @@ header .mobile-header {
   background-color: #7B9039;
 }
 @media screen and (max-width: 992px) {
+  #order-info-section .allData .user-information {
+    width: 100%;
+  }
+}
+#order-info-section .allData .purchased-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#order-info-section .allData .purchased-product .product-info {
+  border: 1px dashed #7B9039;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px 20px;
+  width: 100%;
+}
+#order-info-section .allData .purchased-product .product-info img {
+  width: 100px;
+  height: 100px;
+}
+#order-info-section .allData .purchased-product .calculate-price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#order-info-section .allData .purchased-product .calculate-price div {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px dashed #7B9039;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#order-info-section .allData .purchased-product .calculate-price div p {
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  #order-info-section .allData .purchased-product {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
   #order-info-section .allData {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 50px;
   }
 }
 
