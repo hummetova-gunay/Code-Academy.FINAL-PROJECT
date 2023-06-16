@@ -1,0 +1,102 @@
+.order-info-header{
+    padding-top: 50px;
+    .container{
+        @include flexbox;
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            color: black;
+            @media screen and (max-width:567px) {
+                font-size: 40px;
+            }
+        }
+    }
+    }
+#order-info-section{
+    padding: 100px 0;
+    .allData{
+        @include flexbox;
+        justify-content: space-between;
+        .user-information{
+            .heading{
+                @include flexbox;
+                justify-content: space-between;
+                padding: 10px 20px;
+                border: 1px dashed #7B9039;
+                p{
+                    margin: 0;
+                }
+                margin-bottom: 50px;
+            }
+            .delivery-method{
+                label{
+                   @extend %checkbox;
+                   padding: 10px 20px;
+                   border: 1px dashed #7B9039;
+                  .fa-solid{
+                    margin-left: 20px;
+                  } 
+                }
+            }
+            .payment{
+                .payment-method{
+                    div{
+                        padding: 10px 20px;
+                        border: 1px dashed #7B9039;
+                        @include flexbox;
+                        justify-content: flex-start;
+                    }
+                }
+                .payment-address{
+                    form{
+                        width: 100%;
+                        @include flexbox;
+                        flex-direction: column;
+                        gap: 10px;
+                        input{
+                            width: 100%;
+                            padding: 10px 20px;
+                            border:1px dashed #7B9039;
+                            &:focus{
+                                border: 3px solid #7B9039;
+                                outline: none;
+                            }
+                        }
+                        .name-surname ,.index-city{
+                            width: 100%;
+                            @include flexbox;
+                            gap: 10px;
+                        }
+                        .actions{
+                          width: 100%;
+                          @include flexbox;
+                          justify-content: space-between;
+                          border: 2px solid #7B9039 ;
+                          padding: 5px 20px;
+                          a{
+                            color: #7B9039;
+                          }
+                          .btn{
+                            @extend %styled-button;
+                            background-color: #7B9039;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:992px){
+            flex-direction: column;
+        }
+    }
+}

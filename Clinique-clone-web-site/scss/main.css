@@ -32,7 +32,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#all-products .container .section-body .products-part .see-all-products .single-product #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
+#order-info-section .allData .user-information .payment .payment-address form .actions .btn, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -46,7 +46,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
 }
-#all-products .container .section-body .products-part .see-all-products .single-product #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
+#order-info-section .allData .user-information .payment .payment-address form .actions .btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
   background: #ADDDB7;
   box-shadow: 0 0 30px 5px #061309 95, 26, 122, 0.815;
   transition: all 0.2s ease-out;
@@ -319,6 +319,52 @@
   padding: 10px 20px;
   color: white;
   background-color: #6ebe7e;
+}
+
+#order-info-section .allData .user-information .delivery-method label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#order-info-section .allData .user-information .delivery-method label input {
+  opacity: 0;
+  cursor: pointer;
+}
+#order-info-section .allData .user-information .delivery-method label .checkmark {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+#order-info-section .allData .user-information .delivery-method label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+#order-info-section .allData .user-information .delivery-method label input:checked ~ .checkmark {
+  background-color: #7B9039;
+}
+#order-info-section .allData .user-information .delivery-method label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#order-info-section .allData .user-information .delivery-method label input:checked ~ .checkmark:after {
+  display: block;
+}
+#order-info-section .allData .user-information .delivery-method label .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 header {
@@ -1600,6 +1646,106 @@ header .mobile-header {
   height: 2px;
   background: linear-gradient(90deg, transparent, #ADDDB7);
   animation: btn-anim1 1s linear infinite;
+}
+
+.order-info-header {
+  padding-top: 50px;
+}
+.order-info-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-info-header .container h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+}
+@media screen and (max-width: 567px) {
+  .order-info-header .container h1 {
+    font-size: 40px;
+  }
+}
+
+#order-info-section {
+  padding: 100px 0;
+}
+#order-info-section .allData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#order-info-section .allData .user-information .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px dashed #7B9039;
+  margin-bottom: 50px;
+}
+#order-info-section .allData .user-information .heading p {
+  margin: 0;
+}
+#order-info-section .allData .user-information .delivery-method label {
+  padding: 10px 20px;
+  border: 1px dashed #7B9039;
+}
+#order-info-section .allData .user-information .delivery-method label .fa-solid {
+  margin-left: 20px;
+}
+#order-info-section .allData .user-information .payment .payment-method div {
+  padding: 10px 20px;
+  border: 1px dashed #7B9039;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#order-info-section .allData .user-information .payment .payment-address form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#order-info-section .allData .user-information .payment .payment-address form input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px dashed #7B9039;
+}
+#order-info-section .allData .user-information .payment .payment-address form input:focus {
+  border: 3px solid #7B9039;
+  outline: none;
+}
+#order-info-section .allData .user-information .payment .payment-address form .name-surname, #order-info-section .allData .user-information .payment .payment-address form .index-city {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#order-info-section .allData .user-information .payment .payment-address form .actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #7B9039;
+  padding: 5px 20px;
+}
+#order-info-section .allData .user-information .payment .payment-address form .actions a {
+  color: #7B9039;
+}
+#order-info-section .allData .user-information .payment .payment-address form .actions .btn {
+  background-color: #7B9039;
+}
+@media screen and (max-width: 992px) {
+  #order-info-section .allData {
+    flex-direction: column;
+  }
 }
 
 footer {
