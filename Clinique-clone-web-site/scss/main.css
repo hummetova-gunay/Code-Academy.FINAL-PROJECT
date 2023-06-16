@@ -1669,6 +1669,7 @@ header .mobile-header {
 
 #order-info-section {
   padding: 100px 0;
+  background-color: #f7f7f8;
 }
 #order-info-section .allData {
   display: flex;
