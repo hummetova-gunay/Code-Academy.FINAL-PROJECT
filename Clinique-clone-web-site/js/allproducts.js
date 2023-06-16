@@ -1,15 +1,13 @@
 const BASE_URL="http://localhost:8000/allProducts"
 let allProducts=document.querySelector('.see-all-products')
-
-
 function fillProductData(arr){
     allProducts.innerHTML=''
     arr.forEach(el => {
         allProducts.innerHTML+=`
         <div class="single-product">
         <img src="./images/${el.productImageMain}" alt="">     
-<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#${el.productId}" id="modal-btn">Buy now</button>
-<div class="modal fade" id="${el.productId}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#${el.id}" id="modal-btn">Buy now</button>
+<div class="modal fade" id="${el.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
   <div class="modal-header">
@@ -31,7 +29,7 @@ function fillProductData(arr){
         </div>
       </div>
       <div class="price">
-        <h3>$${el.productPrice}</h3>
+        <h3>$${el.productPrice}.00</h3>
         <button>Add to bag</button>
       </div>
     </div>
@@ -42,6 +40,8 @@ function fillProductData(arr){
 </div>
 </div>
 </div>
+
+<p class="mt-3">Price: $${el.productPrice}</p>
 <div class="mobile-txt">
 <p>${el.productName}</p>
 <p>$${el.productPrice}</p>
@@ -50,6 +50,7 @@ function fillProductData(arr){
 </div>
 <div class="add-bag">
 <button>Add to bag</button>
+
 </div>
 </div>
 </div>

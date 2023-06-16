@@ -1946,6 +1946,7 @@ footer .container .headings .heading ul li a:hover {
 
 #admin-home {
   background-color: #152036;
+  padding: 100px;
 }
 #admin-home .container .progress-part {
   display: flex;
@@ -1982,12 +1983,24 @@ footer .container .headings .heading ul li a:hover {
   padding: 20px;
   background-color: #152036;
 }
+#all-products-home .container .product-table {
+  padding: 50px 0;
+}
+#all-products-home .container .product-table .btn {
+  background-color: #152036;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
 #all-products-home .container .product-table .table th, #all-products-home .container .product-table .table td {
   background-color: #1B2A47;
   color: white;
   text-align: center;
 }
-#all-products-home .container .product-table .table td .btn {
+#all-products-home .container .product-table .table tbody td img {
+  width: 100px;
+  height: 100px;
+}
+#all-products-home .container .product-table .table tbody td .btn {
   background-color: #152036;
 }
 
@@ -2008,6 +2021,7 @@ footer .container .headings .heading ul li a:hover {
 }
 #edit-products .edit-form form .form-control {
   background-color: #152036;
+  color: white;
 }
 #edit-products .edit-form form .form-control:focus {
   outline: none;

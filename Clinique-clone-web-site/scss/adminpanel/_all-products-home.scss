@@ -3,17 +3,29 @@
     background-color: #152036;
     .container{
         .product-table{
+            padding: 50px 0;
+            .btn{
+                background-color: #152036;
+                border: 1px solid white;
+                margin-bottom: 20px;
+            }
             .table{
                     th ,td {
                         background-color: #1B2A47;
                         color: white;
                         text-align: center;
                     }
-                    td{
-                        .btn{
+                    tbody{
+                        td{
+                           img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                       .btn{
                             background-color: #152036;
                         }
                     }
+                }
             }
         }
     }

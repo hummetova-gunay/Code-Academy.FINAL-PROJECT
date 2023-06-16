@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./scss/main.css">
     <title>All products</title>
 </head>
@@ -37,7 +36,7 @@
                             <div class="pages">
                                 <a href="./admin.html" class="btn">Home</a>
                                 <a href="./admin-all-products.html" class="btn">All products</a>
-                                <a href="./edit-products-admin.html" class="btn">Edit products</a>
+                                <a href="./edit-add-products-admin.html" class="btn">Edit or Add products</a>
                                 <a href="./admin-bestseller" class="btn">See Bestsellers</a>
                                 <a href="./index.html" class="btn">Clinique</a>
                             </div>
@@ -62,64 +61,31 @@
     <section id="all-products-home">
         <div class="container">
             <div class="product-table">
+              <button class="btn" id="addBtn"><i class="fa-solid fa-plus"></i> Add new Product</button>
                 <table class="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">Product Image</th>
-                        <th scope="col">Product Title</th>
-                        <th scope="col">Stock</th>
+                        <th scope="col">Product for modal</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Description</th>
                         <th scope="col">Price</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Skin concern</th>
+                        <th scope="col">Skin Type</th>
+                        <th scope="col">Product Form </th>
                         <th scope="col">Setting</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button class="btn">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button class="btn">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button class="btn">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
             </div>
         </div>
-    </section>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./admin-js/admin-all-products.js"></script>
 </body>
 </html>
