@@ -21,5 +21,5 @@ closeIcon.addEventListener('click', function(){
 //   window.location.href="singin-login.html"  
 // }
 
-localStorage.clear()
+localStorage.removeItem('isAdmin')
 
