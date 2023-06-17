@@ -19,3 +19,4 @@ let seconds = Math.floor((howFar % (1000 * 60)) / 1000);
         clearInterval(x)
     } 
 },1000);
+  

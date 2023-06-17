@@ -23,7 +23,7 @@
             span{
                 font-weight: 700;
             }
-            button{
+            .btn{
                 @extend %primary-button;
                 letter-spacing: 1px;
                 margin: 20px 0;

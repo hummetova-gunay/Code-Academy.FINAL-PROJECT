@@ -14,13 +14,15 @@ closeIcon.addEventListener('click', function(){
 localStorage.removeItem('isAdmin')
 
 let goAccount=document.querySelector('.goAccount')
-
+let signIn=document.querySelector('.signIn')
 let hasUser=JSON.parse(localStorage.getItem("normalUser"))
 console.log(hasUser);
 
 if(hasUser){
     goAccount.style.display="block"
+    signIn.style.display="none"
 }else{
     goAccount.style.display="none"
+    signIn.style.display="block"
 }
 

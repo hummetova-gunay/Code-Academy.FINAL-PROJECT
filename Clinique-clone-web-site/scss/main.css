@@ -19,7 +19,7 @@
   text-shadow: 5px 5px 18px whitesmoke;
 }
 
-#all-products .container .section-body .products-part .featured .dropdown .dropdown-toggle, #afterpay .section-body .text button, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle, #home .section-body .section-text button, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-footer button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
+#all-products .container .section-body .products-part .featured .dropdown .dropdown-toggle, #afterpay .section-body .text button, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle, #home .section-body .section-text .btn, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-footer button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button {
   padding: 10px 30px;
   background-color: black;
   border: none;
@@ -28,7 +28,7 @@
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 800;
 }
-#all-products .container .section-body .products-part .featured .dropdown .dropdown-toggle:hover, #afterpay .section-body .text button:hover, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle:hover, #home .section-body .section-text button:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-footer button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
+#all-products .container .section-body .products-part .featured .dropdown .dropdown-toggle:hover, #afterpay .section-body .text button:hover, #all-bestsellers .container .section-body .bestsellers-part .featured .dropdown .dropdown-toggle:hover, #home .section-body .section-text .btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-footer button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-footer button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-footer button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -84,7 +84,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: black;
+  background-color: #ADDDB7;
 }
 #bestseller .all-images .single-image .card .front .front-content .slider-text {
   text-align: center;
@@ -485,7 +485,7 @@ header .mobile-header {
 #home .section-body .section-text span {
   font-weight: 700;
 }
-#home .section-body .section-text button {
+#home .section-body .section-text .btn {
   letter-spacing: 1px;
   margin: 20px 0;
 }

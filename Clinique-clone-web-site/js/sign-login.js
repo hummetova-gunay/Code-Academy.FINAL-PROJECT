@@ -28,6 +28,7 @@ async function addUser(){
     if(userEmail.value&&userName.value&&userPassword.value){
         await axios.post(USER_URL, user)
         window.location.href="user-account.html"
+        localStorage.setItem('normalUser', JSON.stringify(user))
     }else{
         alert('Please fill out the form')
     }
@@ -59,4 +60,4 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     checkUser()
 })
-localStorage.clear()
+// localStorage.clear()
