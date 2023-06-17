@@ -1816,6 +1816,26 @@ header .mobile-header {
   }
 }
 
+#home-account .container .account-body .section-heading {
+  padding: 20px 10px;
+  border-bottom: 1px dashed #8C971A;
+}
+#home-account .container .account-body .all-orders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#home-account .container .account-body .all-orders .orderedProd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home-account .container .account-body .all-orders .orderedProd img {
+  width: 100%;
+}
+
 footer {
   padding: 50px 0;
 }

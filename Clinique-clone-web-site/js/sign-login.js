@@ -19,6 +19,7 @@ let  userName =document.querySelector('#userName')
 let  userEmail=document.querySelector('#userEmail')
 let  userPassword=document.querySelector('#userPassword')
 let  form=document.querySelector('form')
+
 async function addUser(){
     const user={
         userName:userName.value,
@@ -35,10 +36,8 @@ async function addUser(){
     if(userEmail.value&&userName.value&&userPassword.value){
         await axios.post(USER_URL, user)
         await axios.post(CUSTOMER_URL, customer)
-        // window.location.href="user-account.html"
-        localStorage.setItem('isLoggedIn', JSON.stringify(true))
-        localStorage.setItem(`${userName.value}`, JSON.stringify(user))
-        // customer=JSON.parse(localStorage.getItem(`${userName.value}`))
+        window.location.href="user-account.html"
+        localStorage.setItem("normalUser", JSON.stringify(user))
         console.log(customer);
     }else{
         alert('Please fill out the form')
@@ -57,11 +56,8 @@ async function checkUser(){
             localStorage.setItem('isAdmin',JSON.stringify(matchedUser))
             window.location.href="admin.html"
         }else{
-            localStorage.setItem('isLoggedIn', JSON.stringify(true))
-            localStorage.setItem(`${userName.value}`, JSON.stringify(matchedUser))
-            customer=JSON.parse(localStorage.getItem(`${userName.value}`))
+            localStorage.setItem("normalUser", JSON.stringify(matchedUser))
             window.location.href="user-account.html"
-            console.log(customer);
         }
       }else{
         addUser()
@@ -71,5 +67,3 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     checkUser()
 })
-
-

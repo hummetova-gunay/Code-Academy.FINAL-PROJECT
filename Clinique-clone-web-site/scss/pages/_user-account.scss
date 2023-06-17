@@ -1,0 +1,21 @@
+#home-account{
+    .container{
+        .account-body{
+            .section-heading{
+                padding: 20px 10px;
+                border-bottom: 1px dashed #8C971A;
+            }
+            .all-orders{
+                @include flexbox;
+                gap: 20px;
+                .orderedProd{
+                @include flexbox;
+                flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

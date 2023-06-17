@@ -10,5 +10,9 @@ closeIcon.addEventListener('click', function(){
     mobileHeading.classList.remove('show')
     desktopHeader.classList.remove('hide')
 })
-
 localStorage.removeItem('isAdmin')
+
+//////////////////////////////////////////////////
+
+let CUSTOMER_API="http://localhost:7000/customers"
+

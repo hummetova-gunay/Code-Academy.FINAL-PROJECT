@@ -1,3 +1,31 @@
+let menuIcon=document.querySelector('.fa-bars')
+let desktopHeader=document.querySelector('.header')
+let closeIcon=document.querySelector('.fa-x')
+let mobileHeading=document.querySelector('.mobile-header')
+menuIcon.addEventListener('click', function(){
+    mobileHeading.classList.add('show')
+    desktopHeader.classList.add('hide')
+})
+closeIcon.addEventListener('click', function(){
+    mobileHeading.classList.remove('show')
+    desktopHeader.classList.remove('hide')
+})
+
+localStorage.removeItem('isAdmin')
+
+let goAccount=document.querySelector('.goAccount')
+let signIn=document.querySelector('.signIn')
+let hasUser=JSON.parse(localStorage.getItem("normalUser"))
+console.log(hasUser);
+
+if(hasUser){
+    goAccount.style.display="block"
+    signIn.style.display="none"
+}else{
+    goAccount.style.display="none"
+    signIn.style.display="block"
+}
+
 const BASE_URL="http://localhost:8000/allProducts"
 let allProducts=document.querySelector('.see-all-products')
 function fillProductData(arr){
@@ -30,7 +58,7 @@ function fillProductData(arr){
       </div>
       <div class="price">
         <h3>$${el.productPrice}.00</h3>
-        <button>Add to bag</button>
+        <button onclick="addBag(${el.id})">Add to bag</button>
       </div>
     </div>
   </div>
@@ -67,3 +95,8 @@ async function getProdData(){
 }
 getProdData()
 
+function addToBag(id){
+  if(!hasUser){
+    window.location.href="singin-login.html"
+  }
+}

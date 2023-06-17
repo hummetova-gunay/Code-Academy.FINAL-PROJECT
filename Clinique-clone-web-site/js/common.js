@@ -15,7 +15,7 @@ localStorage.removeItem('isAdmin')
 
 let goAccount=document.querySelector('.goAccount')
 let signIn=document.querySelector('.signIn')
-let hasUser=JSON.parse(localStorage.getItem("isLoggedIn"))
+let hasUser=JSON.parse(localStorage.getItem("normalUser"))
 console.log(hasUser);
 
 if(hasUser){
