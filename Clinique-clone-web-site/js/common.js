@@ -15,7 +15,7 @@ localStorage.removeItem('isAdmin')
 
 let goAccount=document.querySelector('.goAccount')
 let signIn=document.querySelector('.signIn')
-let hasUser=JSON.parse(localStorage.getItem("normalUser"))
+let hasUser=JSON.parse(localStorage.getItem("isLoggedIn"))
 console.log(hasUser);
 
 if(hasUser){
@@ -26,3 +26,10 @@ if(hasUser){
     signIn.style.display="block"
 }
 
+let addToBag=document.querySelector('.add-to-bag')
+
+addToBag.addEventListener('click', function(){
+    if(!hasUser){
+        window.location.href="singin-login.html"
+    }
+})

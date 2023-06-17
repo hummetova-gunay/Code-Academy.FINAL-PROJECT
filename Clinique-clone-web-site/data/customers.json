@@ -1,0 +1,12 @@
+{
+  "customers": [
+    {
+      "customerName": "Nermin",
+      "customerEmail": "nermin@gmail.com",
+      "basketItems": [],
+      "searchings": [],
+      "bougthProducts": [],
+      "id": 1
+    }
+  ]
+}
