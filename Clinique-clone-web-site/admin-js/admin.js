@@ -59,3 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
         data: visitData
     });
 });
+
+
+let admin=JSON.parse(localStorage.getItem("isAdmin"))
+
+if(!admin){
+    window.location.href="singin-login.html"
+}

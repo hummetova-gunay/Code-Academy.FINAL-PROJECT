@@ -5,13 +5,49 @@
       "userName": "Gunay",
       "userEmail": "gunay@gmail.com",
       "userPassword": "gunay2001",
-      "isAdmin":true
+      "isAdmin": true
     },
     {
       "userName": "Nermin",
       "userEmail": "nermin@gmail.com",
       "userPassword": "nermin2010",
       "id": 2
+    },
+    {
+      "userName": "Nigar",
+      "userEmail": "nigar@gmail.com",
+      "userPassword": "nigar2007",
+      "id": 3
+    },
+    {
+      "userName": "lorem",
+      "userEmail": "ipsum@gmail.com",
+      "userPassword": "lorem 19999",
+      "id": 4
+    },
+    {
+      "userName": "Leyla",
+      "userEmail": "leyla@gmail.com",
+      "userPassword": "leyla1980",
+      "id": 5
+    },
+    {
+      "userName": "Refiqe",
+      "userEmail": "refiqe@gmail.com",
+      "userPassword": "refiqe1973",
+      "id": 6
+    },
+    {
+      "userName": "Gunay",
+      "userEmail": "gunay@gmail.com",
+      "userPassword": "guny2001",
+      "id": 7
+    },
+    {
+      "userName": "Xaver",
+      "userEmail": "xaver@gmail.com",
+      "userPassword": "xaver2018",
+      "id": 8
     }
   ]
 }

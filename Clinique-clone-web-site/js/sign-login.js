@@ -12,11 +12,36 @@ async function addUser(){
     }
     if(userEmail.value&&userName.value&&userPassword.value){
         await axios.post(USER_URL, user)
+        window.location.href="user-account.html"
     }else{
         alert('Please fill out the form')
     }
 }
+
+async function checkUser(){
+    const res = await axios(USER_URL)
+    const data= await res.data
+    const matchedUser = data.find(user => (
+        user.userName === userName.value &&
+        user.userEmail === userEmail.value &&
+        user.userPassword === userPassword.value
+      ));
+      
+      if (matchedUser) {
+        if(matchedUser.isAdmin){
+            localStorage.setItem('isAdmin',JSON.stringify(matchedUser))
+            window.location.href="admin.html"
+        }else{
+            localStorage.setItem('normalUser', JSON.stringify(matchedUser))
+            window.location.href="user-account.html"
+        }
+      }else{
+        addUser()
+      }
+}
+
 form.addEventListener('submit', function(e){
     e.preventDefault()
-    addUser()
+    checkUser()
 })
+localStorage.clear()
