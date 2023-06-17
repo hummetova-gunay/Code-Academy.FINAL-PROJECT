@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Gunay",
+      "userEmail": "gunay@gmail.com",
+      "userPassword": "gunay2001",
+      "isAdmin":true
+    },
+    {
+      "userName": "Nermin",
+      "userEmail": "nermin@gmail.com",
+      "userPassword": "nermin2010",
+      "id": 2
+    }
+  ]
+}
