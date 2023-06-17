@@ -12,15 +12,3 @@ closeIcon.addEventListener('click', function(){
 })
 
 localStorage.removeItem('isAdmin')
-
-let goAccount=document.querySelector('.goAccount')
-
-let hasUser=JSON.parse(localStorage.getItem("normalUser"))
-console.log(hasUser);
-
-if(hasUser){
-    goAccount.style.display="block"
-}else{
-    goAccount.style.display="none"
-}
-

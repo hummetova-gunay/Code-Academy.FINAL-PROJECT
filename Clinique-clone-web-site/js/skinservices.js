@@ -1,20 +1,4 @@
 
-let menuIcon=document.querySelector('.fa-bars')
-let desktopHeader=document.querySelector('.header')
-let closeIcon=document.querySelector('.fa-x')
-let mobileHeading=document.querySelector('.mobile-header')
-menuIcon.addEventListener('click', function(){
-    mobileHeading.classList.add('show')
-    desktopHeader.classList.add('hide')
-})
-closeIcon.addEventListener('click', function(){
-    mobileHeading.classList.remove('show')
-    desktopHeader.classList.remove('hide')
-})
-
-
-
-
 const BASE_URL = "http://localhost:8000/Ian";
 
 function fillCalendar(modalId) {
@@ -27,15 +11,6 @@ function fillCalendar(modalId) {
     currentDate.getDate() - currentDate.getDay()
   );
 
-//   async function fetchData() {
-//     try {
-//       const res = await axios(BASE_URL);
-//       return res.data;
-//     } catch (error) {
-//       console.error(error);
-//       return [];
-//     }
-//   }
 
   function createButton(day, isMatched) {
     const button = document.createElement("button");
