@@ -2,6 +2,7 @@
 const BASE_URL = "http://localhost:8000/allProducts";
 let tableBody = document.querySelector('tbody');
 let addBtn=document.querySelector('#addBtn')
+let searchInput= document.querySelector('#searchInput')
 
 function fillTable(arr) {
   tableBody.innerHTML = '';
@@ -30,16 +31,13 @@ function fillTable(arr) {
     `;
   });
 }
-
+let data=[]
 async function getData() {
     const res = await axios(BASE_URL);
-    const data = await res.data;
+    data = await res.data;
     fillTable(data);
-    console.log(data);
-}
+  }
 getData();
-
-
  async function deleteProduct(id){
    await axios.delete(`${BASE_URL}/${id}`)
 }
@@ -51,3 +49,10 @@ addBtn.addEventListener('click', function(){
 function editProd(id){
   window.location.href=`edit-add-products-admin.html?id=${id}`
 }
+
+searchInput.addEventListener('input', async function(e){
+  const res = await axios(BASE_URL);
+  data =  res.data;
+  let searchedData=data.filter((item)=>item.productName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+  fillTable(searchedData)
+})
