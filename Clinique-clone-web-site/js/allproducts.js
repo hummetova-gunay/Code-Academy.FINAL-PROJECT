@@ -15,10 +15,10 @@ localStorage.removeItem('isAdmin')
 
 let goAccount=document.querySelector('.goAccount')
 let signIn=document.querySelector('.signIn')
-let hasUser=JSON.parse(localStorage.getItem("normalUser"))
-console.log(hasUser);
+let customer=JSON.parse(localStorage.getItem("normalUser"))
+// console.log(customer);
 
-if(hasUser){
+if(customer){
     goAccount.style.display="block"
     signIn.style.display="none"
 }else{
@@ -26,7 +26,7 @@ if(hasUser){
     signIn.style.display="block"
 }
 
-const BASE_URL="http://localhost:8000/allProducts"
+const BASE_URL="http://localhost:3000/allProducts"
 let allProducts=document.querySelector('.see-all-products')
 function fillProductData(arr){
     allProducts.innerHTML=''
@@ -47,14 +47,6 @@ function fillProductData(arr){
       <h1>${el.productName}</h1>
       <p>${el.productDescription}</p>
       <div class="rating">
-      </div>
-      <div class="quantity">
-        <h3>Quantity</h3>
-        <div class="inc-dec">
-          <button>-</button>
-          <span id="amount">1</span>
-          <button>+</button>
-        </div>
       </div>
       <div class="price">
         <h3>$${el.productPrice}.00</h3>
@@ -77,8 +69,7 @@ function fillProductData(arr){
 <div class="rating">
 </div>
 <div class="add-bag">
-<button>Add to bag</button>
-
+<button onclick="addBag(${el.id})">Add to bag</button>
 </div>
 </div>
 </div>
@@ -89,14 +80,29 @@ function fillProductData(arr){
 
 async function getProdData(){
    let res=await axios(BASE_URL)
-   let data= await res.data
-   console.log(data);
+  let  data= await res.data
    fillProductData(data)
 }
 getProdData()
 
-function addToBag(id){
-  if(!hasUser){
-    window.location.href="singin-login.html"
+// /////////////////////////////////////////////////
+let CUSTOMER_API="http://localhost:4000/customers"
+
+async function addBag(id) {
+  const res = await axios(BASE_URL);
+  const data = await res.data;
+  let desiredProd = data.find(item => item.id === id);
+
+  const customerRes = await axios(CUSTOMER_API);
+  const customerData = await customerRes.data;
+  let findCustomer = customerData.find(el => el.customerName === customer.userName);
+
+  if (!findCustomer.basketItems) {
+    findCustomer.basketItems = []; 
   }
+  findCustomer.basketItems.push(desiredProd);
+  await axios.patch(`${CUSTOMER_API}/${findCustomer.id}`, findCustomer);
+  console.log(findCustomer.basketItems);
 }
+
+

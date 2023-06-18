@@ -14,5 +14,40 @@ localStorage.removeItem('isAdmin')
 
 //////////////////////////////////////////////////
 
-let CUSTOMER_API="http://localhost:7000/customers"
-
+let CUSTOMER_API="http://localhost:4000/customers"
+let count=1;
+let allBasketItems=document.querySelector('.all-basket-items')
+let badge=document.querySelector('.badge')
+function fillBasket(arr){
+    allBasketItems.innerHTML=""
+    arr.forEach(el=> {
+        allBasketItems.innerHTML+=`
+        <div class="basket-item">
+        <img src="./images/${el.productImageMain}" alt="">
+        <div class="basket-info">
+          <p>${el.productName}</p>
+          <div class="basket-actions">
+            <span>${el.productPrice}</span>
+            <button class="inc" onclick="incValue()">+</button>
+            <span>${count}</span>
+            <button class="dec" onclick="decValue()">-</button>
+            <button class="delete-from-basket"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+      </div>
+        `
+    });
+}
+let customer= JSON.parse(localStorage.getItem('normalUser'))
+async function getBasketItems(){
+    const res= await axios(CUSTOMER_API)
+    const data= await res.data
+    let activeCustomer=data.find(item=>item.customerName===customer.userName)
+    console.log(activeCustomer);
+    badge.innerHTML=activeCustomer.basketItems.length
+    fillBasket(activeCustomer.basketItems)
+}
+getBasketItems()
+ function incValue(){
+  return count++
+ }

@@ -1,5 +1,5 @@
 
-const BASE_URL = "http://localhost:8000/allProducts";
+const BASE_URL = "http://localhost:3000/allProducts";
 let tableBody = document.querySelector('tbody');
 let addBtn=document.querySelector('#addBtn')
 let searchInput= document.querySelector('#searchInput')

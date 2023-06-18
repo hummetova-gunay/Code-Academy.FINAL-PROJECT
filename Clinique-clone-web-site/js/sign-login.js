@@ -13,8 +13,8 @@ closeIcon.addEventListener('click', function(){
 
 localStorage.removeItem('isAdmin')
 
-const USER_URL="http://localhost:9000/users"
-const CUSTOMER_URL="http://localhost:7000/customers"
+const USER_URL="http://localhost:3000/users"
+const CUSTOMER_URL="http://localhost:4000/customers"
 let  userName =document.querySelector('#userName')
 let  userEmail=document.querySelector('#userEmail')
 let  userPassword=document.querySelector('#userPassword')

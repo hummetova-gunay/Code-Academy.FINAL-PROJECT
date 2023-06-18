@@ -271,56 +271,6 @@
   }
 }
 
-#offcanvas-basket .offcanvas-header {
-  border-bottom: 1px solid grey;
-}
-#offcanvas-basket .offcanvas-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-#offcanvas-basket .offcanvas-body .all-basket-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-#offcanvas-basket .offcanvas-body .all-basket-items .basket-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid grey;
-}
-#offcanvas-basket .offcanvas-body .all-basket-items .basket-item img {
-  width: 40%;
-}
-#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions button {
-  border: none;
-}
-#offcanvas-basket .offcanvas-body .offcanvas-footer {
-  border-top: 1px solid grey;
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-#offcanvas-basket .offcanvas-body .offcanvas-footer a {
-  padding: 10px 20px;
-  color: white;
-  background-color: #6ebe7e;
-}
-
 #order-info-section .allData .user-information .delivery-method label {
   display: block;
   position: relative;
@@ -1816,6 +1766,61 @@ header .mobile-header {
   }
 }
 
+#offcanvas-basket .offcanvas-header {
+  border-bottom: 1px solid grey;
+}
+#offcanvas-basket .offcanvas-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item img {
+  width: 40%;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions button {
+  border: none;
+}
+#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions .inc, #offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions .dec {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#offcanvas-basket .offcanvas-body .offcanvas-footer {
+  border-top: 1px solid grey;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#offcanvas-basket .offcanvas-body .offcanvas-footer a {
+  padding: 10px 20px;
+  color: white;
+  background-color: #6ebe7e;
+}
+
 #home-account .container .account-body .section-heading {
   padding: 20px 10px;
   border-bottom: 1px dashed #8C971A;
@@ -1834,6 +1839,11 @@ header .mobile-header {
 }
 #home-account .container .account-body .all-orders .orderedProd img {
   width: 100%;
+}
+@media screen and (max-width: 567px) {
+  #home-account .container .account-body .all-orders {
+    flex-direction: column;
+  }
 }
 
 footer {

@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000/allProducts";
+const BASE_URL = "http://localhost:3000/allProducts";
  let id =new URLSearchParams(window.location.search).get("id")
  console.log(id);
  let heading=document.querySelector('h1')
