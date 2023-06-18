@@ -21,8 +21,9 @@ let badge=document.querySelector('.badge')
 function fillBasket(arr){
     allBasketItems.innerHTML=""
     arr.forEach(el=> {
-        allBasketItems.innerHTML+=`
-        <div class="basket-item">
+      let basketItem=document.createElement('div')
+      basketItem.classList.add('basket-item')
+        basketItem.innerHTML=`
         <img src="./images/${el.productImageMain}" alt="">
         <div class="basket-info">
           <p>${el.productName}</p>
@@ -31,8 +32,8 @@ function fillBasket(arr){
             <button class="delete-from-basket" onclick="deleteFromBasket(${el.id})"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
-      </div>
         `
+        allBasketItems.append(basketItem)
     });
 }
 let customer= JSON.parse(localStorage.getItem('normalUser'))
@@ -40,24 +41,26 @@ async function getBasketItems(){
     const res= await axios(CUSTOMER_API)
     const data= await res.data
     let activeCustomer=data.find(item=>item.customerName===customer.userName)
-    // console.log(activeCustomer);
     badge.innerHTML=activeCustomer.basketItems.length
     fillBasket(activeCustomer.basketItems)
 }
 getBasketItems()
 
-// function deleteFromBasket(id){
-
-// }
-
 let totalPrice=document.querySelector('.total-price')
-
  async function calculatePrice(){
   const res= await axios(CUSTOMER_API)
   const data= await res.data
   let activeCustomer=data.find(item=>item.customerName===customer.userName)
-    totalPrice.innerHTML= `$${activeCustomer.basketItems.reduce((acc, item) => acc + item.productPrice, 0)}`
+  totalPrice.innerHTML= `$${activeCustomer.basketItems.reduce((acc, item) => acc + item.productPrice, 0)}`
 
 }
 calculatePrice()
 
+async function deleteFromBasket(id){
+  const res= await axios(CUSTOMER_API)
+  const data= await res.data
+  let activeCustomer=data.find(item=>item.customerName===customer.userName) 
+  activeCustomer.basketItems=activeCustomer.basketItems.filter(item => item.id !== id);
+  await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
+  console.log(activeCustomer.basketItems);
+}

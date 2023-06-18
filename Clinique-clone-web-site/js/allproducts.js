@@ -103,6 +103,7 @@ async function addBag(id) {
   findCustomer.basketItems.push(desiredProd);
   await axios.patch(`${CUSTOMER_API}/${findCustomer.id}`, findCustomer);
   console.log(findCustomer.basketItems);
+  window.location.href="user-account.html"
 }
 
 

@@ -5,32 +5,18 @@
       "customerEmail": "oruc@gmail.com",
       "basketItems": [
         {
-          "id": 1,
-          "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
-          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
-          "productPrice": 40,
-          "productImageMain": "dramatically-diff.png",
-          "productImageModal": "ingridients-lotion.jpg",
+          "id": 4,
+          "productName": "All About Clean™ Liquid Facial Soap",
+          "productDescription": "CLINIQUE.COM EXCLUSIVE. Buy one, get one free. Our #1 makeup remover in a silky balm formula gently dissolves makeup",
+          "productPrice": 38,
+          "productImageMain": "all-about-clean.png",
+          "productImageModal": "clean-refresh.jpeg",
           "productRating": 5,
           "productAmount": 6,
           "productCategory": "Skincare",
-          "skinConcern": "Lines & Wrinkles",
-          "skinType": "Very Dry to Dry",
-          "productForm": "Cream"
-        },
-        {
-          "id": 2,
-          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
-          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
-          "productPrice": 23,
-          "productImageMain": "lipgloss-katespande.png",
-          "productImageModal": "lip-glosses-for-modal.jpeg",
-          "productRating": 5,
-          "productAmount": 6,
-          "productCategory": "Makeup",
-          "skinConcern": "Dehydration",
+          "skinConcern": "Fatigue",
           "skinType": "Dry Combination",
-          "productForm": "Stick"
+          "productForm": "Liquid"
         }
       ],
       "searchings": [],
