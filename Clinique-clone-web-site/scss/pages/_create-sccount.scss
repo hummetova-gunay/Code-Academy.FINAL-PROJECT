@@ -8,8 +8,8 @@
   }
     .container{
         .user-form{
-            @include flexbox;
-            // margin: 100px;
+          @include flexbox;
+          flex-direction: column;
             .login-box {
               width: 400px;
               padding: 40px;
@@ -37,6 +37,7 @@
               margin: 100px 0;
             }
         }
+
     }
 }
 .login-box .user-box label {

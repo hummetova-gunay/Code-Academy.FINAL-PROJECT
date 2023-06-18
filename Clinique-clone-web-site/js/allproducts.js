@@ -86,13 +86,12 @@ async function getProdData(){
 getProdData()
 
 // /////////////////////////////////////////////////
-let CUSTOMER_API="http://localhost:4000/customers"
+let CUSTOMER_API="http://localhost:8000/customers"
 
 async function addBag(id) {
   const res = await axios(BASE_URL);
   const data = await res.data;
   let desiredProd = data.find(item => item.id === id);
-
   const customerRes = await axios(CUSTOMER_API);
   const customerData = await customerRes.data;
   let findCustomer = customerData.find(el => el.customerName === customer.userName);
@@ -105,5 +104,4 @@ async function addBag(id) {
   console.log(findCustomer.basketItems);
   window.location.href="user-account.html"
 }
-
 

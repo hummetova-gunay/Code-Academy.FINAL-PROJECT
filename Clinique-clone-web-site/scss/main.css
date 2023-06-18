@@ -1505,6 +1505,7 @@ header .mobile-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #create-account .container .user-form .login-box {
   width: 400px;
@@ -1764,6 +1765,10 @@ header .mobile-header {
     flex-direction: column-reverse;
     gap: 50px;
   }
+}
+
+header .container nav ul li .log-out {
+  border: none;
 }
 
 #offcanvas-basket .offcanvas-header {

@@ -8,10 +8,16 @@
       "isAdmin": true
     },
     {
-      "userName": "Oruc",
-      "userEmail": "oruc@gmail.com",
-      "userPassword": "oruc2004",
+      "userName": "Nigar",
+      "userEmail": "nigar@gmail.com",
+      "userPassword": "nigar",
       "id": 2
+    },
+    {
+      "userName": "Selcan",
+      "userEmail": "selcan@gmail.com",
+      "userPassword": "selcan",
+      "id": 3
     }
   ]
 }

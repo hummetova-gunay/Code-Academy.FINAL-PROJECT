@@ -1,3 +1,19 @@
+header{
+    .container{
+        nav{
+            ul{
+                li{
+                    .log-out{
+                        border: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 #offcanvas-basket{
     .offcanvas-header{
         border-bottom: 1px solid grey;
@@ -46,8 +62,6 @@
         }
     }
 }
-
-
 #home-account{
     .container{
         .account-body{

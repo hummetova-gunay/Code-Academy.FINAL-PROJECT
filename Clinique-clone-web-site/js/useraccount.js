@@ -14,7 +14,7 @@ localStorage.removeItem('isAdmin')
 
 //////////////////////////////////////////////////
 
-let CUSTOMER_API="http://localhost:4000/customers"
+let CUSTOMER_API="http://localhost:8000/customers"
 let count=1;
 let allBasketItems=document.querySelector('.all-basket-items')
 let badge=document.querySelector('.badge')
@@ -59,8 +59,25 @@ calculatePrice()
 async function deleteFromBasket(id){
   const res= await axios(CUSTOMER_API)
   const data= await res.data
-  let activeCustomer=data.find(item=>item.customerName===customer.userName) 
+   activeCustomer=data.find(item=>item.customerName===customer.userName) 
   activeCustomer.basketItems=activeCustomer.basketItems.filter(item => item.id !== id);
   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
-  console.log(activeCustomer.basketItems);
+  // console.log(activeCustomer.basketItems);
 }
+
+let orderNow=document.querySelector('.orderNow')
+orderNow.addEventListener('click',async function(){
+  const res= await axios(CUSTOMER_API)
+  const data= await res.data
+  activeCustomer=data.find(item=>item.customerName===customer.userName) 
+
+})
+
+let accountOwner=document.querySelector('#accountOwner')
+accountOwner.innerHTML=customer.userName
+
+let logOut=document.querySelector('.log-out')
+logOut.addEventListener('click', function(){
+  localStorage.removeItem('normalUser')
+  window.location.href="index.html"
+})
