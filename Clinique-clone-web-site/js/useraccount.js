@@ -27,11 +27,8 @@ function fillBasket(arr){
         <div class="basket-info">
           <p>${el.productName}</p>
           <div class="basket-actions">
-            <span>${el.productPrice}</span>
-            <button class="inc" onclick="incValue()">+</button>
-            <span>${count}</span>
-            <button class="dec" onclick="decValue()">-</button>
-            <button class="delete-from-basket"><i class="fa-solid fa-trash-can"></i></button>
+            <span>$${el.productPrice}</span>
+            <button class="delete-from-basket" onclick="deleteFromBasket(${el.id})"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       </div>
@@ -43,11 +40,24 @@ async function getBasketItems(){
     const res= await axios(CUSTOMER_API)
     const data= await res.data
     let activeCustomer=data.find(item=>item.customerName===customer.userName)
-    console.log(activeCustomer);
+    // console.log(activeCustomer);
     badge.innerHTML=activeCustomer.basketItems.length
     fillBasket(activeCustomer.basketItems)
 }
 getBasketItems()
- function incValue(){
-  return count++
- }
+
+// function deleteFromBasket(id){
+
+// }
+
+let totalPrice=document.querySelector('.total-price')
+
+ async function calculatePrice(){
+  const res= await axios(CUSTOMER_API)
+  const data= await res.data
+  let activeCustomer=data.find(item=>item.customerName===customer.userName)
+    totalPrice.innerHTML= `$${activeCustomer.basketItems.reduce((acc, item) => acc + item.productPrice, 0)}`
+
+}
+calculatePrice()
+
