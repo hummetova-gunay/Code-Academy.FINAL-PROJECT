@@ -1507,6 +1507,10 @@ header .mobile-header {
   align-items: center;
   flex-direction: column;
 }
+#create-account .container .user-form .section-header a {
+  border-bottom: 1px solid #091d0d;
+  color: #091d0d;
+}
 #create-account .container .user-form .login-box {
   width: 400px;
   padding: 40px;
