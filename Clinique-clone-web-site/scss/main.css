@@ -1848,6 +1848,7 @@ header .container nav ul li .log-out {
   gap: 20px;
 }
 #home-account .container .account-body .all-orders .orderedProd {
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

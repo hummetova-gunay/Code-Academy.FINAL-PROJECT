@@ -73,6 +73,7 @@ header{
                 @include flexbox;
                 gap: 20px;
                 .orderedProd{
+                width: 300px;
                 @include flexbox;
                 flex-direction: column;
                     img{

@@ -38,14 +38,14 @@ function fillBasket(arr){
 }
 let customer= JSON.parse(localStorage.getItem('normalUser'))
 
-async function getBasketItems(){
-    const res= await axios(CUSTOMER_API)
-    const data= await res.data
-    let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
-    badge.innerHTML=activeCustomer.basketItems.length
-    fillBasket(activeCustomer.basketItems)
-}
-getBasketItems()
+// async function getBasketItems(){
+//     const res= await axios(CUSTOMER_API)
+//     const data= await res.data
+//     let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
+//     badge.innerHTML=activeCustomer.basketItems.length
+//     fillBasket(activeCustomer.basketItems)
+// }
+// getBasketItems()
 
 let totalPrice=document.querySelector('.total-price')
  async function calculatePrice(){
@@ -80,3 +80,30 @@ orderNow.addEventListener('click',async function(){
   window.location.href="order-information.html"
 })
 
+let allOrders=document.querySelector('.all-orders')
+let emptyOrder=document.querySelector('.empty-order-list')
+
+function fillCustomerOrders(arr){
+  allOrders.innerHTML=""
+  arr.forEach(item=>{
+      if(item.orderedProducts){
+        emptyOrder.style.display="none"
+      }
+      allOrders.innerHTML+=`
+      <div class="orderedProd">
+      <img src="./images/${item.productImageMain}" alt="">
+      <span class="prodName">${item.productName}</span>
+    </div>
+      `
+  })
+}
+
+async function getBasketItems(){
+  const res= await axios(CUSTOMER_API)
+  const data= await res.data
+  let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
+  badge.innerHTML=activeCustomer.basketItems.length
+  fillBasket(activeCustomer.basketItems)
+  fillCustomerOrders(activeCustomer.orderedProducts)
+}
+getBasketItems()
