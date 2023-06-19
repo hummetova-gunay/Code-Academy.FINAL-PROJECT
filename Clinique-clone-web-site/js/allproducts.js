@@ -31,8 +31,9 @@ let allProducts=document.querySelector('.see-all-products')
 function fillProductData(arr){
     allProducts.innerHTML=''
     arr.forEach(el => {
-        allProducts.innerHTML+=`
-        <div class="single-product">
+      let singleProduct=document.createElement('div')
+      singleProduct.classList.add('single-product')
+      singleProduct.innerHTML=`
         <img src="./images/${el.productImageMain}" alt="">     
 <button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#${el.id}" id="modal-btn">Buy now</button>
 <div class="modal fade" id="${el.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -46,8 +47,6 @@ function fillProductData(arr){
     <div class="modal-text">
       <h1>${el.productName}</h1>
       <p>${el.productDescription}</p>
-      <div class="rating">
-      </div>
       <div class="price">
         <h3>$${el.productPrice}.00</h3>
         <button onclick="addBag(${el.id})">Add to bag</button>
@@ -66,15 +65,14 @@ function fillProductData(arr){
 <p>${el.productName}</p>
 <p>$${el.productPrice}</p>
 <div class="rating-add-bag">
-<div class="rating">
-</div>
 <div class="add-bag">
 <button onclick="addBag(${el.id})">Add to bag</button>
 </div>
 </div>
 </div>
-        </div>
         `
+        allProducts.append(singleProduct)
+        
     });
 }
 
@@ -85,7 +83,7 @@ async function getProdData(){
 }
 getProdData()
 
-// /////////////////////////////////////////////////
+/////////////////////////////////////////////////
 let CUSTOMER_API="http://localhost:8000/customers"
 
 async function addBag(id) {
@@ -105,3 +103,50 @@ async function addBag(id) {
   window.location.href="user-account.html"
 }
 
+
+// Filter
+let filterByCategories=document.querySelectorAll('.filter-category')
+function filterCategory(arr){
+  filterByCategories.forEach(item=>{
+    item.addEventListener("click", function(){
+      let filteredData=arr.filter(el=>el.productCategory===item.innerHTML)
+      fillProductData(filteredData)
+    })
+  })
+}
+let filterConcern=document.querySelectorAll('.filter-concern')
+function byConcern(arr){
+  filterConcern.forEach(item=>{
+    item.addEventListener("click", function(){
+      let filteredData=arr.filter(el=>el.skinConcern===item.innerHTML)
+      fillProductData(filteredData)
+    })
+  })
+}
+let filterForm=document.querySelectorAll('.filter-form')
+function byForm(arr){
+  filterForm.forEach(item=>{
+    item.addEventListener("click", function(){
+      let filteredData=arr.filter(el=>el.productForm===item.innerHTML)
+      fillProductData(filteredData)
+    })
+  })
+}
+let filterType=document.querySelectorAll('.filter-type')
+function byType(arr){
+  filterForm.forEach(item=>{
+    item.addEventListener("click", function(){
+      let filteredData=arr.filter(el=>el.productForm===item.innerHTML)
+      fillProductData(filteredData)
+    })
+  })
+}
+async function fillFilter(){
+  const res= await axios(BASE_URL)
+  const data =res.data
+  byConcern(data)
+  filterCategory(data)
+  byForm(data)
+  byType(data)
+}
+fillFilter()
