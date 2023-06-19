@@ -59,6 +59,29 @@
         }
       ],
       "id": 2
+    },
+    {
+      "customerName": "Nermin",
+      "customerEmail": "nermin@gmail.com",
+      "basketItems": [],
+      "searchings": [],
+      "bougthProducts": [],
+      "id": 3,
+      "orderedProducts": [
+        {
+          "productName": "Almost Lipstick in Black Honey",
+          "productDescription": "Clinique's cult classic lip shade. One is sold every 4 minutes globally.* This bestseller is excluded from discounts. Read more",
+          "productPrice": 23,
+          "productImageMain": "allure.png",
+          "productImageModal": "arms.jpg",
+          "productAmount": 6,
+          "productCategory": "Makeup",
+          "skinConcern": "Lines & Wrinkles",
+          "skinType": "Very Dry to Dry",
+          "productForm": "Stick",
+          "id": 5
+        }
+      ]
     }
   ]
 }

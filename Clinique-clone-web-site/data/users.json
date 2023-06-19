@@ -18,6 +18,12 @@
       "userEmail": "selcan@gmail.com",
       "userPassword": "selcan",
       "id": 3
+    },
+    {
+      "userName": "Nermin",
+      "userEmail": "nermin@gmail.com",
+      "userPassword": "nermin",
+      "id": 4
     }
   ]
 }
