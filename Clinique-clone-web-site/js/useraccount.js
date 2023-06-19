@@ -80,14 +80,3 @@ orderNow.addEventListener('click',async function(){
   window.location.href="order-information.html"
 })
 
-// orderNow.addEventListener('click',async function(){
-//   const res= await axios(CUSTOMER_API)
-//   const data= await res.data
-//   activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
-//   if(!activeCustomer.orderedProducts){
-//     activeCustomer.orderedProducts=[]
-//   }
-//   activeCustomer.orderedProducts=[...activeCustomer.basketItems]
-//   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
-//   window.location.href="order-information.html"
-// })

@@ -85,6 +85,20 @@
           "skinConcern": "Fatigue",
           "skinType": "Dry Combination",
           "productForm": "Liquid"
+        },
+        {
+          "id": 3,
+          "productName": "NEW Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator",
+          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
+          "productPrice": 43,
+          "productImageMain": "moisture-surge.png",
+          "productImageModal": "surge-vitamins.jpg",
+          "productRating": 5,
+          "productAmount": 6,
+          "productCategory": "Skincare",
+          "skinConcern": "Lines & Wrinkles",
+          "skinType": "Very Dry to Dry",
+          "productForm": "Cream"
         }
       ],
       "id": 2

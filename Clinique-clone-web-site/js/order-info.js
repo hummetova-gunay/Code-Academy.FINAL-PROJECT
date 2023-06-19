@@ -54,3 +54,21 @@ async function calculatePrice(){
 }
 calculatePrice()
 
+async function addOrder(){
+  const res= await axios(CUSTOMER_API)
+  const data= await res.data
+  activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
+  if(!activeCustomer.orderedProducts){
+    activeCustomer.orderedProducts=[]
+  }
+  activeCustomer.orderedProducts=[...activeCustomer.basketItems]
+  await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
+  window.location.href="user-account.html"
+}
+
+let form= document.querySelector('form')
+
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+    addOrder()
+})
