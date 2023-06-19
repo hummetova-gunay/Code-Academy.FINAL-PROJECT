@@ -7,12 +7,13 @@
       "productPrice": 40,
       "productImageMain": "dramatically-diff.png",
       "productImageModal": "ingridients-lotion.jpg",
-      "productRating": 5,
+      "productRating": [],
       "productAmount": 6,
       "productCategory": "Skincare",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
-      "productForm": "Cream"
+      "productForm": "Cream",
+      "userReview": []
     },
     {
       "id": 2,
@@ -21,12 +22,13 @@
       "productPrice": 23,
       "productImageMain": "lipgloss-katespande.png",
       "productImageModal": "lip-glosses-for-modal.jpeg",
-      "productRating": 5,
+      "productRating": [],
       "productAmount": 6,
       "productCategory": "Makeup",
       "skinConcern": "Dehydration",
       "skinType": "Dry Combination",
-      "productForm": "Stick"
+      "productForm": "Stick",
+      "userReview": []
     },
     {
       "id": 3,
@@ -35,12 +37,13 @@
       "productPrice": 43,
       "productImageMain": "moisture-surge.png",
       "productImageModal": "surge-vitamins.jpg",
-      "productRating": 5,
+      "productRating": [],
       "productAmount": 6,
       "productCategory": "Skincare",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
-      "productForm": "Cream"
+      "productForm": "Cream",
+      "userReview": []
     },
     {
       "id": 4,
@@ -49,12 +52,13 @@
       "productPrice": 38,
       "productImageMain": "all-about-clean.png",
       "productImageModal": "clean-refresh.jpeg",
-      "productRating": 5,
+      "productRating": [],
       "productAmount": 6,
       "productCategory": "Skincare",
       "skinConcern": "Fatigue",
       "skinType": "Dry Combination",
-      "productForm": "Liquid"
+      "productForm": "Liquid",
+      "userReview": []
     },
     {
       "productName": "Almost Lipstick in Black Honey",
@@ -62,12 +66,18 @@
       "productPrice": 23,
       "productImageMain": "allure.png",
       "productImageModal": "arms.jpg",
+      "productRating": [
+        4
+      ],
       "productAmount": 6,
       "productCategory": "Makeup",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
       "productForm": "Stick",
-      "id": 5
+      "id": 5,
+      "userReview": [
+        "nnnnnnn"
+      ]
     }
   ]
 }
