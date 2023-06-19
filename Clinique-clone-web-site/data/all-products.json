@@ -9,6 +9,7 @@
       "productImageModal": "ingridients-lotion.jpg",
       "productRating": [],
       "productAmount": 6,
+      "purchaseAmount": 0,
       "productCategory": "Skincare",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
@@ -24,6 +25,7 @@
       "productImageModal": "lip-glosses-for-modal.jpeg",
       "productRating": [],
       "productAmount": 6,
+      "purchaseAmount": 0,
       "productCategory": "Makeup",
       "skinConcern": "Dehydration",
       "skinType": "Dry Combination",
@@ -37,13 +39,18 @@
       "productPrice": 43,
       "productImageMain": "moisture-surge.png",
       "productImageModal": "surge-vitamins.jpg",
-      "productRating": [],
+      "productRating": [
+        3
+      ],
       "productAmount": 6,
+      "purchaseAmount": 0,
       "productCategory": "Skincare",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
       "productForm": "Cream",
-      "userReview": []
+      "userReview": [
+        "hello"
+      ]
     },
     {
       "id": 4,
@@ -54,6 +61,7 @@
       "productImageModal": "clean-refresh.jpeg",
       "productRating": [],
       "productAmount": 6,
+      "purchaseAmount": 0,
       "productCategory": "Skincare",
       "skinConcern": "Fatigue",
       "skinType": "Dry Combination",
@@ -66,18 +74,15 @@
       "productPrice": 23,
       "productImageMain": "allure.png",
       "productImageModal": "arms.jpg",
-      "productRating": [
-        4
-      ],
+      "productRating": [],
       "productAmount": 6,
+      "purchaseAmount": 0,
       "productCategory": "Makeup",
       "skinConcern": "Lines & Wrinkles",
       "skinType": "Very Dry to Dry",
       "productForm": "Stick",
       "id": 5,
-      "userReview": [
-        "nnnnnnn"
-      ]
+      "userReview": []
     }
   ]
 }

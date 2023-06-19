@@ -64,7 +64,6 @@ async function addOrder(){
     activeCustomer.orderedProducts=[]
   }
   activeCustomer.orderedProducts=[...activeCustomer.basketItems]
-  activeCustomer.basketItems=[]
   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
   window.location.href="user-account.html"
 }

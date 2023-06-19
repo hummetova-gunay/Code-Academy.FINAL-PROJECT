@@ -3,36 +3,7 @@
     {
       "customerName": "Nigar",
       "customerEmail": "nigar@gmail.com",
-      "basketItems": [
-        {
-          "id": 2,
-          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
-          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
-          "productPrice": 23,
-          "productImageMain": "lipgloss-katespande.png",
-          "productImageModal": "lip-glosses-for-modal.jpeg",
-          "productRating": 5,
-          "productAmount": 6,
-          "productCategory": "Makeup",
-          "skinConcern": "Dehydration",
-          "skinType": "Dry Combination",
-          "productForm": "Stick"
-        },
-        {
-          "id": 3,
-          "productName": "NEW Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator",
-          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
-          "productPrice": 43,
-          "productImageMain": "moisture-surge.png",
-          "productImageModal": "surge-vitamins.jpg",
-          "productRating": 5,
-          "productAmount": 6,
-          "productCategory": "Skincare",
-          "skinConcern": "Lines & Wrinkles",
-          "skinType": "Very Dry to Dry",
-          "productForm": "Cream"
-        }
-      ],
+      "basketItems": [],
       "searchings": [],
       "orderedProducts": [],
       "id": 1
@@ -42,7 +13,29 @@
       "customerEmail": "selcan@gmail.com",
       "basketItems": [],
       "searchings": [],
-      "orderedProducts": [
+      "orderedProducts": [],
+      "id": 2
+    },
+    {
+      "customerName": "Nermin",
+      "customerEmail": "nermin@gmail.com",
+      "basketItems": [
+        {
+          "id": 3,
+          "productName": "NEW Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator",
+          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
+          "productPrice": 43,
+          "productImageMain": "moisture-surge.png",
+          "productImageModal": "surge-vitamins.jpg",
+          "productRating": [],
+          "productAmount": 6,
+          "purchaseAmount": 0,
+          "productCategory": "Skincare",
+          "skinConcern": "Lines & Wrinkles",
+          "skinType": "Very Dry to Dry",
+          "productForm": "Cream",
+          "userReview": []
+        },
         {
           "id": 1,
           "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
@@ -50,36 +43,51 @@
           "productPrice": 40,
           "productImageMain": "dramatically-diff.png",
           "productImageModal": "ingridients-lotion.jpg",
-          "productRating": 5,
+          "productRating": [],
           "productAmount": 6,
+          "purchaseAmount": 0,
           "productCategory": "Skincare",
           "skinConcern": "Lines & Wrinkles",
           "skinType": "Very Dry to Dry",
-          "productForm": "Cream"
+          "productForm": "Cream",
+          "userReview": []
         }
       ],
-      "id": 2
-    },
-    {
-      "customerName": "Nermin",
-      "customerEmail": "nermin@gmail.com",
-      "basketItems": [],
       "searchings": [],
       "bougthProducts": [],
       "id": 3,
       "orderedProducts": [
         {
-          "productName": "Almost Lipstick in Black Honey",
-          "productDescription": "Clinique's cult classic lip shade. One is sold every 4 minutes globally.* This bestseller is excluded from discounts. Read more",
-          "productPrice": 23,
-          "productImageMain": "allure.png",
-          "productImageModal": "arms.jpg",
+          "id": 3,
+          "productName": "NEW Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator",
+          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
+          "productPrice": 43,
+          "productImageMain": "moisture-surge.png",
+          "productImageModal": "surge-vitamins.jpg",
+          "productRating": [],
           "productAmount": 6,
-          "productCategory": "Makeup",
+          "purchaseAmount": 0,
+          "productCategory": "Skincare",
           "skinConcern": "Lines & Wrinkles",
           "skinType": "Very Dry to Dry",
-          "productForm": "Stick",
-          "id": 5
+          "productForm": "Cream",
+          "userReview": []
+        },
+        {
+          "id": 1,
+          "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
+          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
+          "productPrice": 40,
+          "productImageMain": "dramatically-diff.png",
+          "productImageModal": "ingridients-lotion.jpg",
+          "productRating": [],
+          "productAmount": 6,
+          "purchaseAmount": 0,
+          "productCategory": "Skincare",
+          "skinConcern": "Lines & Wrinkles",
+          "skinType": "Very Dry to Dry",
+          "productForm": "Cream",
+          "userReview": []
         }
       ]
     }
