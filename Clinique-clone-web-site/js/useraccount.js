@@ -40,7 +40,7 @@ let customer= JSON.parse(localStorage.getItem('normalUser'))
 async function getBasketItems(){
     const res= await axios(CUSTOMER_API)
     const data= await res.data
-    let activeCustomer=data.find(item=>item.customerName===customer.userName)
+    let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
     badge.innerHTML=activeCustomer.basketItems.length
     fillBasket(activeCustomer.basketItems)
 }
@@ -50,7 +50,7 @@ let totalPrice=document.querySelector('.total-price')
  async function calculatePrice(){
   const res= await axios(CUSTOMER_API)
   const data= await res.data
-  let activeCustomer=data.find(item=>item.customerName===customer.userName)
+  let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
   totalPrice.innerHTML= `$${activeCustomer.basketItems.reduce((acc, item) => acc + item.productPrice, 0)}`
 
 }
@@ -59,7 +59,7 @@ calculatePrice()
 async function deleteFromBasket(id){
   const res= await axios(CUSTOMER_API)
   const data= await res.data
-   activeCustomer=data.find(item=>item.customerName===customer.userName) 
+   activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
   activeCustomer.basketItems=activeCustomer.basketItems.filter(item => item.id !== id);
   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
   // console.log(activeCustomer.basketItems);
@@ -69,7 +69,7 @@ let orderNow=document.querySelector('.orderNow')
 orderNow.addEventListener('click',async function(){
   const res= await axios(CUSTOMER_API)
   const data= await res.data
-  activeCustomer=data.find(item=>item.customerName===customer.userName) 
+  activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
 
 })
 
