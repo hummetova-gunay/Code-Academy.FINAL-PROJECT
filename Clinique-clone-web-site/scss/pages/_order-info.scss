@@ -98,20 +98,28 @@
             width: 100%;
             }
         }
-        .purchased-product{
+        .prod{
             @include flexbox;
             flex-direction: column;
-            gap: 40px;
-            .product-info{
-                border:1px dashed #7B9039;
+            gap: 40px; 
+            .purchased-product{
                 @include flexbox;
-                justify-content: space-around;
-                gap: 20px;
-                padding: 10px 20px;
-                width: 100%;
-                img{
-                    width: 100px ;
-                    height: 100px;
+                flex-direction: column;
+                gap: 40px;
+                .product-info{
+                    border:1px dashed #7B9039;
+                    @include flexbox;
+                    justify-content: space-around;
+                    gap: 20px;
+                    padding: 10px 20px;
+                    width: 100%;
+                    img{
+                        width: 100px ;
+                        height: 100px;
+                    }
+                }
+                @media screen and (max-width:992px){
+                    width: 100%;
                 }
             }
             .calculate-price{
@@ -130,11 +138,7 @@
                 }
                 }
             } 
-            @media screen and (max-width:992px){
-                width: 100%;
-            }
         }
-
         @media screen and (max-width:992px){
             flex-direction: column-reverse;
             gap: 50px;

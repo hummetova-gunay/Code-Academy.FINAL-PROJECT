@@ -16,7 +16,6 @@ localStorage.removeItem('isAdmin')
 let goAccount=document.querySelector('.goAccount')
 let signIn=document.querySelector('.signIn')
 let customer=JSON.parse(localStorage.getItem("normalUser"))
-// console.log(customer);
 
 if(customer){
     goAccount.style.display="block"
@@ -104,4 +103,3 @@ async function addBag(id) {
   console.log(findCustomer.basketItems);
   window.location.href="user-account.html"
 }
-

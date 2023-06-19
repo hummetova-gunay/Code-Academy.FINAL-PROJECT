@@ -15,7 +15,7 @@ localStorage.removeItem('isAdmin')
 //////////////////////////////////////////////////
 
 let CUSTOMER_API="http://localhost:8000/customers"
-let count=1;
+// let count=1;
 let allBasketItems=document.querySelector('.all-basket-items')
 let badge=document.querySelector('.badge')
 function fillBasket(arr){
@@ -37,6 +37,7 @@ function fillBasket(arr){
     });
 }
 let customer= JSON.parse(localStorage.getItem('normalUser'))
+
 async function getBasketItems(){
     const res= await axios(CUSTOMER_API)
     const data= await res.data
@@ -62,16 +63,7 @@ async function deleteFromBasket(id){
    activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
   activeCustomer.basketItems=activeCustomer.basketItems.filter(item => item.id !== id);
   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
-  // console.log(activeCustomer.basketItems);
 }
-
-let orderNow=document.querySelector('.orderNow')
-orderNow.addEventListener('click',async function(){
-  const res= await axios(CUSTOMER_API)
-  const data= await res.data
-  activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
-
-})
 
 let accountOwner=document.querySelector('#accountOwner')
 accountOwner.innerHTML=customer.userName
@@ -81,3 +73,21 @@ logOut.addEventListener('click', function(){
   localStorage.removeItem('normalUser')
   window.location.href="index.html"
 })
+
+let orderNow=document.querySelector('.orderNow')
+
+orderNow.addEventListener('click',async function(){
+  window.location.href="order-information.html"
+})
+
+// orderNow.addEventListener('click',async function(){
+//   const res= await axios(CUSTOMER_API)
+//   const data= await res.data
+//   activeCustomer=data.find(item=>item.customerEmail===customer.userEmail) 
+//   if(!activeCustomer.orderedProducts){
+//     activeCustomer.orderedProducts=[]
+//   }
+//   activeCustomer.orderedProducts=[...activeCustomer.basketItems]
+//   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
+//   window.location.href="order-information.html"
+// })

@@ -1718,14 +1718,21 @@ header .mobile-header {
     width: 100%;
   }
 }
-#order-info-section .allData .purchased-product {
+#order-info-section .allData .prod {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 40px;
 }
-#order-info-section .allData .purchased-product .product-info {
+#order-info-section .allData .prod .purchased-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#order-info-section .allData .prod .purchased-product .product-info {
   border: 1px dashed #7B9039;
   display: flex;
   justify-content: center;
@@ -1735,11 +1742,16 @@ header .mobile-header {
   padding: 10px 20px;
   width: 100%;
 }
-#order-info-section .allData .purchased-product .product-info img {
+#order-info-section .allData .prod .purchased-product .product-info img {
   width: 100px;
   height: 100px;
 }
-#order-info-section .allData .purchased-product .calculate-price {
+@media screen and (max-width: 992px) {
+  #order-info-section .allData .prod .purchased-product {
+    width: 100%;
+  }
+}
+#order-info-section .allData .prod .calculate-price {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1747,7 +1759,7 @@ header .mobile-header {
   flex-direction: column;
   gap: 20px;
 }
-#order-info-section .allData .purchased-product .calculate-price div {
+#order-info-section .allData .prod .calculate-price div {
   width: 100%;
   padding: 10px 20px;
   border: 1px dashed #7B9039;
@@ -1756,13 +1768,8 @@ header .mobile-header {
   align-items: center;
   justify-content: space-between;
 }
-#order-info-section .allData .purchased-product .calculate-price div p {
+#order-info-section .allData .prod .calculate-price div p {
   margin: 0;
-}
-@media screen and (max-width: 992px) {
-  #order-info-section .allData .purchased-product {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 992px) {
   #order-info-section .allData {
