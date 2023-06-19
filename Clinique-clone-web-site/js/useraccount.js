@@ -104,6 +104,6 @@ async function getBasketItems(){
   let activeCustomer=data.find(item=>item.customerEmail===customer.userEmail)
   badge.innerHTML=activeCustomer.basketItems.length
   fillBasket(activeCustomer.basketItems)
-  fillCustomerOrders(activeCustomer.orderedProducts)
+  // fillCustomerOrders(activeCustomer.orderedProducts)
 }
 getBasketItems()

@@ -22,7 +22,7 @@
  
  .input:focus, input:valid {
   outline: none;
-  border: 1.5px solid black;
+  // border: 1.5px solid black;
  }
  
  .input:focus ~ label, input:valid ~ .user-label {

@@ -32,7 +32,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#order-info-section .allData .user-information .payment .payment-address form .actions .btn, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .sendReview, #order-info-section .allData .user-information .payment .payment-address form .actions .btn, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn, #laser-smart .section-body .section-text button, #bestseller .go-bestseller, #bestseller .all-images .single-image #modal-btn, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button {
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -46,7 +46,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
 }
-#order-info-section .allData .user-information .payment .payment-address form .actions .btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .sendReview:hover, #order-info-section .allData .user-information .payment .payment-address form .actions .btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product #modal-btn:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller #modal-btn:hover, #laser-smart .section-body .section-text button:hover, #bestseller .go-bestseller:hover, #bestseller .all-images .single-image #modal-btn:hover, #all-products .container .section-body .products-part .see-all-products .single-product .mobile-txt .rating-add-bag .add-bag button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .mobile-txt .rating-add-bag .add-bag button:hover, #all-products .container .section-body .products-part .see-all-products .single-product .modal .modal-dialog .modal-body .modal-text .price button:hover, #all-bestsellers .container .section-body .bestsellers-part .all-bestseller-products .single-bestseller .modal .modal-dialog .modal-body .modal-text .price button:hover, #bestseller .all-images .single-image .modal .modal-dialog .modal-body .modal-text .price button:hover {
   background: #ADDDB7;
   box-shadow: 0 0 30px 5px #061309 95, 26, 122, 0.815;
   transition: all 0.2s ease-out;
@@ -151,7 +151,6 @@
 
 .input:focus, input:valid {
   outline: none;
-  border: 1.5px solid black;
 }
 
 .input:focus ~ label, input:valid ~ .user-label {
@@ -1780,6 +1779,7 @@ header .mobile-header {
 
 header .container nav ul li .log-out {
   border: none;
+  background-color: transparent;
 }
 
 #offcanvas-basket .offcanvas-header {
@@ -1853,9 +1853,109 @@ header .container nav ul li .log-out {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
 }
 #home-account .container .account-body .all-orders .orderedProd img {
   width: 100%;
+}
+#home-account .container .account-body .all-orders .orderedProd .btn {
+  border: 2px dashed #8C971A;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body textarea {
+  outline: none;
+  border: 2px solid #8C971A;
+  padding: 10px;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .sendReview {
+  border: 2px solid #8C971A;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .sendReview:hover {
+  background-color: #8C971A;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating input {
+  -webkit-appearance: unset;
+     -moz-appearance: unset;
+          appearance: unset;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating label {
+  cursor: pointer;
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating svg {
+  width: 3rem;
+  height: 3rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating label:hover svg {
+  stroke: var(--fill);
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-body .rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+#home-account .container .account-body .all-orders .orderedProd .review-modal .modal-footer .btn {
+  border-radius: 0;
+  border: 1px solid #666;
 }
 @media screen and (max-width: 567px) {
   #home-account .container .account-body .all-orders {
