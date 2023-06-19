@@ -8,6 +8,8 @@ let totalPrice=document.querySelector('.total-price')
 
 let CUSTOMER_API="http://localhost:8000/customers"
 let customer= JSON.parse(localStorage.getItem('normalUser'))
+let customerName=document.querySelector('#customerName')
+customerName.innerHTML=customer.userEmail
 function fillData(arr){
     purchasedProduct.innerHTML=""
     arr.forEach(element => {
@@ -62,6 +64,7 @@ async function addOrder(){
     activeCustomer.orderedProducts=[]
   }
   activeCustomer.orderedProducts=[...activeCustomer.basketItems]
+  activeCustomer.basketItems=[]
   await axios.patch(`${CUSTOMER_API}/${activeCustomer.id}`, activeCustomer);
   window.location.href="user-account.html"
 }
