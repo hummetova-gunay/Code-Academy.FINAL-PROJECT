@@ -9,6 +9,58 @@
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Clinique</title>
+    
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+
+    swiper-container {
+      margin: 50px 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      padding: 100px ;
+    }
+
+    swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      background-image: url(./images/summerstaples5pc_tout_pc_us@2x.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+
+    swiper-slide .subtitle {
+      font-size: 21px;
+    }
+
+    swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -329,6 +381,59 @@
         </div>
       </div>
     </section>
+    <section id="slider">
+      <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+      speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+      <div slot="container-start" class="parallax-bg" data-swiper-parallax="-23%"></div>
+      <swiper-slide>
+        <div class="title" data-swiper-parallax="-300">Summer Staples Kit. Yours free.</div>
+        <div class="subtitle" data-swiper-parallax="-200">
+          All About Clean™ Liquid Facial Soap</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            What's in your 5-piece kit.
+7 Day Scrub Cream, 30ml
+Dramatically Different Moisturizing Lotion+™, 30ml
+Take The Day Off™ Makeup Remover, 50ml
+Clinique Pop™ Lip in Plum Pop
+High Impact™ Mascara in Black
+Giftable Box
+          </p>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="title" data-swiper-parallax="-300">Enjoy up to 6 free samples with purchase.</div>
+        <div class="subtitle" data-swiper-parallax="-200">For a limited time, enjoy 25% off cleansers, exfoliators, and makeup removers.</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            25% off cleansers + exfoliators.*
+            CLEAN START EVENT
+            25% off cleansers
+            + exfoliators.*
+            Fresh summer skin starts here.
+            Stock up and save on our cleansing heroes.
+            Includes makeup removers, too.
+          </p>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="title" data-swiper-parallax="-300">Sunny Sensations Set</div>
+        <div class="subtitle" data-swiper-parallax="-200">Fresh summer skin starts here.
+          Stock up and save on our cleansing heroes.
+          Includes makeup removers, too.</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            High Impact™ Waterproof Mascara
+Cheek Pop™ Highlighter in Celebration Pop
+Clinique Pop™ Lip Gloss in Air Kiss
+7 Day Scrub Cream, 100ml
+Moisture Surge™ 100H, 50ml
+Hot Pink Train Case
+          </p>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    </section>
     <section id="services">
       <div class="container">
         <h1>Great perks every day.</h1>
@@ -455,6 +560,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
