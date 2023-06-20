@@ -38,11 +38,6 @@ header{
                         button{
                             border: none;
                         }
-                        .inc , .dec{
-                            font-size: 20px;
-                            padding: 5px 10px;
-                            border-radius: 10px;
-                        }
                     }
                 }
             }
@@ -53,7 +48,7 @@ header{
             width: 100%;
             @include flexbox;
             justify-content: space-between;
-            a{
+            .orderNow{
                 padding: 10px 20px;
                 color: white;
                 background-color: #6ebe7e;

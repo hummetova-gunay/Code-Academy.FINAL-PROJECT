@@ -2043,11 +2043,6 @@ header .container nav ul li .log-out {
 #offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions button {
   border: none;
 }
-#offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions .inc, #offcanvas-basket .offcanvas-body .all-basket-items .basket-item .basket-info .basket-actions .dec {
-  font-size: 20px;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
 #offcanvas-basket .offcanvas-body .offcanvas-footer {
   border-top: 1px solid grey;
   padding: 20px;
@@ -2057,7 +2052,7 @@ header .container nav ul li .log-out {
   align-items: center;
   justify-content: space-between;
 }
-#offcanvas-basket .offcanvas-body .offcanvas-footer a {
+#offcanvas-basket .offcanvas-body .offcanvas-footer .orderNow {
   padding: 10px 20px;
   color: white;
   background-color: #6ebe7e;

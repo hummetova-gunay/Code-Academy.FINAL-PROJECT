@@ -32,35 +32,36 @@ function fillCalendar(modalId) {
           for (let i = 0; i < selectedDay.AM.length; i++) {
             const selectTime = document.createElement("button");
             selectTime.classList.add("btn");
+            selectTime.addEventListener('click', function(){
+              alert('See you soon')
+            })
             selectTime.textContent = selectedDay.AM[i];
             amTime.appendChild(selectTime);
           }
         } else {
           amTime.innerHTML = "No AM Time";
         }
-
         if (selectedDay.PM) {
           for (let i = 0; i < selectedDay.PM.length; i++) {
             const selectTime = document.createElement("button");
             selectTime.classList.add("btn");
+            selectTime.addEventListener('click', function(){
+              alert('See you soon')
+            })
             selectTime.textContent = selectedDay.PM[i];
             pmTime.appendChild(selectTime);
           }
         } else {
           pmTime.innerHTML = "No PM Time";
         }
-
-        // availableDate.textContent = selectedDay.date;
         const currentDate = new Date();
         let clickedDay=new Date(currentDate.getFullYear(), currentDate.getMonth(), button.textContent )
-                    // console.log(clickedDay);
                     const formattedDate = clickedDay.toLocaleString('en-US', {
                         weekday: 'short',
                         month: 'short', 
                         day: 'numeric', 
                         year: 'numeric' 
                       });
-                    //   console.log(formattedDate);
                     availableDate.innerHTML=formattedDate;
       }
     });
