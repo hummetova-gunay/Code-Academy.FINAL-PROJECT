@@ -7,7 +7,6 @@ const BASE_URL = "http://localhost:3000/allProducts";
  let  editName = document.querySelector('#editName')
  let  editDesc = document.querySelector('#editDesc')
  let  editPrice = document.querySelector('#editPrice')
- let  editStock = document.querySelector('#editStock')
  let  editCat = document.querySelector('#editCat')
  let  editConcern = document.querySelector('#editConcern')
  let  editSkinType = document.querySelector('#editSkinType')
@@ -22,7 +21,6 @@ if(id){
         editName.value=data.productName
         editDesc.value=data.productDescription
         editPrice.value=data.productPrice
-        editStock.value=data.productAmount
         editCat.value=data.productCategory
         editConcern.value=data.skinConcern
         editSkinType.value=data.skinType
@@ -36,10 +34,9 @@ if(id){
     const editedProduct={
         productName:editName.value,
         productDescription:editDesc.value,
-        productPrice:editPrice.value,
+        productPrice:+editPrice.value,
         productImageMain:editImg.value.split("\\")[2],
         productImageModal:editImgModal.value.split("\\")[2],
-        productAmount:editStock.value,
         productCategory:editCat.value,
         skinConcern:editConcern.value,
         skinType:editSkinType.value,
@@ -54,10 +51,9 @@ async function createProd(){
     const newProduct={
         productName:editName.value,
         productDescription:editDesc.value,
-        productPrice:editPrice.value,
+        productPrice:+editPrice.value,
         productImageMain:editImg.value.split("\\")[2],
         productImageModal:editImgModal.value.split("\\")[2],
-        productAmount:editStock.value,
         productCategory:editCat.value,
         skinConcern:editConcern.value,
         skinType:editSkinType.value,

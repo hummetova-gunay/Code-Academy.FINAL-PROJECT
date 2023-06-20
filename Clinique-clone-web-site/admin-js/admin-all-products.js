@@ -14,7 +14,6 @@ function fillTable(arr) {
         <td>${el.productName}</td>
         <td>${el.productDescription}</td>
         <td>${el.productPrice}</td>
-        <td>${el.productAmount}</td>
         <td>${el.productCategory}</td>
         <td>${el.skinConcern}</td>
         <td>${el.skinType}</td>

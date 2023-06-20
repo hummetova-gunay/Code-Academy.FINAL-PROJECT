@@ -125,11 +125,25 @@ function getStars(arr){
     ratedStars.innerHTML="No rating yet"
   }
 }
+let comment=document.querySelector(".comment")
+function getComments(arr){
+  if(arr.length){
+    arr.forEach(element => {
+      comment.innerHTML+=`
+      <p>${element}</p>
+      `
+    });
+  }else{
+    comment.innerHTML="No comments yet"
+  }
+}
+
 async function getReviews(){
   const res= await axios(`${BASE_URL}/${id}`)
   const data = await res.data
   getRating(data.productRating)
   getStars(data.productRating)
+  getComments(data.userReview)
   if(data.productRating.length){
     totalReview.innerHTML=`${data.productRating.reduce((acc, curr)=>acc+curr,0)/data.productRating.length}/5`
     reviewAmount.innerHTML=`${data.productRating.length} reviews`

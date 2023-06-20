@@ -37,16 +37,9 @@
                                 <a href="./admin.html" class="btn">Home</a>
                                 <a href="./admin-all-products.html" class="btn">All products</a>
                                 <a href="./edit-add-products-admin.html" class="btn">Edit products</a>
-                                <a href="./admin-bestseller" class="btn">See Bestsellers</a>
                                 <a href="./index.html" class="btn">Clinique</a>
                             </div>
                         </div>
-                      </div>
-                      <div class="container-input">
-                        <input type="text" placeholder="Search" name="text" class="input">
-                        <svg fill="#fff" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-                      </svg>
                       </div>
                       
                 </div>
@@ -62,36 +55,22 @@
         <div class="container">
             <div class="progress-part">
                 <div class="single-progress">
-                   <div class="progress-text">
                     <h2>Orders:</h2>
-                    <h2>10000</h2>
-                   </div>
-                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 25%"></div>
-                      </div>
+                    <h2 class="allOrders"></h2>
                 </div>
                 <div class="single-progress">
-                   <div class="progress-text">
-                    <h2>progress-text:</h2>
-                    <h2>10000</h2>
-                   </div>
-                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 25%"></div>
-                      </div>
+                    <h2>Total Revenue</h2>
+                    <h2 class="total-revenue"></h2>
                 </div>
                 <div class="single-progress">
-                   <div class="progress-text">
-                    <h2>Yearly Sales:</h2>
-                    <h2>10000</h2>
-                   </div>
-                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 25%"></div>
-                      </div>
+                    <h2>Customers</h2>
+                    <h2 class="all-customers"></h2>
                 </div>
-
             </div>
-            <canvas id="productChart"></canvas>
-            <canvas id="visitChart"></canvas>
+            <div class="canvas">
+                <canvas id="productChart"></canvas>
+                <canvas id="visitChart"></canvas>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

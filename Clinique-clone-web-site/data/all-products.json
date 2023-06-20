@@ -5,10 +5,9 @@
       "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
       "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
       "productPrice": 40,
-      "productImageMain": "dramatically-diff.png",
-      "productImageModal": "ingridients-lotion.jpg",
+      "productImageMain": "cl_sku_V4C001_600x750_0.png",
+      "productImageModal": "hydrate-pump.jpg",
       "productRating": [],
-      "productAmount": 6,
       "purchaseAmount": 1,
       "productCategory": "Skincare",
       "skinConcern": "Lines and Wrinkles",
@@ -26,7 +25,6 @@
       "productImageMain": "lipgloss-katespande.png",
       "productImageModal": "lip-glosses-for-modal.jpeg",
       "productRating": [],
-      "productAmount": 6,
       "purchaseAmount": 3,
       "productCategory": "Makeup",
       "skinConcern": "Dehydration",
@@ -49,7 +47,6 @@
         1,
         5
       ],
-      "productAmount": 6,
       "purchaseAmount": 1,
       "productCategory": "Skincare",
       "skinConcern": "Lines and Wrinkles",
@@ -70,7 +67,6 @@
       "productImageMain": "all-about-clean.png",
       "productImageModal": "clean-refresh.jpeg",
       "productRating": [],
-      "productAmount": 6,
       "purchaseAmount": 0,
       "productCategory": "Skincare",
       "skinConcern": "Fatigue",
@@ -87,7 +83,6 @@
       "productImageMain": "allure.png",
       "productImageModal": "arms.jpg",
       "productRating": [],
-      "productAmount": 6,
       "purchaseAmount": 0,
       "productCategory": "Makeup",
       "skinConcern": "Lines and Wrinkles",
@@ -97,6 +92,19 @@
       "userReview": [
         ""
       ]
+    },
+    {
+      "productName": "Something",
+      "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
+      "productPrice": 30,
+      "productImageMain": "cl_sku_V70T01_600x750_0.png",
+      "productImageModal": "dissolve.jpg",
+      "productCategory": "Skincare",
+      "purchaseAmount": 0,
+      "skinConcern": "Lines and Wrinkles",
+      "skinType": "Dry",
+      "productForm": "Cream",
+      "id": 6
     }
   ]
 }

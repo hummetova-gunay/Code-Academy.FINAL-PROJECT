@@ -2273,11 +2273,15 @@ header .container nav ul li .log-out {
   border-top: 1px solid black;
   padding: 100px 0;
 }
-#review-section .container .reviews .single-review {
+#review-section .container .reviews .comment {
+  border-top: 1px solid black;
+  padding: 50px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+}
+#review-section .container .reviews .comment p {
+  font-size: 22px;
 }
 
 footer {
@@ -2423,8 +2427,12 @@ footer .container .headings .heading ul li a:hover {
 }
 #admin-home .container .progress-part .single-progress {
   width: 400px;
+  height: 150px;
   margin: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #admin-home .container .progress-part .single-progress .progress-text {
   display: flex;
@@ -2438,8 +2446,15 @@ footer .container .headings .heading ul li a:hover {
 #admin-home .container .progress-part .single-progress .progress .progress-bar {
   background-color: #24C79F;
 }
-#admin-home .container canvas {
-  max-width: 800px;
+#admin-home .container .canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+#admin-home .container .canvas canvas {
+  width: 800px;
   margin: 0 auto;
 }
 

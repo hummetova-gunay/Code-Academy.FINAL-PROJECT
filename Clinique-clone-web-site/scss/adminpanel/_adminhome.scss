@@ -11,8 +11,12 @@
             background-color: #152036;
             .single-progress{
                width: 400px;
+               height: 150px;
                margin: 20px ;
                padding: 20px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
                .progress-text{
                 @include flexbox;
                 gap: 20px;
@@ -25,9 +29,14 @@
                 }
             }
         }
-        canvas {
-            max-width: 800px;
+        .canvas{
+            @include flexbox;
+            flex-direction: column;
+            gap: 100px;
+           canvas{
+            width: 800px;
             margin: 0 auto;
+           }
         }
     }
 }

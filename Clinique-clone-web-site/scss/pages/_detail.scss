@@ -72,9 +72,15 @@
         .reviews{
             border-top: 1px solid black;
             padding: 100px 0;
-            .single-review{
-                @include flexbox;
-                justify-content: space-between;  
+            .comment{
+                border-top: 1px solid black;
+                padding: 50px 0;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column; 
+                p{
+                    font-size: 22px;
+                } 
             }
         }
     }

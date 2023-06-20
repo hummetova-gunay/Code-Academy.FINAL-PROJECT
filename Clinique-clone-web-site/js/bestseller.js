@@ -70,6 +70,7 @@ function fillProductData(arr){
 <div class="rating-add-bag">
 <div class="add-bag">
 <button onclick="addBag(${el.id})">Add to bag</button>
+<button onclick="detail(${el.id})">See detail</button>
 </div>
 </div>
 </div>

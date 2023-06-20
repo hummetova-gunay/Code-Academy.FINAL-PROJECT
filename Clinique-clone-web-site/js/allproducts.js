@@ -70,6 +70,7 @@ function fillProductData(arr){
 <p>$${el.productPrice}</p>
 <div class="rating-add-bag">
 <div class="add-bag">
+<button onclick="detail(${el.id})">See detail</button>
 <button onclick="addBag(${el.id})">Add to bag</button>
 </div>
 </div>
@@ -88,7 +89,7 @@ async function getProdData(){
 getProdData()
 
 /////////////////////////////////////////////////
-let CUSTOMER_API="http://localhost:8000/customers"
+const CUSTOMER_API="http://localhost:8000/customers"
 
 async function addBag(id) {
   const res = await axios(BASE_URL);
