@@ -67,24 +67,6 @@
           "skinType": "Very Dry to Dry",
           "productForm": "Cream",
           "userReview": []
-        },
-        {
-          "id": 4,
-          "productName": "All About Clean™ Liquid Facial Soap",
-          "productDescription": "CLINIQUE.COM EXCLUSIVE. Buy one, get one free. Our #1 makeup remover in a silky balm formula gently dissolves makeup",
-          "productPrice": 38,
-          "productImageMain": "all-about-clean.png",
-          "productImageModal": "clean-refresh.jpeg",
-          "productRating": [],
-          "productAmount": 6,
-          "purchaseAmount": 0,
-          "productCategory": "Skincare",
-          "skinConcern": "Fatigue",
-          "skinType": "Dry Combination",
-          "productForm": "Liquid",
-          "userReview": [
-            ""
-          ]
         }
       ],
       "searchings": [],

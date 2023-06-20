@@ -28,8 +28,11 @@ if(customer){
 
 const BASE_URL="http://localhost:3000/allProducts"
 let allProducts=document.querySelector('.see-all-products')
+let prodAmount=document.querySelector('.amount')
+
 function fillProductData(arr){
     allProducts.innerHTML=''
+    prodAmount.innerHTML=arr.length
     arr.forEach(el => {
       let singleProduct=document.createElement('div')
       singleProduct.classList.add('single-product')
@@ -103,10 +106,10 @@ async function addBag(id) {
   window.location.href="user-account.html"
 }
 
-
 // Filter
 let filterByCategories=document.querySelectorAll('.filter-category')
 function filterCategory(arr){
+  prodAmount.innerHTML=arr.length
   filterByCategories.forEach(item=>{
     item.addEventListener("click", function(){
       let filteredData=arr.filter(el=>el.productCategory===item.innerHTML)
@@ -117,6 +120,7 @@ function filterCategory(arr){
 let filterConcern=document.querySelectorAll('.filter-concern')
 function byConcern(arr){
   filterConcern.forEach(item=>{
+    prodAmount.innerHTML=arr.length
     item.addEventListener("click", function(){
       let filteredData=arr.filter(el=>el.skinConcern===item.innerHTML)
       fillProductData(filteredData)
@@ -126,6 +130,7 @@ function byConcern(arr){
 let filterForm=document.querySelectorAll('.filter-form')
 function byForm(arr){
   filterForm.forEach(item=>{
+    prodAmount.innerHTML=arr.length
     item.addEventListener("click", function(){
       let filteredData=arr.filter(el=>el.productForm===item.innerHTML)
       fillProductData(filteredData)
@@ -134,9 +139,10 @@ function byForm(arr){
 }
 let filterType=document.querySelectorAll('.filter-type')
 function byType(arr){
-  filterForm.forEach(item=>{
+  filterType.forEach(item=>{
+    prodAmount.innerHTML=arr.length
     item.addEventListener("click", function(){
-      let filteredData=arr.filter(el=>el.productForm===item.innerHTML)
+      let filteredData=arr.filter(el=>el.skinType===item.innerHTML)
       fillProductData(filteredData)
     })
   })
@@ -150,3 +156,7 @@ async function fillFilter(){
   byType(data)
 }
 fillFilter()
+
+
+// search
+

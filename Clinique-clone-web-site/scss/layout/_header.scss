@@ -9,7 +9,6 @@ header{
         h1 {
             a{
                 color:black;
-                // margin-right: 150px;
             }
         }
         nav{
@@ -41,6 +40,25 @@ header{
             }
             .fa-bars{
                 display: none;
+            }
+        }
+        .dropdown-center{
+            .search-menu{
+                min-width: 300px;
+                padding: 10px;
+                input{
+                    width: 100%;
+                    padding: 10px;
+                }
+                .btn{
+                    width: 100%;
+                    text-align: start;
+                }
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }

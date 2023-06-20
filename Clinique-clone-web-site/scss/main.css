@@ -355,6 +355,23 @@ header .header .icons i {
 header .header .icons .fa-bars {
   display: none;
 }
+header .header .dropdown-center .search-menu {
+  min-width: 300px;
+  padding: 10px;
+}
+header .header .dropdown-center .search-menu input {
+  width: 100%;
+  padding: 10px;
+}
+header .header .dropdown-center .search-menu .btn {
+  width: 100%;
+  text-align: start;
+}
+header .header .dropdown-center .search-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .mobile-header {
   display: none;
 }
