@@ -52,6 +52,7 @@ function fillProductData(arr){
       <p>${el.productDescription}</p>
       <div class="price">
         <h3>$${el.productPrice}.00</h3>
+        <button onclick="detail(${el.id})">See detail</button>
         <button onclick="addBag(${el.id})">Add to bag</button>
       </div>
     </div>
@@ -186,3 +187,9 @@ async function fillFilter(){
   searchProd(data)
 }
 fillFilter()
+
+
+
+function detail(id){
+  window.location.href=`detail.html?id=${id}`
+}
