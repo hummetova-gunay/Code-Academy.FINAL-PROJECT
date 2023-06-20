@@ -9,6 +9,7 @@ header{
         h1 {
             a{
                 color:black;
+                // margin-right: 150px;
             }
         }
         nav{
@@ -31,36 +32,15 @@ header{
                 }
             }
         }
-        .dropdown-center{
+        .icons{
             display: flex;
-            justify-content: center;
-            align-items: center;
             gap: 20px;
-            .dropdown-toggle{
-                padding: 0;
-                border: none;
-            }
             i{
                 color: black;
                 font-size: 24px;
             }
             .fa-bars{
                 display: none;
-            }
-            .search-menu{
-                min-width: 300px;
-                padding: 10px;
-                input{
-                    width: 100%;
-                    padding: 10px;
-                }
-                .suggestions{
-                    width: 100%;
-                    text-align: start;
-                    p{
-                        font-size: 16px;
-                    }
-                }
             }
         }
     }
@@ -73,7 +53,7 @@ header{
             nav{
                 display:none;
             }
-            .dropdown-center{
+            .icons{
                 .fa-bars{
                     display: block;
                 }

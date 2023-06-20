@@ -106,7 +106,7 @@ async function addBag(id) {
   window.location.href="user-account.html"
 }
 
-// Filter
+///////////////////// Filtering/////////////////////
 let filterByCategories=document.querySelectorAll('.filter-category')
 function filterCategory(arr){
   prodAmount.innerHTML=arr.length
@@ -147,29 +147,17 @@ function byType(arr){
     })
   })
 }
-async function fillFilter(){
-  const res= await axios(BASE_URL)
-  const data =res.data
-  byConcern(data)
-  filterCategory(data)
-  byForm(data)
-  byType(data)
-}
-fillFilter()
 
 
-////////////////////////// search /////////////////////////////
+
+////////////////////////// searching /////////////////////////////
 
 let searchInput=document.querySelector('.searchInput')
 
 let suggestionBtn=document.querySelector('.suggestions')
-let prevSearchings=document.querySelector('.previous-searchings')
-
-// console.log(prevSearchings.innerText);
 
 function searchProd(arr){
   searchInput.addEventListener('input', function(e){
-    // e.target.value?suggestionBtn.innerHTML="":""
     let searchedData=arr.filter(item=>item.productName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
     suggestionBtn.innerHTML=""
     searchedData.forEach(item=>{
@@ -179,9 +167,15 @@ function searchProd(arr){
       <p><i class="fa-solid fa-magnifying-glass"></i>${item.productName}</p>
       </button>
       `
+      suggestionBtn.addEventListener('click', function(){
+        fillProductData(searchedData)
+      })
     })
   })
 }
+
+
+
 async function fillFilter(){
   const res= await axios(BASE_URL)
   const data =res.data

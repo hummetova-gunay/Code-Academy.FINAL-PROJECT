@@ -11,587 +11,299 @@
     <title>Bestsellers</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header">
-                <h1><a href="index.html">CLINIQUE</a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="./bestseller.html">BestSellers</a></li>
-                        <li><a href="./allproducts.html">All products</a></li>
-                        <li><a href="./skinservices.html">Skin Services</a></li>
-                        <li><a href="">Travel Sizes</a></li>
-                        <li><a href="./singin-login.html" class="signIn">Sign in</a></li>
-                    </ul>
-                </nav>
-                <div class="icons">
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="./user-account.html" class="goAccount"><i class="fa-regular fa-user"></i></a>
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-            <div class="mobile-header">
-               <div class="mobile-nav">
-                <h1><a href="index.html">CLINIQUE</a></h1>
-                <i class="fa-solid fa-x"></i>
-               </div>
-            <nav>
-                <ul>
-                    <li><a href="./bestseller.html">BestSellers</a></li>
-                    <li><a href="./allproducts.html">All products</a></li>
-                    <li><a href="./skinservices.html">Skin Services</a></li>
-                    <li><a href="">Travel Sizes</a></li>
-                    <li><a href="./singin-login.html" class="signIn">Sign in</a></li>
-                    <li><a href="./user-account.html" class="goAccount">My Account</a></li>
-                </ul>
-            </nav>
-            </div>
-        </div>
-    </header>
-    <hr>
-    <section id="all-bestsellers">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Bestsellers</h1>
-                <p>Our most loved, from cult classics to innovative formulas and cutting-edge de-agers.</p>
-            </div>
-            <div class="section-body">
-              <div class="responsive-heading-of-section">      
-                <div class="mobile-filter">
-                  <button class="btn mobile-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-category" aria-expanded="false" aria-controls="collapseExample1">Filter </button>
-                  <div class="collapse mobile-filter-body " id="mobile-category">                       
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#byCategory" aria-expanded="false" aria-controls="collapseExample">Category </button>
-                    <div class="collapse" id="byCategory">
-                            <button class="btn">Skincare</button>
-                            <button class="btn">Makeup</button>
-                            <button class="btn">Fragrance</button>
-                            <button class="btn">Men</button>
-                    </div>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skinconcern" aria-expanded="false" aria-controls="collapseExample">Skin concern </button>
-                    <div class="collapse" id="skinconcern">
-                        <div class="filter-by">
-                            <button class="btn">Imperfections or Acne</button>
-                            <button class="btn">Dehydration</button>
-                            <button class="btn">Fatigue</button>
-                            <button class="btn"> Lines & wrinkles</button>
-                        </div>
-                    </div>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#select-form" aria-expanded="false" aria-controls="collapseExample">Form </button>
-                    <div class="collapse" id="select-form">
-                        <div class="filter-by">
-                            <button class="btn">Liquid</button>
-                            <button class="btn">Powder</button>
-                            <button class="btn">Cream</button>
-                            <button class="btn">Stick</button>
-                        </div>
-                    </div>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skintype" aria-expanded="false" aria-controls="collapseExample">Skin type </button>
-                    <div class="collapse" id="skintype">
-                        <div class="filter-by">
-                            <button class="btn">Very Dry to Dry</button>
-                            <button class="btn">Dry Combination</button>
-                            <button class="btn">Combination Oily</button>
-                            <button class="btn">Oily</button>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-                 <div class="dropdown">
-                  <button class="btn mobile-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Featured
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><button class="btn">Featured</button></li>
-                    <li><button class="btn">Price (high to low)</button></li>
-                    <li><button class="btn">Price (Low to high)</button></li>
-                    <li><button class="btn">Top rated</button></li>
+  <header>
+      <div class="container">
+          <div class="header">
+              <h1><a href="index.html">CLINIQUE</a></h1>
+              <nav>
+                  <ul>
+                      <li><a href="./bestseller.html">BestSellers</a></li>
+                      <li><a href="./allproducts.html">All products</a></li>
+                      <li><a href="./skinservices.html">Skin Services</a></li>
+                      <li><a href="">Travel Sizes</a></li>
+                      <li><a href="./singin-login.html" class="signIn">Sign in</a></li>
                   </ul>
+              </nav>
+              <div class="dropdown-center">
+                <a href="./user-account.html" class="goAccount"><i class="fa-regular fa-user"></i></a>
+                <i class="fa-solid fa-bars"></i>
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <ul class="dropdown-menu search-menu">
+                  <input type="search" placeholder="Search for products" class="searchInput">
+                  <div class="btn suggestions"></div>
+                </ul>
               </div>
-              </div>
-                <div class="filter-part">
-                    <div class="filter-head">
-                        <p>Filter</p>
-                        <p><span class="amount">29</span> products</p>
-                    </div>
-                    <div class="filter-body">                       
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#byCategory" aria-expanded="false" aria-controls="collapseExample">Category </button>
-                            <div class="collapse" id="byCategory">
-                                    <button class="btn">SkinCare <div class="products">17</div></button>
-                                    <button class="btn">MakeUp <div class="products">8</div></button>
-                                    <button class="btn">Fragrance<div class="products">2</div></button>
-                                    <button class="btn">Men<div class="products">1</div></button>
-                            </div>
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skinconcern" aria-expanded="false" aria-controls="collapseExample">Skin concern </button>
-                            <div class="collapse" id="skinconcern">
-                                <div class="filter-by">
-                                    <button class="btn">Imperfections or Acne<div class="products">2</div></button>
-                                    <button class="btn">Dehydration<div class="products">11</div></button>
-                                    <button class="btn">Fatigue<div class="products">10</div></button>
-                                    <button class="btn"> Lines & Wrinkles<div class="products">10</div></button>
-                                </div>
-                            </div>
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#select-form" aria-expanded="false" aria-controls="collapseExample">Form </button>
-                            <div class="collapse" id="select-form">
-                                <div class="filter-by">
-                                    <button class="btn">Liquid<div class="products"></div></button>
-                                    <button class="btn">Powder<div class="products"></div></button>
-                                    <button class="btn">Cream<div class="products"></div></button>
-                                    <button class="btn">Stick<div class="products"></div></button>
-                                </div>
-                            </div>
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skintype" aria-expanded="false" aria-controls="collapseExample">Skin type </button>
-                            <div class="collapse" id="skintype">
-                                <div class="filter-by">
-                                    <button class="btn">Very Dry to Dry<div class="products"></div></button>
-                                    <button class="btn">Dry Combination<div class="products"></div></button>
-                                    <button class="btn">Combination Oily<div class="products"></div></button>
-                                    <button class="btn">Oily<div class="products"></div></button>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="bestsellers-part">
-                    <div class="featured">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Featured
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><button class="btn">Featured</button></li>
-                              <li><button class="btn">Price (high to low)</button></li>
-                              <li><button class="btn">Price (Low to high)</button></li>
-                              <li><button class="btn">Top rated</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="all-bestseller-products">
-                            <div class="single-bestseller">
-                              <img src="./images/dramatically-diff.png" alt="">     
-                  <button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#dramatically" id="modal-btn">Buy now</button>
-                  <div class="modal fade" id="dramatically" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="./images/ingridients-lotion.jpg" alt="">
-                          <div class="modal-text">
-                            <h1>LIMITED-EDITION DUO Take The Day Off™ Cleansing Balm</h1>
-                            <p>CLINIQUE.COM EXCLUSIVE. Buy one, get one free. Our #1 makeup remover in a silky balm formula gently dissolves makeup</p>
-                            <div class="rating">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <span class="how-many">(3002)</span>
-                            </div>
-                            <div class="quantity">
-                              <h3>Quantity</h3>
-                              <div class="inc-dec">
-                                <button>-</button>
-                                <span id="amount">1</span>
-                                <button>+</button>
-                              </div>
-                            </div>
-                            <div class="price">
-                              <h3>$38.00</h3>
-                              <button>Add to bag</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mobile-txt">
-                    <p>LIMITED-EDITION DUO Take The Day Off™ Cleansing Balm</p>
-                    <p>$38.00</p>
-                  <div class="rating-add-bag">
-                    <div class="rating">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <span class="how-many">(1471)</span>
-                    </div>
-                    <div class="add-bag">
-                      <button>Add to bag</button>
-                    </div>
-                  </div>
-                  </div>
-                              </div>
-                            <div class="single-bestseller">
-                              <img src="./images/lipgloss-katespande.png" alt="">     
-                  <button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#lipgloss" id="modal-btn">Buy now</button>
-                  <div class="modal fade" id="lipgloss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="./images/lip-glosses-for-modal.jpeg" alt="">
-                          <div class="modal-text">
-                            <h1>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</h1>
-                            <p>A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York</p>
-                            <div class="rating">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <span class="how-many">(3002)</span>
-                            </div>
-                            <div class="quantity">
-                              <h3>Quantity</h3>
-                              <div class="inc-dec">
-                                <button>-</button>
-                                <span id="amount">1</span>
-                                <button>+</button>
-                              </div>
-                            </div>
-                            <div class="price">
-                              <h3>$38.00</h3>
-                              <button>Add to bag</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mobile-txt">
-                    <p>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</p>
-                    <p>$38.00</p>
-                  <div class="rating-add-bag">
-                    <div class="rating">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <span class="how-many">(1471)</span>
-                    </div>
-                    <div class="add-bag">
-                      <button>Add to bag</button>
-                    </div>
-                  </div>
-                  </div>
-                              </div>
-                            <div class="single-bestseller">
-                              <img src="./images/all-about-clean.png" alt="">     
-                  <button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#allaboutclean" id="modal-btn">Buy now</button>
-                  <div class="modal fade" id="allaboutclean" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="./images/clean-refresh.jpeg" alt="">
-                          <div class="modal-text">
-                            <h1>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</h1>
-                            <p>A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York</p>
-                            <div class="rating">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <span class="how-many">(3002)</span>
-                            </div>
-                            <div class="quantity">
-                              <h3>Quantity</h3>
-                              <div class="inc-dec">
-                                <button>-</button>
-                                <span id="amount">1</span>
-                                <button>+</button>
-                              </div>
-                            </div>
-                            <div class="price">
-                              <h3>$38.00</h3>
-                              <button>Add to bag</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mobile-txt">
-                    <p>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</p>
-                    <p>$38.00</p>
-                  <div class="rating-add-bag">
-                    <div class="rating">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <span class="how-many">(1471)</span>
-                    </div>
-                    <div class="add-bag">
-                      <button>Add to bag</button>
-                    </div>
-                  </div>
-                  </div>
-                              </div>
-                            <div class="single-bestseller">
-                              <img src="./images/lipgloss-katespande.png" alt="">     
-                  <button type="button" class="btn styled-btn" data-bs-toggle="modal" data-bs-target="#lipgloss" id="modal-btn">Buy now</button>
-                  <div class="modal fade" id="lipgloss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="./images/lip-glosses-for-modal.jpeg" alt="">
-                          <div class="modal-text">
-                            <h1>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</h1>
-                            <p>A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York</p>
-                            <div class="rating">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <i class="fa-solid fa-star rated-star"></i>
-                              <span class="how-many">(3002)</span>
-                            </div>
-                            <div class="quantity">
-                              <h3>Quantity</h3>
-                              <div class="inc-dec">
-                                <button>-</button>
-                                <span id="amount">1</span>
-                                <button>+</button>
-                              </div>
-                            </div>
-                            <div class="price">
-                              <h3>$38.00</h3>
-                              <button>Add to bag</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mobile-txt">
-                    <p>Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss</p>
-                    <p>$38.00</p>
-                  <div class="rating-add-bag">
-                    <div class="rating">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <i class="fa-solid fa-star rated-star"></i>
-                      <span class="how-many">(1471)</span>
-                    </div>
-                    <div class="add-bag">
-                      <button>Add to bag</button>
-                    </div>
-                  </div>
-                  </div>
-                              </div>
-                    </div>
-                </div>
+          </div>
+          <div class="mobile-header">
+             <div class="mobile-nav">
+              <h1><a href="index.html">CLINIQUE</a></h1>
+              <i class="fa-solid fa-x"></i>
+             </div>
+             <div class="dropdown-center">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <ul class="dropdown-menu search-menu">
+                <input type="search" placeholder="Search for products" id="searchInput">
+                <li>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <button class="btn suggestions">Lip GLoss</button>
+                </li>
+              </ul>
             </div>
-        </div>
-    </section>
-    <section id="afterpay">
-      <div class="container">
-        <div class="section-body">
-          <img src="/images/afterpay-mb.jpg" class="mobile-img" alt="">
-          <div class="text">
-            <h1>Buy now. Pay later.</h1>
-            <img src="./images/Afterpay_Logo_Black@2x.png" alt="">
-            <p>Shop your favorites today. Pay later in four interest-free installments. Available on orders over $35.</p>
-            <button>Learn more</button>
+          <nav>
+              <ul>
+                  <li><a href="./bestseller.html">BestSellers</a></li>
+                  <li><a href="./allproducts.html">All products</a></li>
+                  <li><a href="./skinservices.html">Skin Services</a></li>
+                  <li><a href="">Travel Sizes</a></li>
+                  <li><a href="./singin-login.html" class="signIn">Sign in</a></li>
+                  <li><a href="./user-account.html" class="goAccount">My Account</a></li>
+              </ul>
+          </nav>
           </div>
+      </div>
+  </header>
+  <hr>
+  <section id="all-products">
+      <div class="container">
+          <div class="section-heading">
+              <h1>Our Bestsellers</h1>
+          </div>
+          <div class="section-body">
+            <div class="responsive-heading-of-section">      
+              <div class="mobile-filter">
+                <button class="btn mobile-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-category" aria-expanded="false" aria-controls="collapseExample1">Filter </button>
+                <div class="collapse mobile-filter-body " id="mobile-category">                       
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#byCategory" aria-expanded="false" aria-controls="collapseExample">Category </button>
+                  <div class="collapse" id="byCategory">
+                          <button class="btn filter-category">SkinCare</button>
+                          <button class="btn filter-category">MakeUp</button>
+                          <button class="btn filter-category">Fragrance</button>
+                          <button class="btn filter-category">Men</button>
+                  </div>
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skinconcern" aria-expanded="false" aria-controls="collapseExample">Skin concern </button>
+                  <div class="collapse" id="skinconcern">
+                          <button class="btn filter-concern">Imperfections or Acne</button>
+                          <button class="btn filter-concern">Dehydration</button>
+                          <button class="btn filter-concern">Fatigue</button>
+                          <button class="btn filter-concern">Lines & Wrinkles</button>
+                  </div>
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#select-form" aria-expanded="false" aria-controls="collapseExample">Form </button>
+                  <div class="collapse" id="select-form">
+                      <div class="filter-by">
+                          <button class="btn filter-form">Liquid</button>
+                          <button class="btn filter-form">Powder</button>
+                          <button class="btn filter-form">Cream</button>
+                          <button class="btn filter-form">Stick</button>
+                      </div>
+                  </div>
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skintype" aria-expanded="false" aria-controls="collapseExample">Skin type </button>
+                  <div class="collapse" id="skintype">
+                      <div class="filter-by">
+                          <button class="btn filter-type">Very Dry to Dry</button>
+                          <button class="btn filter-type">Dry Combination</button>
+                          <button class="btn filter-type">Combination Oily</button>
+                          <button class="btn filter-type">Oily</button>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+              <div class="filter-part">
+                  <div class="filter-head">
+                      <p>Filter</p>
+                      <p><span class="amount"></span> products</p>
+                  </div>
+                  <div class="filter-body">                       
+                          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#byCategory" aria-expanded="false" aria-controls="collapseExample">Category </button>
+                          <div class="collapse" id="byCategory">
+                                  <button class="btn filter-category">Skincare</button>
+                                  <button class="btn filter-category">Makeup</button>
+                                  <button class="btn filter-category">Fragrance</button>
+                                  <button class="btn filter-category">Men</button>
+                          </div>
+                          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skinconcern" aria-expanded="false" aria-controls="collapseExample">Skin concern </button>
+                          <div class="collapse" id="skinconcern">
+                              <div class="filter-by">
+                                  <button class="btn filter-concern">Imperfections or Acne</button>
+                                  <button class="btn filter-concern">Dehydration</button>
+                                  <button class="btn filter-concern">Fatigue</button>
+                                  <button class="btn filter-concern">Lines and Wrinkles</button>
+                              </div>
+                          </div>
+                          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#select-form" aria-expanded="false" aria-controls="collapseExample">Form </button>
+                          <div class="collapse" id="select-form">
+                              <div class="filter-by">
+                                  <button class="btn filter-form">Liquid</button>
+                                  <button class="btn filter-form">Powder</button>
+                                  <button class="btn filter-form">Cream</button>
+                                  <button class="btn filter-form">Stick</button>
+                              </div>
+                          </div>
+                          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#skintype" aria-expanded="false" aria-controls="collapseExample">Skin type </button>
+                          <div class="collapse" id="skintype">
+                              <div class="filter-by">
+                                  <button class="btn filter-type">Very Dry to Dry</button>
+                                  <button class="btn filter-type">Dry Combination</button>
+                                  <button class="btn filter-type">Combination Oily</button>
+                                  <button class="btn filter-type">Oily</button>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+              <div class="products-part">
+                  <div class="see-all-bestsellers">
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="afterpay">
+    <div class="container">
+      <div class="section-body">
+        <img src="/images/afterpay-mb.jpg" class="mobile-img" alt="">
+        <div class="text">
+          <h1>Buy now. Pay later.</h1>
+          <img src="./images/Afterpay_Logo_Black@2x.png" alt="">
+          <p>Shop your favorites today. Pay later in four interest-free installments. Available on orders over $35.</p>
+          <button>Learn more</button>
         </div>
       </div>
-    </section>
-    <section id="services">
-      <div class="container">
-        <h1>Great perks every day.</h1>
-        <div class="all-services">
-          <div class="single-service">
-            <img src="./images/icon1_fs@2x_v2.png" alt="">
-            <p>Free standard shipping on $50+ orders.*</p>
-            <a href="">Learn more </a>
-          </div>
-          <div class="single-service">
-            <img src="./images/icon2_samples@2x_v2.png" alt="">
-            <p>Free samples with every purchase.</p>
-            <a href="">Learn more </a>
-          </div>
-          <div class="single-service">
-            <img src="./images/icon3_afterpay@2x_v2.png" alt="">
-            <p>Pay later with Afterpay.</p>
-            <a href="">Learn more </a>
-          </div>
-          <div class="single-service">
-            <img src="./images/icon4_smart@2x_v2.png" alt="">
-            <p>Smart Rewards benefits.</p>
-            <a href="">Learn more </a>
-          </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <h1>Great perks every day.</h1>
+      <div class="all-services">
+        <div class="single-service">
+          <img src="./images/icon1_fs@2x_v2.png" alt="">
+          <p>Free standard shipping on $50+ orders.*</p>
+          <a href="">Learn more </a>
+        </div>
+        <div class="single-service">
+          <img src="./images/icon2_samples@2x_v2.png" alt="">
+          <p>Free samples with every purchase.</p>
+          <a href="">Learn more </a>
+        </div>
+        <div class="single-service">
+          <img src="./images/icon3_afterpay@2x_v2.png" alt="">
+          <p>Pay later with Afterpay.</p>
+          <a href="">Learn more </a>
+        </div>
+        <div class="single-service">
+          <img src="./images/icon4_smart@2x_v2.png" alt="">
+          <p>Smart Rewards benefits.</p>
+          <a href="">Learn more </a>
         </div>
       </div>
-    </section>
-    <section id="get-in-touch">
-      <div class="container">
-        <div class="section-body row">
-          <div class="deals col col-lg-6 col-12">
-            <h1>Get access to Clinique news and exclusive deals.</h1>
-            <p>Sign up to receive updates and special offers.</p>
-          </div>
-          <div class="subscription col col-lg-6 col-12">
-            <p>By entering my email and clicking “Submit”, I agree to hear from Clinique, and If I am a California resident, I agree to the Notice of Financial Incentive. To learn more, view our Privacy Policy.</p>
-            <div class="input-group">
-              <form action="">
-                <input type="email" autocomplete="off" class="input" id="enteremail" required="">
-                <label for="enteremail" class="user-label">Email address</label>
-                <input type="submit" class="submit">
-              </form>
-          </div>
-          </div>
+    </div>
+  </section>
+  <section id="get-in-touch">
+    <div class="container">
+      <div class="section-body row">
+        <div class="deals col col-lg-6 col-12">
+          <h1>Get access to Clinique news and exclusive deals.</h1>
+          <p>Sign up to receive updates and special offers.</p>
+        </div>
+        <div class="subscription col col-lg-6 col-12">
+          <p>By entering my email and clicking “Submit”, I agree to hear from Clinique, and If I am a California resident, I agree to the Notice of Financial Incentive. To learn more, view our Privacy Policy.</p>
+          <div class="input-group">
+            <form action="">
+              <input type="email" autocomplete="off" class="input" id="enteremail" required="">
+              <label for="enteremail" class="user-label">Email address</label>
+              <input type="submit" class="submit">
+            </form>
+        </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="headings">
-          <div class="heading">
-            <p>Shopping</p>
-            <ul>
-              <li>
-                <a href="">Offers</a>
-              </li>
-              <li>
-                <a href="">Smart Rewards Loyalty</a>
-              </li>
-              <li>
-                <a href="">eGift cards</a>
-              </li>
-              <li>
-                <a href="">Subscription&Save</a>
-              </li>
-              <li>
-                <a href="">After Pay</a>
-              </li>
-              <li>
-                <a href="">SmartGift</a>
-              </li>
-              <li>
-                <a href="">Store Location </a>
-              </li>
-            </ul>
-          </div>
-          <div class="heading">
-            <p>About Brand</p>
-            <ul>
-              <li><a href="">Clinique philosophy</a></li>
-              <li><a href="">Skin school blog</a></li>
-              <li><a href="">Ingridients</a></li>
-              <li><a href="">Skin services</a></li>
-              <li><a href="">INternatinal</a></li>
-              <li><a href="">Corporate info</a></li>
-              <li><a href="">Careers</a></li>
-            </ul>
-          </div>
-          <div class="heading">
-            <p>Need help?</p>
-            <ul>
-              <li><a href="">Track My Order</a></li>
-              <li><a href="">Returns & Exchanges</a></li>
-              <li><a href="">Shipping</a></li>
-              <li><a href="">Account Sign-Up / Login</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Live Chat with Customer Service</a></li>
-              <li><a href="">Live Chat with a Beauty Consultant</a></li>
-              <li><a href="tel:1-800-419-4041">1-800-419-4041</a></li>
-            </ul>
-          </div>
-          <div class="heading">
-            <p>Privacy Terms</p>
-            <ul>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Do Not Sell or Share My Personal Information / Targeted Ads</a></li>
-              <li><a href="">Terms & Conditions</a></li>
-              <li><a href="">Accessibility</a></li>
-              <li><a href="">Supplier Relations</a></li>
-              <li><a href="">Manage Cookies</a></li>
-            </ul>
-          </div>
-          <div class="heading">
-            <p>Social</p>
-            <ul>
-              <li><a href="https://www.facebook.com/cliniqueuk/">Facebook</a></li>
-              <li><a href="https://www.instagram.com/clinique/">Instagram</a></li>
-              <li><a href="https://www.pinterest.com/angiejo4654/clinique/">Pinterest</a></li>
-              <li><a href="https://www.tiktok.com/@cliniqueuk">TikTok</a></li>
-              <li><a href="https://twitter.com/Clinique/status/404731715954159616">Twitter</a></li>
-              <li><a href="https://www.youtube.com/channel/UC8MupHwlZULY0RH1BxNwKsg">Youtube</a></li>
-            </ul>
-          </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="headings">
+        <div class="heading">
+          <p>Shopping</p>
+          <ul>
+            <li>
+              <a href="">Offers</a>
+            </li>
+            <li>
+              <a href="">Smart Rewards Loyalty</a>
+            </li>
+            <li>
+              <a href="">eGift cards</a>
+            </li>
+            <li>
+              <a href="">Subscription&Save</a>
+            </li>
+            <li>
+              <a href="">After Pay</a>
+            </li>
+            <li>
+              <a href="">SmartGift</a>
+            </li>
+            <li>
+              <a href="">Store Location </a>
+            </li>
+          </ul>
+        </div>
+        <div class="heading">
+          <p>About Brand</p>
+          <ul>
+            <li><a href="">Clinique philosophy</a></li>
+            <li><a href="">Skin school blog</a></li>
+            <li><a href="">Ingridients</a></li>
+            <li><a href="">Skin services</a></li>
+            <li><a href="">INternatinal</a></li>
+            <li><a href="">Corporate info</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="heading">
+          <p>Need help?</p>
+          <ul>
+            <li><a href="">Track My Order</a></li>
+            <li><a href="">Returns & Exchanges</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Account Sign-Up / Login</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Live Chat with Customer Service</a></li>
+            <li><a href="">Live Chat with a Beauty Consultant</a></li>
+            <li><a href="tel:1-800-419-4041">1-800-419-4041</a></li>
+          </ul>
+        </div>
+        <div class="heading">
+          <p>Privacy Terms</p>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Do Not Sell or Share My Personal Information / Targeted Ads</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Accessibility</a></li>
+            <li><a href="">Supplier Relations</a></li>
+            <li><a href="">Manage Cookies</a></li>
+          </ul>
+        </div>
+        <div class="heading">
+          <p>Social</p>
+          <ul>
+            <li><a href="https://www.facebook.com/cliniqueuk/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/clinique/">Instagram</a></li>
+            <li><a href="https://www.pinterest.com/angiejo4654/clinique/">Pinterest</a></li>
+            <li><a href="https://www.tiktok.com/@cliniqueuk">TikTok</a></li>
+            <li><a href="https://twitter.com/Clinique/status/404731715954159616">Twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/UC8MupHwlZULY0RH1BxNwKsg">Youtube</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="./js/bestseller.js"></script>
-    <script src="./js/common.js"></script>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="./js/bestseller.js"></script>
 </body>
 </html> 

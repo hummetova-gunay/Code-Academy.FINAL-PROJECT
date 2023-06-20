@@ -9,12 +9,14 @@
       "productImageModal": "ingridients-lotion.jpg",
       "productRating": [],
       "productAmount": 6,
-      "purchaseAmount": 0,
+      "purchaseAmount": 1,
       "productCategory": "Skincare",
       "skinConcern": "Lines and Wrinkles",
       "skinType": "Very Dry to Dry",
       "productForm": "Cream",
-      "userReview": [""]
+      "userReview": [
+        ""
+      ]
     },
     {
       "id": 2,
@@ -30,7 +32,9 @@
       "skinConcern": "Dehydration",
       "skinType": "Dry Combination",
       "productForm": "Stick",
-      "userReview": [""]
+      "userReview": [
+        ""
+      ]
     },
     {
       "id": 3,
@@ -70,7 +74,9 @@
       "skinConcern": "Fatigue",
       "skinType": "Dry Combination",
       "productForm": "Liquid",
-      "userReview": [""]
+      "userReview": [
+        ""
+      ]
     },
     {
       "productName": "Almost Lipstick in Black Honey",
@@ -86,7 +92,9 @@
       "skinType": "Very Dry to Dry",
       "productForm": "Stick",
       "id": 5,
-      "userReview": [""]
+      "userReview": [
+        ""
+      ]
     }
   ]
 }
