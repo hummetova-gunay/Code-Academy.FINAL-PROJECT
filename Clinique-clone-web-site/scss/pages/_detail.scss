@@ -1,6 +1,11 @@
 #detail-section{
+    padding: 100px 0;
     .container{
         .detailed-product{
+            @include flexbox;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
             #carouselExampleFade{
                 width: 50%;
                 .carousel-control-prev, .carousel-control-next{
@@ -10,6 +15,61 @@
                         padding: 15px;
                     }
                 }
+            }
+            .detailed-info{
+                @include flexbox;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+                width: 50%;   
+                h3{
+                    font-weight: 900;
+                }
+                a{
+                    border-bottom: 1px solid black;
+                    color: black;
+                }
+            }
+            @media screen and (max-width:992px){
+                flex-direction: column;
+                #carouselExampleFade{
+                    width: 100%;
+                }
+                .detailed-info{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#review-section{
+    .container{
+        .rating{
+            @include flexbox;
+            justify-content: space-around;
+            padding: 50px 0;
+            border-top: 1px solid black;
+            .total{
+                border: 1px solid black;
+                padding: 20px 40px;
+            }
+            .rating-stars{
+                div{
+                    @include flexbox;
+                    meter{
+                        width: 200px;
+                        height: 30px;
+                        &::-webkit-meter-optimum-value {background: black;}
+                    }
+                }
+            }
+        }
+        .reviews{
+            border-top: 1px solid black;
+            padding: 100px 0;
+            .single-review{
+                @include flexbox;
+                justify-content: space-between;  
             }
         }
     }

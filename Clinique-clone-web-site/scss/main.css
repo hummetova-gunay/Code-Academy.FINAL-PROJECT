@@ -2189,6 +2189,17 @@ header .container nav ul li .log-out {
   }
 }
 
+#detail-section {
+  padding: 100px 0;
+}
+#detail-section .container .detailed-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
 #detail-section .container .detailed-product #carouselExampleFade {
   width: 50%;
 }
@@ -2196,6 +2207,68 @@ header .container nav ul li .log-out {
   background-color: #ADDDB7;
   border-radius: 100%;
   padding: 15px;
+}
+#detail-section .container .detailed-product .detailed-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+#detail-section .container .detailed-product .detailed-info h3 {
+  font-weight: 900;
+}
+#detail-section .container .detailed-product .detailed-info a {
+  border-bottom: 1px solid black;
+  color: black;
+}
+@media screen and (max-width: 992px) {
+  #detail-section .container .detailed-product {
+    flex-direction: column;
+  }
+  #detail-section .container .detailed-product #carouselExampleFade {
+    width: 100%;
+  }
+  #detail-section .container .detailed-product .detailed-info {
+    width: 100%;
+  }
+}
+
+#review-section .container .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+  border-top: 1px solid black;
+}
+#review-section .container .rating .total {
+  border: 1px solid black;
+  padding: 20px 40px;
+}
+#review-section .container .rating .rating-stars div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#review-section .container .rating .rating-stars div meter {
+  width: 200px;
+  height: 30px;
+}
+#review-section .container .rating .rating-stars div meter::-webkit-meter-optimum-value {
+  background: black;
+}
+#review-section .container .reviews {
+  border-top: 1px solid black;
+  padding: 100px 0;
+}
+#review-section .container .reviews .single-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
