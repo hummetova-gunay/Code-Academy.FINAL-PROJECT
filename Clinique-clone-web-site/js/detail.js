@@ -77,12 +77,7 @@ getdetail()
 // let totalRating=0
 let totalReview=document.querySelector('.total-review')
 let reviewAmount= document.querySelector('.review-amount')
-
-
-
-
 let userRating=document.querySelectorAll('.user-rating')
-
 
 function getRating(arr){
   userRating[0].innerHTML=arr.filter(item=>item==5).length
@@ -91,16 +86,56 @@ function getRating(arr){
   userRating[3].innerHTML=arr.filter(item=>item==2).length
   userRating[4].innerHTML=arr.filter(item=>item==1).length
 }
+
+
+let ratedStars=document.querySelector('.rated-stars')
+function getStars(arr){
+  if(arr.length){
+    let rate=arr.reduce((acc, curr)=>acc+curr,0)/arr.length
+    console.log(rate);
+    if(!Number.isInteger(rate)){
+      let halfStar=document.createElement('i')
+      halfStar.classList.add('fa-solid', 'fa-star-half-stroke')
+      let intNum=Math.floor(rate)
+      for (let  i= 0;  i< intNum; i++) {
+       let star=document.createElement('i')
+       star.classList.add("fa-solid","fa-star")
+       ratedStars.append(star)
+      }
+      ratedStars.append(halfStar)
+      for (let  i= 0;  i< 4-intNum; i++) {
+        let star=document.createElement('i')
+        star.classList.add("fa-regular","fa-star")
+        ratedStars.append(star)
+       }
+    }else{
+      for (let  i= 0;  i< rate; i++) {
+        let star=document.createElement('i')
+        star.classList.add("fa-solid","fa-star")
+        ratedStars.append(star)
+       }
+       for (let  i= 0;  i< 5-rate; i++) {
+        let star=document.createElement('i')
+        star.classList.add("fa-regular","fa-star")
+        ratedStars.append(star)
+       }
+    }
+
+  }else{
+    ratedStars.innerHTML="No rating yet"
+  }
+}
 async function getReviews(){
   const res= await axios(`${BASE_URL}/${id}`)
   const data = await res.data
   getRating(data.productRating)
-  if(data.productRating==[]){
-      totalReview.innerHTML="No reviews yet"
-      reviewAmount.innerHTML="0 reviews"
+  getStars(data.productRating)
+  if(data.productRating.length){
+    totalReview.innerHTML=`${data.productRating.reduce((acc, curr)=>acc+curr,0)/data.productRating.length}/5`
+    reviewAmount.innerHTML=`${data.productRating.length} reviews`
   }else{
-      totalReview.innerHTML=`${data.productRating.reduce((acc, curr)=>acc+curr,0)/data.productRating.length}/5`
-      reviewAmount.innerHTML=`${data.productRating.length} reviews`
+    totalReview.innerHTML="No reviews yet"
+    reviewAmount.innerHTML="0 reviews"
   }
 }
 getReviews()

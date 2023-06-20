@@ -46,10 +46,11 @@
       "productRating": [
         3,
         5,
-        1
+        1,
+        5
       ],
       "productAmount": 6,
-      "purchaseAmount": 0,
+      "purchaseAmount": 1,
       "productCategory": "Skincare",
       "skinConcern": "Lines and Wrinkles",
       "skinType": "Very Dry to Dry",
@@ -57,7 +58,8 @@
       "userReview": [
         "Good",
         "Well",
-        "Bad"
+        "Bad",
+        "So good"
       ]
     },
     {
