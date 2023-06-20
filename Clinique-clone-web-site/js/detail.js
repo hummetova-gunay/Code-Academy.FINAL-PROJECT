@@ -30,7 +30,7 @@ if(hasUser){
 ////////// get reviews /////////
 
 let id = new URLSearchParams(window.location.search).get('id')
-console.log(id);
+// console.log(id);
 
 let detailedProduct=document.querySelector('.detailed-product')
 const BASE_URL="http://localhost:3000/allProducts"
@@ -61,7 +61,7 @@ function prodDetail(obj){
     <h4>Skin Type: ${obj.skinType}</h4>
     <h4>Skin Concern: ${obj.skinConcern}</h4>
     <h4>Product Form : ${obj.productForm}</h4>
-    <h3>Price: ${obj.productPrice}</h3>
+    <h3>Price: $${obj.productPrice}.00</h3>
   </div>
     `
 }
@@ -70,6 +70,37 @@ async function getdetail(){
     const res= await axios(`${BASE_URL}/${id}`)
     const data = await res.data
     prodDetail(data)
-    console.log(data);
+    // console.log(data);
 }
 getdetail()
+
+// let totalRating=0
+let totalReview=document.querySelector('.total-review')
+let reviewAmount= document.querySelector('.review-amount')
+
+
+
+
+let userRating=document.querySelectorAll('.user-rating')
+
+
+function getRating(arr){
+  userRating[0].innerHTML=arr.filter(item=>item==5).length
+  userRating[1].innerHTML=arr.filter(item=>item==4).length
+  userRating[2].innerHTML=arr.filter(item=>item==3).length
+  userRating[3].innerHTML=arr.filter(item=>item==2).length
+  userRating[4].innerHTML=arr.filter(item=>item==1).length
+}
+async function getReviews(){
+  const res= await axios(`${BASE_URL}/${id}`)
+  const data = await res.data
+  getRating(data.productRating)
+  if(data.productRating==[]){
+      totalReview.innerHTML="No reviews yet"
+      reviewAmount.innerHTML="0 reviews"
+  }else{
+      totalReview.innerHTML=`${data.productRating.reduce((acc, curr)=>acc+curr,0)/data.productRating.length}/5`
+      reviewAmount.innerHTML=`${data.productRating.length} reviews`
+  }
+}
+getReviews()
