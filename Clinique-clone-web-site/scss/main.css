@@ -2260,6 +2260,16 @@ header .container nav ul li .log-out {
 #review-section .container .rating .rating-stars div meter::-webkit-meter-optimum-value {
   background: black;
 }
+@media screen and (max-width: 567px) {
+  #review-section .container .rating .rating-stars div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  #review-section .container .rating {
+    flex-direction: column;
+  }
+}
 #review-section .container .reviews {
   border-top: 1px solid black;
   padding: 100px 0;
