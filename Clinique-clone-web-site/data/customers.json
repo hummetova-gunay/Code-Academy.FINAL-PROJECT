@@ -19,19 +19,37 @@
       "customerEmail": "nermin@gmail.com",
       "basketItems": [
         {
-          "id": 1,
-          "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
-          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
-          "productPrice": 40,
-          "productImageMain": "dramatically-diff.png",
-          "productImageModal": "ingridients-lotion.jpg",
+          "id": 2,
+          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
+          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
+          "productPrice": 23,
+          "productImageMain": "lipgloss-katespande.png",
+          "productImageModal": "lip-glosses-for-modal.jpeg",
           "productRating": [],
           "productAmount": 6,
           "purchaseAmount": 0,
-          "productCategory": "Skincare",
-          "skinConcern": "Lines and Wrinkles",
-          "skinType": "Very Dry to Dry",
-          "productForm": "Cream",
+          "productCategory": "Makeup",
+          "skinConcern": "Dehydration",
+          "skinType": "Dry Combination",
+          "productForm": "Stick",
+          "userReview": [
+            ""
+          ]
+        },
+        {
+          "id": 2,
+          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
+          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
+          "productPrice": 23,
+          "productImageMain": "lipgloss-katespande.png",
+          "productImageModal": "lip-glosses-for-modal.jpeg",
+          "productRating": [],
+          "productAmount": 6,
+          "purchaseAmount": 1,
+          "productCategory": "Makeup",
+          "skinConcern": "Dehydration",
+          "skinType": "Dry Combination",
+          "productForm": "Stick",
           "userReview": [
             ""
           ]
@@ -40,19 +58,37 @@
       "id": 3,
       "orderedProducts": [
         {
-          "id": 1,
-          "productName": " Moisture Surge™ Broad Spectrum SPF 28 Sheer Hydrator  (test)",
-          "productDescription": "Cloud-like cream with SPF 28 hydrates and delivers sheer sun protection.",
-          "productPrice": 40,
-          "productImageMain": "dramatically-diff.png",
-          "productImageModal": "ingridients-lotion.jpg",
+          "id": 2,
+          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
+          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
+          "productPrice": 23,
+          "productImageMain": "lipgloss-katespande.png",
+          "productImageModal": "lip-glosses-for-modal.jpeg",
           "productRating": [],
           "productAmount": 6,
           "purchaseAmount": 0,
-          "productCategory": "Skincare",
-          "skinConcern": "Lines and Wrinkles",
-          "skinType": "Very Dry to Dry",
-          "productForm": "Cream",
+          "productCategory": "Makeup",
+          "skinConcern": "Dehydration",
+          "skinType": "Dry Combination",
+          "productForm": "Stick",
+          "userReview": [
+            ""
+          ]
+        },
+        {
+          "id": 2,
+          "productName": "Clinique x Kate Spade New York Clinique Pop Plush™ Creamy Lip Gloss",
+          "productDescription": "A lineup of our ultra-cushiony, super juicy lip glosses embellished with limited-edition packaging designed by Kate Spade New York",
+          "productPrice": 23,
+          "productImageMain": "lipgloss-katespande.png",
+          "productImageModal": "lip-glosses-for-modal.jpeg",
+          "productRating": [],
+          "productAmount": 6,
+          "purchaseAmount": 1,
+          "productCategory": "Makeup",
+          "skinConcern": "Dehydration",
+          "skinType": "Dry Combination",
+          "productForm": "Stick",
           "userReview": [
             ""
           ]

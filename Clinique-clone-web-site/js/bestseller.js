@@ -77,13 +77,19 @@ function fillProductData(arr){
         
     });
 }
-
+let num=3
 async function getProdData(){
    let res=await axios(BASE_URL)
   let  data= await res.data
-   fillProductData(data)
+   let sortedByselling=data.sort((a,b)=>b.purchaseAmount-a.purchaseAmount).slice(0,num)
+   fillProductData(sortedByselling)
 }
 getProdData()
+let loadMore=document.querySelector('.loadMore')
+loadMore.addEventListener('click', function(){
+    num+=3
+    getProdData()
+}) 
 
 /////////////////////////////////////////////////
 let CUSTOMER_API="http://localhost:8000/customers"
@@ -178,10 +184,11 @@ function searchProd(arr){
 async function fillFilter(){
   const res= await axios(BASE_URL)
   const data =res.data
-  byConcern(data)
-  filterCategory(data)
-  byForm(data)
-  byType(data)
-  searchProd(data)
+  let sortedByselling=data.sort((a,b)=>b.purchaseAmount-a.purchaseAmount).slice(0,num)
+  byConcern(sortedByselling)
+  filterCategory(sortedByselling)
+  byForm(sortedByselling)
+  byType(sortedByselling)
+  searchProd(sortedByselling)
 }
 fillFilter()
