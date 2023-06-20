@@ -344,15 +344,21 @@ header .header nav ul li a:hover {
   transition: 0.8s;
   border-bottom-color: black;
 }
-header .header .icons {
+header .header .dropdown-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
-header .header .icons i {
+header .header .dropdown-center .dropdown-toggle {
+  padding: 0;
+  border: none;
+}
+header .header .dropdown-center i {
   color: black;
   font-size: 24px;
 }
-header .header .icons .fa-bars {
+header .header .dropdown-center .fa-bars {
   display: none;
 }
 header .header .dropdown-center .search-menu {
@@ -363,14 +369,12 @@ header .header .dropdown-center .search-menu input {
   width: 100%;
   padding: 10px;
 }
-header .header .dropdown-center .search-menu .btn {
+header .header .dropdown-center .search-menu .suggestions {
   width: 100%;
   text-align: start;
 }
-header .header .dropdown-center .search-menu li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header .header .dropdown-center .search-menu .suggestions p {
+  font-size: 16px;
 }
 header .mobile-header {
   display: none;
@@ -382,7 +386,7 @@ header .mobile-header {
   header .header nav {
     display: none;
   }
-  header .header .icons .fa-bars {
+  header .header .dropdown-center .fa-bars {
     display: block;
   }
   header .header.hide {

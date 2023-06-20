@@ -9,6 +9,7 @@ menuIcon.addEventListener('click', function(){
 closeIcon.addEventListener('click', function(){
     mobileHeading.classList.remove('show')
     desktopHeader.classList.remove('hide')
+    
 })
 
 localStorage.removeItem('isAdmin')
@@ -17,7 +18,6 @@ let goAccount=document.querySelector('.goAccount')
 let signIn=document.querySelector('.signIn')
 let customer=JSON.parse(localStorage.getItem("normalUser"))
 // console.log(customer);
-
 if(customer){
     goAccount.style.display="block"
     signIn.style.display="none"
@@ -158,5 +158,37 @@ async function fillFilter(){
 fillFilter()
 
 
-// search
+////////////////////////// search /////////////////////////////
 
+let searchInput=document.querySelector('.searchInput')
+
+let suggestionBtn=document.querySelector('.suggestions')
+let prevSearchings=document.querySelector('.previous-searchings')
+
+// console.log(prevSearchings.innerText);
+
+function searchProd(arr){
+  searchInput.addEventListener('input', function(e){
+    // e.target.value?suggestionBtn.innerHTML="":""
+    let searchedData=arr.filter(item=>item.productName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+    suggestionBtn.innerHTML=""
+    searchedData.forEach(item=>{
+      !e.target.value?suggestionBtn.innerHTML="":
+      suggestionBtn.innerHTML+=`
+      <button class="btn">
+      <p><i class="fa-solid fa-magnifying-glass"></i>${item.productName}</p>
+      </button>
+      `
+    })
+  })
+}
+async function fillFilter(){
+  const res= await axios(BASE_URL)
+  const data =res.data
+  byConcern(data)
+  filterCategory(data)
+  byForm(data)
+  byType(data)
+  searchProd(data)
+}
+fillFilter()
