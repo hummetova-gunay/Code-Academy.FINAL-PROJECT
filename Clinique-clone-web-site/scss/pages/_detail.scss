@@ -1,0 +1,16 @@
+#detail-section{
+    .container{
+        .detailed-product{
+            #carouselExampleFade{
+                width: 50%;
+                .carousel-control-prev, .carousel-control-next{
+                    span{
+                        background-color: #ADDDB7;
+                        border-radius: 100%;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2189,6 +2189,15 @@ header .container nav ul li .log-out {
   }
 }
 
+#detail-section .container .detailed-product #carouselExampleFade {
+  width: 50%;
+}
+#detail-section .container .detailed-product #carouselExampleFade .carousel-control-prev span, #detail-section .container .detailed-product #carouselExampleFade .carousel-control-next span {
+  background-color: #ADDDB7;
+  border-radius: 100%;
+  padding: 15px;
+}
+
 footer {
   padding: 50px 0;
 }
